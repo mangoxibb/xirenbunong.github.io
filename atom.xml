@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xiren</title>
+  
+  <subtitle>谦谦君子，温润如玉</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-03-18T08:31:44.980Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Xiren</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript入门基础（二）内置对象（String）</title>
+    <link href="http://yoursite.com/2018/03/19/2018/03/js2/"/>
+    <id>http://yoursite.com/2018/03/19/2018/03/js2/</id>
+    <published>2018-03-18T16:00:00.000Z</published>
+    <updated>2018-03-18T08:31:44.980Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h3>字符串方法</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的字符串方法：</span><br><span class="line">charAt()、charCodeAt()、indexOf()、lastIndexOf()</span><br></pre></td></tr></table></figure></p><h4>chatAt()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.chatAt(index);</span><br></pre></td></tr></table></figure></p><h4>charCodeAt()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.charCodeAt(index);</span><br></pre></td></tr></table></figure></p><h4>indexOf()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.indexOf(&quot;element&quot;);</span><br></pre></td></tr></table></figure></p><h4>lastIndexOf()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str.lastIndexOf(&quot;element&quot;);</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript入门基础（一）内置对象（数组）</title>
+    <link href="http://yoursite.com/2018/03/18/2018/03/js1/"/>
+    <id>http://yoursite.com/2018/03/18/2018/03/js1/</id>
+    <published>2018-03-18T14:23:58.000Z</published>
+    <updated>2018-03-18T08:23:17.610Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h3>1. 数组</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">会用到的单词如下：</span><br><span class="line">variable   变量；   separator   分隔符；    index   索引；  element 元素.</span><br></pre></td></tr></table></figure></p><h3>1.1 arr.length</h3><p>用于for遍历数组(i &lt; arr.length)</p><h3>1.2 数组方法</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见数组方法：</span><br><span class="line">push(), unshift(), pop(), shift(), join(), reverse(), sort(), concat(), slice()...</span><br></pre></td></tr></table></figure></p><h3>1.2.1 push()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.push(&quot;variable&quot;);</span><br><span class="line">将参数按顺序加入数组arr的尾部。</span><br></pre></td></tr></table></figure></p><h3>1.2.2 unshift()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.unshift(&quot;variable&quot;);</span><br><span class="line">将参数按顺序加入数组arr的头部。</span><br></pre></td></tr></table></figure></p><h3>1.2.3 pop()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.pop(&quot;variable&quot;);</span><br><span class="line">删除数组arr的最后一个元素。</span><br></pre></td></tr></table></figure></p><h3>1.2.4 shift()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.shift(&quot;variable&quot;);</span><br><span class="line">删除数组arr的第一个元素</span><br></pre></td></tr></table></figure></p><h3>1.2.5 join()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr.join(&quot;separator&quot;);</span><br><span class="line">separator包括：&quot; &quot;(空)、&quot;-&quot;(减号)、默认不填为&quot;,&quot;(逗号)</span><br><span class="line">将数组元素连接起来，如：</span><br><span class="line">[1,2,3]:    123;    1-2-3;  1,2,3;</span><br></pre></td></tr></table></figure></p><h3>1.2.6 reverse()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.reverse();</span><br><span class="line">将数组反序</span><br></pre></td></tr></table></figure></p><h3>1.2.7 sort()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.sort()</span><br><span class="line">将数组元素字典序排序降序(即首字母或首数字排序)</span><br></pre></td></tr></table></figure></p><h3>1.2.8 concat()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.concat()</span><br></pre></td></tr></table></figure></p><h3>1.2.9 slice()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.slice()</span><br></pre></td></tr></table></figure></p><h3>1.2.10 splice()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.splice()</span><br></pre></td></tr></table></figure></p><h3>1.2.11 indexOf()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.indexOf()</span><br></pre></td></tr></table></figure></p><h3>1.2.12 lastIndexOf()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.lastIndexOf()</span><br></pre></td></tr></table></figure></p><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分类测试文章</title>
+    <link href="http://yoursite.com/2018/03/15/2018/03/text/"/>
+    <id>http://yoursite.com/2018/03/15/2018/03/text/</id>
+    <published>2018-03-15T12:16:50.082Z</published>
+    <updated>2018-03-18T06:27:25.960Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Testing" scheme="http://yoursite.com/categories/Testing/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>new article</title>
+    <link href="http://yoursite.com/2018/03/14/2018/03/new-article/"/>
+    <id>http://yoursite.com/2018/03/14/2018/03/new-article/</id>
+    <published>2018-03-14T14:23:58.000Z</published>
+    <updated>2018-03-18T06:27:34.846Z</updated>
+    
+    <content type="html"><![CDATA[<p>nihao</p><p><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;nihao&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eclipse的汉化和主题美化</title>
+    <link href="http://yoursite.com/2018/03/01/2018/03/eclipse/"/>
+    <id>http://yoursite.com/2018/03/01/2018/03/eclipse/</id>
+    <published>2018-03-01T12:43:48.973Z</published>
+    <updated>2018-03-18T06:27:18.215Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）.</p><p><a id="more"></a></p><h2>Quick Start</h2><p>eclipse的汉化有两种方法：</p><p>点击此链接&lt;a href=&quot;http://m.jb51.net/softjc/141995.html&quot;&gt;http://m.jb51.net/softjc/141995.html&lt;/a&gt;，有详细教程。</p><p>eclipse的主题美化也有两种方法(看图)：</p><p><img src="/img/eclipse1.jpg" alt="banner"></p><p>这是我的主题，此方法比较简单，汉化后点击 &lt;a&gt;帮助&lt;/a&gt; - - - &gt; &lt;a&gt;eclipseMarketPlace&lt;/a&gt;,如下图所示</p><p>搜索图片第一个插件，就是Theme（主题），然后自行安装即可。</p><p><img src="/img/eclipse2.jpg" alt="banner"></p><p>&lt;!-- More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3>Power Mode</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3>Generate static files</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3>Deploy to remote sites</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a> --&gt;</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>VS-code插件配置方式及使用教程</title>
+    <link href="http://yoursite.com/2018/02/28/2018/03/vscode/"/>
+    <id>http://yoursite.com/2018/02/28/2018/03/vscode/</id>
+    <published>2018-02-28T11:32:01.609Z</published>
+    <updated>2018-03-18T06:27:28.242Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。</p><p><a id="more"></a></p><h2>Quick Start</h2><h3>vscode-fileheader</h3><p>向文件头添加注释，并支持自动更新文件修改时间。</p><p>file(文件) - - - &gt; preference(首选项) - - - &gt;settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"fileheader.Author"</span>: <span class="string">"袭人"</span>,</span><br><span class="line"><span class="string">"fileheader.LastModifiedBy"</span>: <span class="string">"who"</span></span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3>Power Mode</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3>Generate static files</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3>Deploy to remote sites</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>手把手教你使用Hexo打造个人博客</title>
+    <link href="http://yoursite.com/2018/02/28/2018/03/hexo%20pro/"/>
+    <id>http://yoursite.com/2018/02/28/2018/03/hexo pro/</id>
+    <published>2018-02-28T06:45:52.158Z</published>
+    <updated>2018-03-18T06:27:23.596Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 我的第一篇<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>文章，用来记录一个小白，从零如何开始使用hexo打造个人博客，希望大家能够喜欢！</p><p><a id="more"></a></p><h2>Quick Start</h2><p><img src="/img/banner1.jpg" alt="banner"></p><h3>Create a new post</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3>Run server</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3>Generate static files</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># &#123;％codeblock lang：objc％&#125; </span></span><br><span class="line"><span class="comment"># [rectangle setX：10 y：10 width：20 height：20]; </span></span><br><span class="line"><span class="comment"># &#123;％endcodeblock％&#125;</span></span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3>Deploy to remote sites</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 我的第一篇&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;文章，用来记录一个小白，从零如何开始使用hexo打造个人博客，希望大家能够喜欢！&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>标题</title>
+    <link href="http://yoursite.com/2015/02/09/2018/03/youzhen/"/>
+    <id>http://yoursite.com/2015/02/09/2018/03/youzhen/</id>
+    <published>2015-02-09T14:01:00.000Z</published>
+    <updated>2018-03-18T06:27:31.398Z</updated>
+    
+    <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabalabalabalabala</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;引言（简介）&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="前端开发" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/CSS/"/>
+    
+    
+  </entry>
+  
+</feed>
