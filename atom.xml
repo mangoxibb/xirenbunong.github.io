@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-18T08:31:44.980Z</updated>
+  <updated>2018-03-19T11:47:46.544Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git入门基础</title>
+    <link href="http://yoursite.com/2018/03/20/2018/03/git/"/>
+    <id>http://yoursite.com/2018/03/20/2018/03/git/</id>
+    <published>2018-03-20T04:23:58.000Z</published>
+    <updated>2018-03-19T11:47:46.544Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。</p><p><a id="more"></a></p><h3>新知识扑面而来的时候，可能会绝望，痛苦。但是不要放弃，没有人一生下来就会这些东西的，慢慢来，想学的，总会学会。首先说一下git，github，gitbash的区别。</h3><p>git是一个软件，因为它要安装，用于开发项目，因为它采用分布式。github是一个托管平台，就是一个网站，从个人角度来说是防止你在本地的文件丢失，从团队角度来讲是便于团队开发，因为大家都能根据项目地址查看下载文件代码。gitbash是软件git自带的命令行工具，类似cmd，可以在命令行中输入命令快速操作文件</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack入门基础</title>
+    <link href="http://yoursite.com/2018/03/19/2018/03/webpack/"/>
+    <id>http://yoursite.com/2018/03/19/2018/03/webpack/</id>
+    <published>2018-03-19T04:23:58.000Z</published>
+    <updated>2018-03-19T11:50:27.822Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。</p><p><a id="more"></a></p><h3>模块之间的依赖关系是由require(commonjs规范)或import(es6规范)实现的。</h3><h3>webpack.config.js配置文件各项说明</h3><p>&lt;!-- more --&gt;</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="webpack" scheme="http://yoursite.com/tags/webpack/"/>
+    
+  </entry>
   
   <entry>
     <title>javascript入门基础（二）内置对象（String）</title>
@@ -168,10 +214,10 @@
   
   <entry>
     <title>标题</title>
-    <link href="http://yoursite.com/2015/02/09/2018/03/youzhen/"/>
-    <id>http://yoursite.com/2015/02/09/2018/03/youzhen/</id>
-    <published>2015-02-09T14:01:00.000Z</published>
-    <updated>2018-03-18T06:27:31.398Z</updated>
+    <link href="http://yoursite.com/2018/02/09/2018/03/youzhen/"/>
+    <id>http://yoursite.com/2018/02/09/2018/03/youzhen/</id>
+    <published>2018-02-09T14:01:00.000Z</published>
+    <updated>2018-03-19T10:35:59.328Z</updated>
     
     <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabalabalabalabala</p>]]></content>
     
