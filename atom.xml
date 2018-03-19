@@ -109,47 +109,6 @@
   </entry>
   
   <entry>
-    <title>分类测试文章</title>
-    <link href="http://yoursite.com/2018/03/15/2018/03/text/"/>
-    <id>http://yoursite.com/2018/03/15/2018/03/text/</id>
-    <published>2018-03-15T12:16:50.082Z</published>
-    <updated>2018-03-18T06:27:25.960Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Testing" scheme="http://yoursite.com/categories/Testing/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>new article</title>
-    <link href="http://yoursite.com/2018/03/14/2018/03/new-article/"/>
-    <id>http://yoursite.com/2018/03/14/2018/03/new-article/</id>
-    <published>2018-03-14T14:23:58.000Z</published>
-    <updated>2018-03-18T06:27:34.846Z</updated>
-    
-    <content type="html"><![CDATA[<p>nihao</p><p><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;nihao&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-      <category term="node.js" scheme="http://yoursite.com/tags/node-js/"/>
-    
-  </entry>
-  
-  <entry>
     <title>eclipse的汉化和主题美化</title>
     <link href="http://yoursite.com/2018/03/01/2018/03/eclipse/"/>
     <id>http://yoursite.com/2018/03/01/2018/03/eclipse/</id>
@@ -217,7 +176,7 @@
     <link href="http://yoursite.com/2018/02/09/2018/03/youzhen/"/>
     <id>http://yoursite.com/2018/02/09/2018/03/youzhen/</id>
     <published>2018-02-09T14:01:00.000Z</published>
-    <updated>2018-03-19T10:35:59.328Z</updated>
+    <updated>2018-03-19T14:41:47.762Z</updated>
     
     <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabalabalabalabala</p>]]></content>
     
@@ -229,8 +188,6 @@
     </summary>
     
       <category term="前端开发" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="CSS" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/CSS/"/>
     
     
   </entry>
