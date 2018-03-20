@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="摘要: 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &amp;gt; preference(首选项) - - - &amp;gt;settings(设置)">
+<meta name="description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VS-code插件配置方式及使用教程">
-<meta property="og:url" content="http://yoursite.com/2018/02/28/2018/03/vscode/index.html">
+<meta property="og:title" content="javascript入门基础（三）内置对象（Math和Date）">
+<meta property="og:url" content="http://yoursite.com/2018/04/01/2018/04/js3/index.html">
 <meta property="og:site_name" content="Xiren">
-<meta property="og:description" content="摘要: 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &amp;gt; preference(首选项) - - - &amp;gt;settings(设置)">
+<meta property="og:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-19T14:54:43.775Z">
+<meta property="og:updated_time" content="2018-03-20T14:31:07.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VS-code插件配置方式及使用教程">
-<meta name="twitter:description" content="摘要: 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &amp;gt; preference(首选项) - - - &amp;gt;settings(设置)">
+<meta name="twitter:title" content="javascript入门基础（三）内置对象（Math和Date）">
+<meta name="twitter:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/28/2018/03/vscode/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/01/2018/04/js3/"/>
 
 
 
 
 
-  <title>VS-code插件配置方式及使用教程 | Xiren</title>
+  <title>javascript入门基础（三）内置对象（Math和Date） | Xiren</title>
   
 
 
@@ -246,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/2018/03/vscode/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/01/2018/04/js3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiren">
@@ -263,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VS-code插件配置方式及使用教程</h1>
+          <h1 class="post-title" itemprop="name headline">javascript入门基础（三）内置对象（Math和Date）</h1>
         
 
         <div class="post-meta">
@@ -275,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-28T19:32:01+08:00">
-                2018-02-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-01T00:00:00+08:00">
+                2018-04-01
               </time>
             
 
@@ -298,8 +299,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/软件/" itemprop="url" rel="index">
-                    <span itemprop="name">软件</span>
+                  <a href="/categories/日记/" itemprop="url" rel="index">
+                    <span itemprop="name">日记</span>
                   </a>
                 </span>
 
@@ -343,22 +344,29 @@
       
 
       
-        <p><strong>摘要:</strong> 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &gt; preference(首选项) - - - &gt;settings(设置)</p>
+        <p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p>
 <p><a id="more"></a></p>
-<h3>vscode-fileheader</h3>
-<p>向文件头添加注释，并支持自动更新文件修改时间。
-要启用，请添加以下到您的settings(设置)
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"fileheader.Author"</span>: <span class="string">"袭人"</span>,</span><br><span class="line"><span class="string">"fileheader.LastModifiedBy"</span>: <span class="string">"who"</span></span><br></pre></td></tr></table></figure></p>
-<h3>Power Mode</h3>
-<p>炫酷的代码编辑特效
-要启用，请添加以下到您的settings(设置)
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
-<h3>Generate static files</h3>
-<p>要启用，请添加以下到您的settings(设置)
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
-<h3>Deploy to remote sites</h3>
-<p>要启用，请添加以下到您的settings(设置)
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h4>3.Math方法</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p>
+<h4>3.1min()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.min(num1, ...);</span><br><span class="line">返回最小值.</span><br></pre></td></tr></table></figure></p>
+<h4>3.2max()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.max(num1, ...);</span><br><span class="line">返回最大值.</span><br></pre></td></tr></table></figure></p>
+<h4>3.3ceil()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.ceil(num);</span><br><span class="line">向上取整.</span><br></pre></td></tr></table></figure></p>
+<h4>3.4floor()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(num);</span><br><span class="line">向下取整.</span><br></pre></td></tr></table></figure></p>
+<h4>3.5round()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.round(num);</span><br><span class="line">四舍五入取整.</span><br></pre></td></tr></table></figure></p>
+<h4>3.6abs()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.abs(num);</span><br><span class="line">返回绝对值.</span><br></pre></td></tr></table></figure></p>
+<h4>3.7random()</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Math.random();</span><br><span class="line">返回一个大于等于0小于1的随机数.</span><br><span class="line">n~m之间的随机数公式：</span><br><span class="line">r = Math.floor(Math.random() * (m -n +1) +n).</span><br></pre></td></tr></table></figure></p>
+<h4>4.Date方法</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var date = new Date();</span><br><span class="line">getFullYear(): 返回四位数年份.</span><br><span class="line">getMonth(): 返回月份，返回值0~11.</span><br><span class="line">getDate(): 返回日.</span><br><span class="line">getDay(): 返回星期，返回值0~6.</span><br><span class="line">getHours(): 返回小时.</span><br><span class="line">getMinutes(): 返回分.</span><br><span class="line">getSeconds(): 返回秒.</span><br><span class="line">getTime(): 返回 1970年 1月 1日至今的毫秒数.</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置年月日星期时分秒的Math方法为：</span><br><span class="line">将get替换为set</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">返回星期值的代码：</span><br><span class="line">var date = new Date();</span><br><span class="line">var weeks = [&quot;日&quot;, &quot;一&quot;, &quot;二&quot;, &quot;三&quot;, &quot;四&quot;, &quot;五&quot;, &quot;六&quot;];</span><br><span class="line">var week = date.getDay();</span><br><span class="line">&quot;星期&quot; + weeks[week]</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -417,6 +425,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
 
       
       
@@ -426,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/28/2018/03/hexo pro/" rel="next" title="手把手教你使用Hexo打造个人博客">
-                <i class="fa fa-chevron-left"></i> 手把手教你使用Hexo打造个人博客
+              <a href="/2018/03/19/2018/03/js2/" rel="next" title="javascript入门基础（二）内置对象（String）">
+                <i class="fa fa-chevron-left"></i> javascript入门基础（二）内置对象（String）
               </a>
             
           </div>
@@ -436,8 +450,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/01/2018/03/eclipse/" rel="prev" title="eclipse的汉化和主题美化">
-                eclipse的汉化和主题美化 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/02/2018/04/js4/" rel="prev" title="javascript入门基础（四）DOM基础">
+                javascript入门基础（四）DOM基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -651,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">vscode-fileheader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Power Mode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">Deploy to remote sites</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.Math方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.1min()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.2max()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.3ceil()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.4floor()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.5round()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.6abs()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.7random()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4.Date方法</span></a></li></ol></div>
             
 
           </div>
