@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-20T14:49:11.832Z</updated>
+  <updated>2018-03-27T13:47:12.340Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>css入门基础（一）Float</title>
+    <link href="http://yoursite.com/2018/04/16/2018/04/css1/"/>
+    <id>http://yoursite.com/2018/04/16/2018/04/css1/</id>
+    <published>2018-04-15T16:00:00.000Z</published>
+    <updated>2018-03-27T13:47:12.340Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> CSS 指层叠样式表 (Cascading Style Sheets),接下来会对css中一些重要的样式进行讲解,并分析其应用场景.</p><p><a id="more"></a></p><h4>1.清除浮动</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p><h4>2.应用场景</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; CSS 指层叠样式表 (Cascading Style Sheets),接下来会对css中一些重要的样式进行讲解,并分析其应用场景.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git入门基础</title>
     <link href="http://yoursite.com/2018/04/06/2018/04/git/"/>
     <id>http://yoursite.com/2018/04/06/2018/04/git/</id>
     <published>2018-04-06T04:23:58.000Z</published>
-    <updated>2018-03-20T14:49:11.832Z</updated>
+    <updated>2018-03-22T14:25:35.404Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。</p><p><a id="more"></a></p><h3>1.</h3><p>新知识扑面而来的时候，可能会绝望，痛苦。但是不要放弃，没有人一生下来就会这些东西的，慢慢来，想学的，总会学会。首先说一下git，github，gitbash的区别。</p><p>git是一个软件，因为它要安装，用于开发项目，因为它采用分布式。github是一个托管平台，就是一个网站，从个人角度来说是防止你在本地的文件丢失，从团队角度来讲是便于团队开发，因为大家都能根据项目地址查看下载文件代码。gitbash是软件git自带的命令行工具，类似cmd，可以在命令行中输入命令快速操作文件。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。</p><p><a id="more"></a></p><h3>1.</h3><p>新知识扑面而来的时候，可能会绝望，痛苦。但是不要放弃，没有人一生下来就会这些东西的，慢慢来，想学的，总会学会。首先说一下git，github，gitbash的区别。</p><p>git是一个软件，因为它要安装，用于开发项目，因为它采用分布式。github是一个托管平台，就是一个网站，从个人角度来说是防止你在本地的文件丢失，从团队角度来讲是便于团队开发，因为大家都能根据项目地址查看下载文件代码。gitbash是软件git自带的命令行工具，类似cmd，可以在命令行中输入命令快速操作文件。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>2.</h3><p>new repository 点击创建一个仓库Repository name 仓库名称Description 描述该仓库Create repository 创建仓库</p><h3>3.</h3><p>cd是用来进入某个目录的，白色的字是自己打的（前面那个美元符号是自动生成的），然后现在就进入了我们要上传路径的目录下。输入git init，这个意思是在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）输入git add.，这个是将项目上所有的文件添加到仓库中的意思，如果想添加某个特定的文件，只需把.换成这个特定的文件名即可。</p>]]></content>
     
     <summary type="html">
     
@@ -63,13 +86,59 @@
   </entry>
   
   <entry>
+    <title>javascript入门基础（六）BOM</title>
+    <link href="http://yoursite.com/2018/04/04/2018/04/js6/"/>
+    <id>http://yoursite.com/2018/04/04/2018/04/js6/</id>
+    <published>2018-04-03T16:00:00.000Z</published>
+    <updated>2018-03-27T13:50:54.947Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.window对象</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javascript入门基础（五）DOM事件</title>
+    <link href="http://yoursite.com/2018/04/03/2018/04/js5/"/>
+    <id>http://yoursite.com/2018/04/03/2018/04/js5/</id>
+    <published>2018-04-02T16:00:00.000Z</published>
+    <updated>2018-03-27T13:51:01.603Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.HTML事件</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this:</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>javascript入门基础（四）DOM基础</title>
     <link href="http://yoursite.com/2018/04/02/2018/04/js4/"/>
     <id>http://yoursite.com/2018/04/02/2018/04/js4/</id>
     <published>2018-04-01T16:00:00.000Z</published>
-    <updated>2018-03-20T14:53:21.835Z</updated>
+    <updated>2018-03-27T13:41:03.693Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.getElementById()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过id获取.</span><br></pre></td></tr></table></figure></p><h4>2.getElementsByTagName()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过标签名称获取(数组).</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.getElementById()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过id获取.</span><br></pre></td></tr></table></figure></p><h4>2.getElementsByTagName()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过标签名称获取(数组).</span><br></pre></td></tr></table></figure></p><h4>3.设置元素样式</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.style.styleName = &apos;styleValue&apos;;</span><br><span class="line">element:需要被设置样式的DOM对象</span><br><span class="line">styleName:样式名称, 如: color, fontSize(不能font-size), backgroundColor...</span><br><span class="line">styleValue: 样式值</span><br></pre></td></tr></table></figure></p><h4>4.innerHTML</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.innerHTML;</span><br><span class="line">返回element之间的html内容。</span><br><span class="line">element.innerHTML= &quot;html&quot;;</span><br><span class="line">设置element之间的html内容。</span><br></pre></td></tr></table></figure></p><h4>5.className</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.className;</span><br><span class="line">获取element的class值。</span><br><span class="line">element.className = &quot;class&quot;;</span><br><span class="line">改变element的class值。</span><br></pre></td></tr></table></figure></p><h4>6.gitAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.getAttribute(&quot;attribute&quot;);</span><br><span class="line">attribute: 属性, 如: id align color </span><br><span class="line">获取自定义的属性</span><br></pre></td></tr></table></figure></p><h4>7.setAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.setAttribute(&quot;attribute&quot;, &quot;value&quot;);</span><br><span class="line">设置element元素的属性</span><br></pre></td></tr></table></figure></p><h4>8.removeAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.removeAttribute(&quot;attribute&quot;);</span><br><span class="line">移除元素的属性</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
@@ -105,6 +174,29 @@
     
     
       <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信公众号开发</title>
+    <link href="http://yoursite.com/2018/03/20/2018/03/wechat/"/>
+    <id>http://yoursite.com/2018/03/20/2018/03/wechat/</id>
+    <published>2018-03-19T16:00:00.000Z</published>
+    <updated>2018-03-27T13:55:36.119Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> wechat</p><p><a id="more"></a></p><h4></h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">开发步骤</span><br></pre></td></tr></table></figure></p><p><img src="/img/wechat.jpg" alt="banner"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; wechat&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="wechat" scheme="http://yoursite.com/tags/wechat/"/>
     
   </entry>
   
@@ -180,9 +272,9 @@
     <link href="http://yoursite.com/2018/02/28/2018/03/vscode/"/>
     <id>http://yoursite.com/2018/02/28/2018/03/vscode/</id>
     <published>2018-02-28T11:32:01.609Z</published>
-    <updated>2018-03-19T14:54:43.775Z</updated>
+    <updated>2018-03-25T14:28:44.637Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &gt; preference(首选项) - - - &gt;settings(设置)</p><p><a id="more"></a></p><h3>vscode-fileheader</h3><p>向文件头添加注释，并支持自动更新文件修改时间。要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"fileheader.Author"</span>: <span class="string">"袭人"</span>,</span><br><span class="line"><span class="string">"fileheader.LastModifiedBy"</span>: <span class="string">"who"</span></span><br></pre></td></tr></table></figure></p><h3>Power Mode</h3><p>炫酷的代码编辑特效要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><h3>Generate static files</h3><p>要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><h3>Deploy to remote sites</h3><p>要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 看了一下，网上大多都是介绍插件的名字和功能，并没有插件的配置方法，导致一些小白不懂为什么安装了插件还是不能达到想要的效果，下面会介绍一些常用插件，以及插件配置方法。操作方式：file(文件) - - - &gt; preference(首选项) - - - &gt;settings(设置)</p><p><a id="more"></a></p><p><img src="/img/set.png" alt="banner"></p><h3>vscode-fileheader</h3><p>向文件头添加注释，并支持自动更新文件修改时间。要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"fileheader.Author"</span>: <span class="string">"袭人"</span>,</span><br><span class="line"><span class="string">"fileheader.LastModifiedBy"</span>: <span class="string">"who"</span></span><br></pre></td></tr></table></figure></p><h3>Power Mode</h3><p>炫酷的代码编辑特效</p><p>要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><h3>vscode-icons</h3><p>Visual Studio代码文件的图标</p><p>要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"workbench.iconTheme"</span>: <span class="string">"vscode-icons"</span></span><br></pre></td></tr></table></figure></p><h3>Auto Rename Tag</h3><p>代码标签自动闭合</p><p>要启用，请添加以下到您的settings(设置)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"auto-rename-tag.activationOnLanguage"</span>: [</span><br><span class="line">        <span class="string">"html"</span>,</span><br><span class="line">        <span class="string">"xml"</span>,</span><br><span class="line">        <span class="string">"php"</span>,</span><br><span class="line">        <span class="string">"javascript"</span></span><br><span class="line">    ]</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
@@ -218,13 +310,13 @@
   </entry>
   
   <entry>
-    <title>标题</title>
+    <title>标题（测试文章）</title>
     <link href="http://yoursite.com/2018/02/09/2018/03/youzhen/"/>
     <id>http://yoursite.com/2018/02/09/2018/03/youzhen/</id>
     <published>2018-02-09T14:01:00.000Z</published>
-    <updated>2018-03-19T14:41:47.762Z</updated>
+    <updated>2018-03-22T12:53:49.703Z</updated>
     
-    <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabalabalabalabala</p>]]></content>
+    <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabala</p>]]></content>
     
     <summary type="html">
     
