@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-30T13:58:43.647Z">
+<meta property="og:updated_time" content="2018-04-01T09:25:55.428Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript入门基础（二）内置对象（String）">
 <meta name="twitter:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
@@ -348,27 +348,27 @@
 <p><a id="more"></a></p>
 <h4>2.字符串方法</h4>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的字符串方法：</span><br><span class="line">charAt()、charCodeAt()、indexOf()、lastIndexOf()、slice()、substring()、substr()、split()、replace()、touUpperCase()、toLowerCase()...</span><br></pre></td></tr></table></figure></p>
-<h4>2.1chatAt()</h4>
+<h3>2.1chatAt()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.chatAt(index);</span><br><span class="line">返回字符串索引为index的字符.</span><br></pre></td></tr></table></figure></p>
-<h4>2.2charCodeAt()</h4>
+<h3>2.2charCodeAt()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.charCodeAt(index);</span><br><span class="line">返回字符串中索引为index字符的字符编码.</span><br></pre></td></tr></table></figure></p>
-<h4>2.3indexOf()</h4>
+<h3>2.3indexOf()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.indexOf(&quot;element&quot;);</span><br><span class="line">返回元素或字符串在字符串中的索引.</span><br></pre></td></tr></table></figure></p>
-<h4>2.4lastIndexOf()</h4>
+<h3>2.4lastIndexOf()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.lastIndexOf(&quot;element&quot;);</span><br><span class="line">在字符串末尾检测元素位置，但索引值还是正序.</span><br></pre></td></tr></table></figure></p>
-<h4>2.5slice()</h4>
+<h3>2.5slice()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.slice(start, end);</span><br><span class="line">返回所选区段字符串.</span><br></pre></td></tr></table></figure></p>
-<h4>2.6substring()</h4>
+<h3>2.6substring()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">同slice();</span><br><span class="line">区别: 参数为负数时，自动转换为0.</span><br></pre></td></tr></table></figure></p>
-<h4>2.7substr()</h4>
+<h3>2.7substr()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str.substr(start, len);</span><br><span class="line">start: 字符串开始位置的索引值(必选).</span><br><span class="line">len：截取字符串长度(可选).</span><br><span class="line">返回所选区段字符串.</span><br></pre></td></tr></table></figure></p>
-<h4>2.8split()</h4>
+<h3>2.8split()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.split(separator);</span><br><span class="line">separator: 字符串的分隔符(&quot;2018/03/19&quot;中的&quot;/&quot;; &quot;hello-world&quot;中的&quot;-&quot;).</span><br></pre></td></tr></table></figure></p>
-<h4>2.9replace()</h4>
+<h3>2.9replace()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str.replace(substr, replace);</span><br><span class="line">substr: 需要被替换的元素；</span><br><span class="line">replace：替换元素</span><br><span class="line">将字符串中的元素替换.</span><br></pre></td></tr></table></figure></p>
-<h4>2.10touUpperCase()</h4>
+<h3>2.10touUpperCase()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.touUpperCase();</span><br><span class="line">将字符串转换为大写.</span><br></pre></td></tr></table></figure></p>
-<h4>2.11toLowerCase()</h4>
+<h3>2.11toLowerCase()</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.toLowerCase();</span><br><span class="line">将字符串转换为小写.</span><br></pre></td></tr></table></figure></p>
 
       
@@ -673,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.字符串方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.1chatAt()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.2charCodeAt()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.3indexOf()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.4lastIndexOf()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.5slice()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.6substring()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.7substr()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.8split()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.9replace()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.10touUpperCase()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.11toLowerCase()</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.字符串方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1chatAt()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2charCodeAt()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.3indexOf()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4lastIndexOf()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.5slice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.6substring()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.7substr()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.8split()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.9replace()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.10touUpperCase()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.11toLowerCase()</span></a></div>
             
 
           </div>
