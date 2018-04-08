@@ -93,7 +93,7 @@
 <meta property="og:image" content="http://yoursite.com/img/foundation2.png">
 <meta property="og:image" content="http://yoursite.com/img/foundation3.png">
 <meta property="og:image" content="http://yoursite.com/img/foundation3.png">
-<meta property="og:updated_time" content="2018-04-01T06:35:57.687Z">
+<meta property="og:updated_time" content="2018-04-08T15:01:05.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="响应式开发（一）Foundation">
 <meta name="twitter:description" content="摘要: 号称是世界上最先进的响应式前端框架, Foundation是一个易用、强大而且灵活的框架, 用于构建基于任何设备上的Web应用. 提供多种Web上的UI 组件, 如表单、按钮、 标签等.">
@@ -351,21 +351,56 @@
       
         <p><strong>摘要:</strong> 号称是世界上最先进的响应式前端框架, Foundation是一个易用、强大而且灵活的框架, 用于构建基于任何设备上的Web应用. 提供多种Web上的UI 组件, 如表单、按钮、 标签等.</p>
 <p><a id="more"></a></p>
-<h4>1.初始化环境步骤</h4>
+<h4>概览</h4>
+<h4>1.开发环境的搭建</h4>
+<h3>1.1 安装Git</h3>
+<p>关于git的下载地址, 安装方式, 在本人博客<a href="">git入门基础</a>中有具体讲解.</p>
+<h3>1.2 安装Node.js</h3>
 <p>查看node版本, 不能小于6.0.0(关于如何安装或者跟新node, 在本人博客&quot;<a href="https://xirenbunong.github.io/2018/02/28/2018/03/hexo%20pro/" target="_blank" rel="noopener">手把手教你使用Hexo打造个人博客</a>&quot;中有)
 <img src="/img/foundation1.png" alt="banner"></p>
+<h3>1.3 下载Foundation</h3>
 <p>npm install --global foundation-cli
 全局安装, 所以--global</p>
 <p>foundation new
 会出现三个问题:
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.安装web, APP, Email(选择一项即可);</span><br><span class="line">2.项目名称;</span><br><span class="line">3.直接回车即可</span><br></pre></td></tr></table></figure></p>
-<p>安装完成后显示如下, Ctrl+C退出
+<p>安装完成后显示如下, 则表示成功, Ctrl+C退出, 否则看下文解决方法<br>
 <img src="/img/foundation2.png" alt="banner"></p>
-<p>如果遇到以下问题, 删除文件, 然后再npm install --save, 然后foundation new安装一次, 即可解决:
+<p>如果遇到以下问题, 删除文件, 然后再npm install --save, 然后foundation new安装一次, 即可解决:<br>
 <img src="/img/foundation3.png" alt="banner"></p>
-<h4>2.启动服务</h4>
-<p>cd进入到项目根目录下(非常重要！！！), 执行npm start启动服务, 然后打开文件所在目录, 在根目录下有index.html, 浏览器打开即可
+<h3>1.4 启动服务预览</h3>
+<p>cd进入到项目根目录下(非常重要！！！), 执行npm start启动服务, 然后打开文件所在目录, 在根目录下有index.html, 浏览器打开即可<br>
 <img src="/img/foundation3.png" alt="banner"></p>
+<h4>2.基本概念与常用工具类</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">通过对列添加属性来实现效果</span><br><span class="line">column: 列、 row:行.</span><br></pre></td></tr></table></figure></p>
+<h3>2.1 了解栅格布局</h3>
+<p>原理: 将一行分为12列进行布局, 三种尺寸：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">small: &lt; 640px</span><br><span class="line">medium: 640px &lt; &amp;&amp; &lt; 1024px</span><br><span class="line">large: &gt; 1024px</span><br></pre></td></tr></table></figure></p>
+<h3>2.2 Flex布局</h3>
+<p>1&gt; 不指定列宽, 则自动填充剩余位置<br>
+2&gt; shrink根据内容缩减列宽<br>
+3&gt; 可以设置对齐方式<br>
+4&gt; 可以控制不同尺寸下盒子排列顺序</p>
+<h3>2.3 Visibility Classes(盒子的显示与隐藏)</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&gt;show-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2&gt;show-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3&gt;show-for-small-only</span><br><span class="line">仅在小屏中显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4&gt;show-for-medium-only</span><br><span class="line">仅在中屏中显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5&gt;show-for-large-only</span><br><span class="line">仅在大屏中显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6&gt;hide-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">7&gt;hide-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8&gt;hide-for-small-only</span><br><span class="line">仅在小屏中隐藏</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">9&gt;hide-for-medium-only</span><br><span class="line">仅在中屏中隐藏</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10&gt;hide-for-large-only</span><br><span class="line">仅在大屏中隐藏</span><br></pre></td></tr></table></figure></p>
+<h3>2.4 Float classes(盒子对齐)</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;float-left 居左显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;float-right 居右显示</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;float-center 居中显示</span><br></pre></td></tr></table></figure></p>
+<h3>2.5 Helper Classes</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;text-left 文字居左对齐</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;text-right 文字居右对齐</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;text-center 文字居中对齐</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4&gt;text-justify 文字两端对齐</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -448,6 +483,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/20/2018/04/wechatApp/" rel="prev" title="微信小程序开发入门">
+                微信小程序开发入门 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -533,7 +572,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -582,13 +621,13 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:yourname@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:m18791744718@163.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://weibo.com/your-user-name" target="_blank" title="微博">
+                    <a href="http://weibo.com/袭人不弄" target="_blank" title="微博">
                       
                         <i class="fa fa-fw fa-globe"></i>微博</a>
                   </span>
@@ -665,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.初始化环境步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.启动服务</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">概览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.开发环境的搭建</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 安装Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 下载Foundation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 启动服务预览</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.基本概念与常用工具类</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 了解栅格布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 Flex布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 Visibility Classes(盒子的显示与隐藏)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 Float classes(盒子对齐)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.5 Helper Classes</span></a></div>
             
 
           </div>

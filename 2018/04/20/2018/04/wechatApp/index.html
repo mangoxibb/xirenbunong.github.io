@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="js," />
+  <meta name="keywords" content="wechat," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
-<meta name="keywords" content="js">
+<meta name="description" content="摘要: 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.">
+<meta name="keywords" content="wechat">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript入门基础（一）内置对象（数组）">
-<meta property="og:url" content="http://yoursite.com/2018/03/16/2018/03/js1/index.html">
+<meta property="og:title" content="微信小程序开发入门">
+<meta property="og:url" content="http://yoursite.com/2018/04/20/2018/04/wechatApp/index.html">
 <meta property="og:site_name" content="Xiren">
-<meta property="og:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
+<meta property="og:description" content="摘要: 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-01T09:24:59.453Z">
+<meta property="og:updated_time" content="2018-04-03T12:02:41.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript入门基础（一）内置对象（数组）">
-<meta name="twitter:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
+<meta name="twitter:title" content="微信小程序开发入门">
+<meta name="twitter:description" content="摘要: 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/16/2018/03/js1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/20/2018/04/wechatApp/"/>
 
 
 
 
 
-  <title>javascript入门基础（一）内置对象（数组） | Xiren</title>
+  <title>微信小程序开发入门 | Xiren</title>
   
 
 
@@ -247,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/16/2018/03/js1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/20/2018/04/wechatApp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiren">
@@ -264,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">javascript入门基础（一）内置对象（数组）</h1>
+          <h1 class="post-title" itemprop="name headline">微信小程序开发入门</h1>
         
 
         <div class="post-meta">
@@ -276,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-16T22:23:58+08:00">
-                2018-03-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-20T00:00:00+08:00">
+                2018-04-20
               </time>
             
 
@@ -344,42 +344,9 @@
       
 
       
-        <p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p>
+        <p><strong>摘要:</strong> 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.</p>
 <p><a id="more"></a></p>
-<h4>1. 数组</h4>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">会用到的单词如下：</span><br><span class="line">variable   变量；   separator   分隔符；    index   索引；  element 元素.</span><br></pre></td></tr></table></figure></p>
-<h3>1.1 arr.length</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用于for遍历数组(i &lt; arr.length)</span><br></pre></td></tr></table></figure></p>
-<h3>1.2 数组方法</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见数组方法：</span><br><span class="line">push(), unshift(), pop(), shift(), join(), reverse(), sort(), concat(), slice()...</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.1 push()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.push(&quot;variable&quot;);</span><br><span class="line">将参数按顺序加入数组arr的尾部.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.2 unshift()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.unshift(&quot;variable&quot;);</span><br><span class="line">将参数按顺序加入数组arr的头部.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.3 pop()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.pop(&quot;variable&quot;);</span><br><span class="line">删除数组arr的最后一个元素.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.4 shift()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.shift(&quot;variable&quot;);</span><br><span class="line">删除数组arr的第一个元素.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.5 join()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr.join(&quot;separator&quot;);</span><br><span class="line">separator包括：&quot; &quot;(空)、&quot;-&quot;(减号)、默认不填为&quot;,&quot;(逗号)</span><br><span class="line">将数组元素连接起来，如：</span><br><span class="line">[1,2,3]:    123;    1-2-3;  1,2,3;</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.6 reverse()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.reverse();</span><br><span class="line">将数组反序.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.7 sort()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.sort()</span><br><span class="line">将数组元素字典序排序降序(即首字母或首数字排序).</span><br></pre></td></tr></table></figure></p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">降序：</span><br><span class="line">arr.sort(function(a, b)&#123;return b - a&#125;);</span><br><span class="line">升序：</span><br><span class="line">arr.sort(function(a, b)&#123;return a - b&#125;);</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.8 concat()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.concat(arr1, arr2,...);</span><br><span class="line">连接两个或多个数组.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.9 slice()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.slice(start, end);</span><br><span class="line">从数组返回所选元素(注意参数end的取值).</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.10 splice()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.splice(index, count);</span><br><span class="line">删除从index处开始的count个元素.</span><br></pre></td></tr></table></figure></p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">arr.splice(index, 0, item1, ...);</span><br><span class="line">index:起始位置</span><br><span class="line">0:要删除的项数为0，即不删除任何数</span><br><span class="line">item1:要插入的项</span><br><span class="line">在数组指定位置插入元素.</span><br></pre></td></tr></table></figure></p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">arr.splice(index, count, item1, ...);</span><br><span class="line">count:要删除的项数</span><br><span class="line">在指定位置插入值，并删除count个元素(注意参数index的取值).</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.11 indexOf()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">arr.indexOf(searchValue, startIndex);</span><br><span class="line">searchValue: 要查找的元素(必选)</span><br><span class="line">startIndex: 查找起点的索引值(可选)</span><br><span class="line">从数组中查找元素.</span><br></pre></td></tr></table></figure></p>
-<h3>1.2.12 lastIndexOf()</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.lastIndexOf(searchValue, startIndex);</span><br><span class="line">从数组的末尾开始查找元素(但返回的值仍是正序索引值).</span><br></pre></td></tr></table></figure></p>
-<hr>
+<h4>概览</h4>
 
       
     </div>
@@ -440,7 +407,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js/" rel="tag"># js</a>
+            <a href="/tags/wechat/" rel="tag"># wechat</a>
           
         </div>
       
@@ -453,8 +420,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/15/2018/03/wechat/" rel="next" title="微信公众号开发">
-                <i class="fa fa-chevron-left"></i> 微信公众号开发
+              <a href="/2018/04/16/2018/04/foundation/" rel="next" title="响应式开发（一）Foundation">
+                <i class="fa fa-chevron-left"></i> 响应式开发（一）Foundation
               </a>
             
           </div>
@@ -462,10 +429,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/17/2018/03/js2/" rel="prev" title="javascript入门基础（二）内置对象（String）">
-                javascript入门基础（二）内置对象（String） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -683,7 +646,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 数组</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 arr.length</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.1 push()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.2 unshift()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.3 pop()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.4 shift()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.5 join()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.6 reverse()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.7 sort()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.8 concat()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.9 slice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.10 splice()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.11 indexOf()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2.12 lastIndexOf()</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">概览</span></a></li></ol></div>
             
 
           </div>

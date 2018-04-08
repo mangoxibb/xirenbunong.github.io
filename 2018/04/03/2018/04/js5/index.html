@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-27T13:51:01.603Z">
+<meta property="og:updated_time" content="2018-04-08T15:15:33.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript入门基础（五）DOM事件">
 <meta name="twitter:description" content="摘要: JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。">
@@ -347,7 +347,28 @@
         <p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p>
 <p><a id="more"></a></p>
 <h4>1.HTML事件</h4>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this:</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">关于this指向: 在事件触发的函数中, this是对该DOM对象的引用, 该函数需要有参数接收</span><br><span class="line">&lt;tag 事件 = &quot;执行脚本&quot;&gt;&lt;/tag&gt;或者函数名称Fn(this)</span><br></pre></td></tr></table></figure></p>
+<h3>鼠标事件</h3>
+<p>onload:页面加载时触发<br>
+onclick: 鼠标点击时触发<br>
+onmouseover: 鼠标滑过时触发<br>
+onmouseout: 鼠标离开时触发<br>
+onfocus: 获得焦点时触发<br>
+onblur: 失去焦点时触发<br>
+onchange: 域的内容改变时触发(一般作用于select、checkbox、radio)<br>
+onscroll: 拖动滚动条滚动时触发<br>
+onsubmit: 表单中的确认按钮被点击时发生(绑定在form表单上, 而不是按钮上)<br>
+onmousedown: 鼠标的按钮在元素上按下时<br>
+onmousemove: 在鼠标指针移动时触发<br>
+onresize: 调整浏览器窗口大小时触发</p>
+<h4>2.DOM0级事件</h4>
+<p>element.事件 = 执行脚本</p>
+<h4>3.键盘事件</h4>
+<p>(顺序)
+onkeydown: 用户按下一个键盘按键时发生<br>
+onkeypress: 在键盘按键被按下并释放一个键时发生<br>
+onkeyup: 在键盘按键被松开时发生<br>
+(keyCode: 返回事件触发的键值)</p>
 
       
     </div>
@@ -519,7 +540,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -568,13 +589,13 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:yourname@gmail.com" target="_blank" title="E-Mail">
+                    <a href="mailto:m18791744718@163.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://weibo.com/your-user-name" target="_blank" title="微博">
+                    <a href="http://weibo.com/袭人不弄" target="_blank" title="微博">
                       
                         <i class="fa fa-fw fa-globe"></i>微博</a>
                   </span>
@@ -651,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.HTML事件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.HTML事件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">鼠标事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.DOM0级事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.键盘事件</span></a></li></ol></div>
             
 
           </div>
