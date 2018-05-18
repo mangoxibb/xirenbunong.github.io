@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-03T12:02:41.680Z</updated>
+  <updated>2018-05-14T07:50:14.392Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="http://yoursite.com/2018/05/06/2018/05/zhengze/"/>
+    <id>http://yoursite.com/2018/05/06/2018/05/zhengze/</id>
+    <published>2018-05-05T16:00:00.000Z</published>
+    <updated>2018-05-14T07:50:14.392Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在编写处理字符串的程序或网页时, 经常会有查找符合某些复杂规则的字符串的需要, 正则表达式就是用于描述这些规则的工具. 换句话说, 正则表达式就是记录文本规则的代码.</p><p><a id="more"></a></p><h4>3.Math方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在编写处理字符串的程序或网页时, 经常会有查找符合某些复杂规则的字符串的需要, 正则表达式就是用于描述这些规则的工具. 换句话说, 正则表达式就是记录文本规则的代码.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈javascript难点</title>
+    <link href="http://yoursite.com/2018/05/02/2018/05/js7/"/>
+    <id>http://yoursite.com/2018/05/02/2018/05/js7/</id>
+    <published>2018-05-01T16:00:00.000Z</published>
+    <updated>2018-05-16T13:50:34.290Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.函数</h4><p>为什么要创建对象?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">全局变量命名太多可能会造成命名冲突, 放在一个对象下好整合</span><br></pre></td></tr></table></figure></p><p>为什么要使用函数?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可以复用代码、维护性高、可读性高</span><br></pre></td></tr></table></figure></p><p>为什么要利用函数也是对象的性质给其添加属性, 并赋值为函数?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">因为这样可以将数值缓存下来</span><br><span class="line">例:</span><br><span class="line">函数名.属性 = function(参数)&#123;</span><br><span class="line">    函数体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>为什么要将对象作为参数传入函数?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">因为函数调用传入实参时(例: 函数名(实参1,实参2,...,实参n))</span><br><span class="line">若参数个数太多, 则实参必须与形参一一对应, 容易出错, 并且有</span><br><span class="line">可选参数时, 可以不传.</span><br><span class="line">使用对象做形参, 只写一个, 例:</span><br><span class="line">function 函数名(对象X)&#123;</span><br><span class="line">    var 对象Y = &#123;&#125;;</span><br><span class="line">    对象Y.属性1 = 对象X.属性1;</span><br><span class="line">    对象Y.属性2 = 对象X.属性2;</span><br><span class="line">    对象Y.属性3 = 对象X.属性3;</span><br><span class="line">    对象Y.属性4 = 对象X.属性4;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>为什么要将对象或者函数作为函数返回值?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">这样就可以返回多个值</span><br><span class="line">return &#123;</span><br><span class="line">    name : &apos;xm&apos;,</span><br><span class="line">    age  : 18</span><br><span class="line">&#125;</span><br><span class="line">return function()&#123;</span><br><span class="line">    函数体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h4>1.闭包</h4><p>为什么要使用闭包?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">因为函数内定义的变量(局部变量)不能在函数体外访问, 想要将该变量在函数体外访问到, </span><br><span class="line">需要在函数内部再定义函数B, 通过B函数函数才能在函数外访问到改变量, 进行操作.</span><br></pre></td></tr></table></figure></p><p>闭包的优缺点:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">优点: 有利于封装, 可以访问局部变量.</span><br><span class="line">缺点：内存占用严重浪费, 会造成内存泄漏.</span><br></pre></td></tr></table></figure></p><h4>2.原型</h4><p>为什么要使用原型?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使方法的属性可以在方法外部去定义</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function test()&#123;</span><br><span class="line">    空;</span><br><span class="line">&#125;</span><br><span class="line">代码示例:</span><br><span class="line">test.prototype.color = &quot;red&quot;;</span><br><span class="line">test.prototype.showInfo = function()&#123;</span><br><span class="line">    alert(this.color);</span><br><span class="line">&#125;</span><br><span class="line">或者(json格式):</span><br><span class="line">test.prototype = &#123;</span><br><span class="line">    color: &quot;red&quot;;</span><br><span class="line">    showInfo: function()&#123;</span><br><span class="line">        alert(this.color);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">备注:</span><br><span class="line">1.prototype是每个函数自带的一个属性</span><br><span class="line">2.混合模式 = 构造 + 原型</span><br></pre></td></tr></table></figure></p><h4>3.封装</h4><p>为什么要使用封装?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将局部变量、方法隐藏在接口中, 通过对外的接口来访问该属性或对象</span><br></pre></td></tr></table></figure></p><h4>4.单例模式</h4><p>为什么要使用单例模式?<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一个类只有一个实例, 如</span><br><span class="line">①公司事件：员工若干, 而老板只有一个</span><br><span class="line">②皇宫事件：大臣若干, 而皇帝只有一个</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>响应式开发（二）Bootstrap</title>
+    <link href="http://yoursite.com/2018/05/01/2018/05/Bootstrap/"/>
+    <id>http://yoursite.com/2018/05/01/2018/05/Bootstrap/</id>
+    <published>2018-04-30T16:00:00.000Z</published>
+    <updated>2018-04-18T13:31:53.780Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> Bootstrap, 来自 Twitter, 是目前最受欢迎的前端框架.Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的, 它简洁灵活, 使得 Web 开发更加快捷.</p><p><a id="more"></a></p><h4>概览</h4><p><img src="/img/boot.png" alt="banner"></p><h4>1.开发环境的搭建</h4><h3>1.1 安装Git</h3><p>Bootstrap CDN 推荐</p><p>&lt;!-- 新 Bootstrap 核心 CSS 文件 --&gt;&lt;link href=&quot;https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;</p><p>&lt;!-- 可选的Bootstrap主题文件（一般不使用） --&gt;&lt;script src=&quot;https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css&quot;&gt;&lt;/script&gt;</p><p>&lt;!-- jQuery文件。务必在bootstrap.min.js 之前引入 --&gt;&lt;script src=&quot;https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;</p><p>&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;&lt;script src=&quot;https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</p><p>你还可以使用以下的 CDN 服务：国内推荐使用 : https://www.staticfile.org/国际推荐使用：https://cdnjs.com/</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; Bootstrap, 来自 Twitter, 是目前最受欢迎的前端框架.Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的, 它简洁灵活, 使得 Web 开发更加快捷.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="响应式开发" scheme="http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发入门</title>
@@ -44,9 +113,9 @@
     <link href="http://yoursite.com/2018/04/16/2018/04/foundation/"/>
     <id>http://yoursite.com/2018/04/16/2018/04/foundation/</id>
     <published>2018-04-15T16:00:00.000Z</published>
-    <updated>2018-04-08T15:01:05.005Z</updated>
+    <updated>2018-04-09T07:09:06.146Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 号称是世界上最先进的响应式前端框架, Foundation是一个易用、强大而且灵活的框架, 用于构建基于任何设备上的Web应用. 提供多种Web上的UI 组件, 如表单、按钮、 标签等.</p><p><a id="more"></a></p><h4>概览</h4><h4>1.开发环境的搭建</h4><h3>1.1 安装Git</h3><p>关于git的下载地址, 安装方式, 在本人博客<a href="">git入门基础</a>中有具体讲解.</p><h3>1.2 安装Node.js</h3><p>查看node版本, 不能小于6.0.0(关于如何安装或者跟新node, 在本人博客&quot;<a href="https://xirenbunong.github.io/2018/02/28/2018/03/hexo%20pro/" target="_blank" rel="noopener">手把手教你使用Hexo打造个人博客</a>&quot;中有)<img src="/img/foundation1.png" alt="banner"></p><h3>1.3 下载Foundation</h3><p>npm install --global foundation-cli全局安装, 所以--global</p><p>foundation new会出现三个问题:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.安装web, APP, Email(选择一项即可);</span><br><span class="line">2.项目名称;</span><br><span class="line">3.直接回车即可</span><br></pre></td></tr></table></figure></p><p>安装完成后显示如下, 则表示成功, Ctrl+C退出, 否则看下文解决方法<br><img src="/img/foundation2.png" alt="banner"></p><p>如果遇到以下问题, 删除文件, 然后再npm install --save, 然后foundation new安装一次, 即可解决:<br><img src="/img/foundation3.png" alt="banner"></p><h3>1.4 启动服务预览</h3><p>cd进入到项目根目录下(非常重要！！！), 执行npm start启动服务, 然后打开文件所在目录, 在根目录下有index.html, 浏览器打开即可<br><img src="/img/foundation3.png" alt="banner"></p><h4>2.基本概念与常用工具类</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">通过对列添加属性来实现效果</span><br><span class="line">column: 列、 row:行.</span><br></pre></td></tr></table></figure></p><h3>2.1 了解栅格布局</h3><p>原理: 将一行分为12列进行布局, 三种尺寸：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">small: &lt; 640px</span><br><span class="line">medium: 640px &lt; &amp;&amp; &lt; 1024px</span><br><span class="line">large: &gt; 1024px</span><br></pre></td></tr></table></figure></p><h3>2.2 Flex布局</h3><p>1&gt; 不指定列宽, 则自动填充剩余位置<br>2&gt; shrink根据内容缩减列宽<br>3&gt; 可以设置对齐方式<br>4&gt; 可以控制不同尺寸下盒子排列顺序</p><h3>2.3 Visibility Classes(盒子的显示与隐藏)</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&gt;show-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2&gt;show-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3&gt;show-for-small-only</span><br><span class="line">仅在小屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4&gt;show-for-medium-only</span><br><span class="line">仅在中屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5&gt;show-for-large-only</span><br><span class="line">仅在大屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6&gt;hide-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">7&gt;hide-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8&gt;hide-for-small-only</span><br><span class="line">仅在小屏中隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">9&gt;hide-for-medium-only</span><br><span class="line">仅在中屏中隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10&gt;hide-for-large-only</span><br><span class="line">仅在大屏中隐藏</span><br></pre></td></tr></table></figure></p><h3>2.4 Float classes(盒子对齐)</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;float-left 居左显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;float-right 居右显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;float-center 居中显示</span><br></pre></td></tr></table></figure></p><h3>2.5 Helper Classes</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;text-left 文字居左对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;text-right 文字居右对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;text-center 文字居中对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4&gt;text-justify 文字两端对齐</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 号称是世界上最先进的响应式前端框架, Foundation是一个易用、强大而且灵活的框架, 用于构建基于任何设备上的Web应用. 提供多种Web上的UI 组件, 如表单、按钮、 标签等.</p><p><a id="more"></a></p><h4>概览</h4><h4>1.开发环境的搭建</h4><h3>1.1 安装Git</h3><p>关于git的下载地址, 安装方式, 在本人博客<a href="">git入门基础</a>中有具体讲解.</p><h3>1.2 安装Node.js</h3><p>查看node版本, 不能小于6.0.0(关于如何安装或者跟新node, 在本人博客&quot;<a href="https://xirenbunong.github.io/2018/02/28/2018/03/hexo%20pro/" target="_blank" rel="noopener">手把手教你使用Hexo打造个人博客</a>&quot;中有)<img src="/img/foundation1.png" alt="banner"></p><h3>1.3 下载Foundation</h3><p>npm install --global foundation-cli全局安装, 所以--global</p><p>foundation new会出现三个问题:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.安装web, APP, Email(选择一项即可);</span><br><span class="line">2.项目名称;</span><br><span class="line">3.直接回车即可</span><br></pre></td></tr></table></figure></p><p>安装完成后显示如下, 则表示成功, Ctrl+C退出, 否则看下文解决方法<br><img src="/img/foundation2.png" alt="banner"></p><p>如果遇到以下问题, 删除文件, 然后再npm install --save, 然后foundation new安装一次, 即可解决:<br><img src="/img/foundation3.png" alt="banner"></p><h3>1.4 启动服务预览</h3><p>cd进入到项目根目录下(非常重要！！！), 执行npm start启动服务, 然后打开文件所在目录, 在根目录下有index.html, 浏览器打开即可<br><img src="/img/foundation3.png" alt="banner"></p><h4>2.基本概念与常用工具类</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">通过对列添加属性来实现效果</span><br><span class="line">column: 列、 row:行.</span><br></pre></td></tr></table></figure></p><h3>2.1 了解栅格布局</h3><p>原理: 将一行分为12列进行布局, 三种尺寸：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">small: &lt; 640px</span><br><span class="line">medium: 640px &lt; &amp;&amp; &lt; 1024px</span><br><span class="line">large: &gt; 1024px</span><br></pre></td></tr></table></figure></p><h3>2.2 Flex布局</h3><p>1&gt; 不指定列宽, 则自动填充剩余位置<br>2&gt; shrink根据内容缩减列宽<br>3&gt; 可以设置对齐方式<br>4&gt; 可以控制不同尺寸下盒子排列顺序</p><h3>2.3 Visibility Classes(盒子的显示与隐藏)</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1&gt;show-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2&gt;show-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3&gt;show-for-small-only</span><br><span class="line">仅在小屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4&gt;show-for-medium-only</span><br><span class="line">仅在中屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5&gt;show-for-large-only</span><br><span class="line">仅在大屏中显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6&gt;hide-for-medium</span><br><span class="line">在中屏或大于中屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">7&gt;hide-for-large</span><br><span class="line">在大屏或大于大屏的屏幕上隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8&gt;hide-for-small-only</span><br><span class="line">仅在小屏中隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">9&gt;hide-for-medium-only</span><br><span class="line">仅在中屏中隐藏</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10&gt;hide-for-large-only</span><br><span class="line">仅在大屏中隐藏</span><br></pre></td></tr></table></figure></p><h3>2.4 Float classes(盒子对齐)</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;float-left 居左显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;float-right 居右显示</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;float-center 居中显示</span><br></pre></td></tr></table></figure></p><h3>2.5 Helper Classes</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1&gt;text-left 文字居左对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2&gt;text-right 文字居右对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3&gt;text-center 文字居中对齐</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4&gt;text-justify 文字两端对齐</span><br></pre></td></tr></table></figure></p><h4>3.多媒体组件</h4><h3>3.1 Badeg(徽章图标)</h3><h3>3.2 Flex Video(可伸缩视频)</h3><h3>3.3 Label(标签)</h3><h3>3.4 Orbit(轮播图)</h3><h3>3.5 Progress Bar(进度条)</h3><h3>3.6 Thumbnail(缩略图)</h3><h3>3.7 Tooltip(提示框)</h3>]]></content>
     
     <summary type="html">
     
@@ -63,13 +132,36 @@
   </entry>
   
   <entry>
+    <title>响应式开发（题外篇）Flex布局</title>
+    <link href="http://yoursite.com/2018/04/15/2018/04/flex/"/>
+    <id>http://yoursite.com/2018/04/15/2018/04/flex/</id>
+    <published>2018-04-14T16:00:00.000Z</published>
+    <updated>2018-05-15T14:23:37.497Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&quot;弹性布局&quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.</p><p><a id="more"></a></p><h4>概览</h4><p><img src="/img/flex.jpg" alt="banner"></p><h4>1.1一般使用格式(套路)</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">display: flex;  </span><br><span class="line">flex-direction: row;  </span><br><span class="line">justify-content:center;   </span><br><span class="line">align-items:flex-end</span><br></pre></td></tr></table></figure></p><h4>1.2基本概念</h4><h4>2.1父元素属性</h4><p>flex-direction主轴的方向justify-content主轴上的对齐方式align-items侧轴方向上的对齐方式flex-wrap决定项目在一行排不下的情况下是否换行flex-flow是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。align-content在侧轴方向上有额外空间时，如何每排布一行，当容器只有一行时，它不起作用</p><h4>2.2子元素属性</h4><p>order定义项目的排列顺序，数值越小排列越靠前，默认为0，可能的值为任意整数。flex-grow定义项目的放大比例，默认为0，即如果存在剩余空间也不放大。flex-shrink定义了项目的缩小比例，默认为1，即如果空间不足该项目将缩小flex-basis定义了在分配多余空间之前，项目占据的主轴空间（main-size）。flex是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。align-self允许单个项目有与其他项目不一样的侧轴对齐方式，可覆盖align-items属性</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&amp;quot;弹性布局&amp;quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="响应式开发" scheme="http://yoursite.com/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git入门基础</title>
     <link href="http://yoursite.com/2018/04/06/2018/04/git/"/>
     <id>http://yoursite.com/2018/04/06/2018/04/git/</id>
     <published>2018-04-06T04:23:58.000Z</published>
-    <updated>2018-04-01T06:35:57.686Z</updated>
+    <updated>2018-04-10T03:49:47.328Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> Git 是一个为了更好地管理 Linux 内核开发而创立的分布式版本控制和软件配置管理软件. 国内外知名 Git 代码托管网站有： GitHub.com Coding.net code.csdn.net ...</p><p><a id="more"></a></p><h3>1.</h3><p>新知识扑面而来的时候，可能会绝望，痛苦。但是不要放弃，没有人一生下来就会这些东西的，慢慢来，想学的，总会学会。首先说一下git，github，gitbash的区别。</p><p>git是一个软件，因为它要安装，用于开发项目，因为它采用分布式。github是一个托管平台，就是一个网站，从个人角度来说是防止你在本地的文件丢失，从团队角度来讲是便于团队开发，因为大家都能根据项目地址查看下载文件代码。gitbash是软件git自带的命令行工具，类似cmd，可以在命令行中输入命令快速操作文件。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>2.</h3><p>new repository 点击创建一个仓库Repository name 仓库名称Description 描述该仓库Create repository 创建仓库</p><h3>3.</h3><p>cd是用来进入某个目录的，白色的字是自己打的（前面那个美元符号是自动生成的），然后现在就进入了我们要上传路径的目录下。输入git init，这个意思是在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）输入git add.，这个是将项目上所有的文件添加到仓库中的意思，如果想添加某个特定的文件，只需把.换成这个特定的文件名即可。</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> Git 是一个为了更好地管理 Linux 内核开发而创立的分布式版本控制和软件配置管理软件. 国内外知名 Git 代码托管网站有： GitHub.com Coding.net code.csdn.net ...</p><p><a id="more"></a></p><h3>1.</h3><p>新知识扑面而来的时候，可能会绝望，痛苦。但是不要放弃，没有人一生下来就会这些东西的，慢慢来，想学的，总会学会。首先说一下git，github，gitbash的区别。</p><p>git是一个软件，因为它要安装，用于开发项目，因为它采用分布式。github是一个托管平台，就是一个网站，从个人角度来说是防止你在本地的文件丢失，从团队角度来讲是便于团队开发，因为大家都能根据项目地址查看下载文件代码。gitbash是软件git自带的命令行工具，类似cmd，可以在命令行中输入命令快速操作文件。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>2.</h3><p>new repository 点击创建一个仓库Repository name 仓库名称Description 描述该仓库Create repository 创建仓库</p><h3>3.</h3><p>cd是用来进入某个目录的，白色的字是自己打的（前面那个美元符号是自动生成的），然后现在就进入了我们要上传路径的目录下。输入git init，这个意思是在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）输入git add.，这个是将项目上所有的文件添加到仓库中的意思，如果想添加某个特定的文件，只需把.换成这个特定的文件名即可。rm -rf 文件名/文件夹mkdir 文件夹vim 文件1.git init2.git remote add origin ssh地址(把当前文件夹和git仓库的文件夹对应起来)3.git pull origin master4.git status 查看当前状态5.git add . 追踪文件6.git commit -am '注释' 提交并添加注释7.git push 上传文件</p>]]></content>
     
     <summary type="html">
     
@@ -247,11 +339,34 @@
   </entry>
   
   <entry>
-    <title>微信公众号开发</title>
-    <link href="http://yoursite.com/2018/03/15/2018/03/wechat/"/>
-    <id>http://yoursite.com/2018/03/15/2018/03/wechat/</id>
+    <title>组件开发-网页常见组件</title>
+    <link href="http://yoursite.com/2018/03/15/2018/03/module/"/>
+    <id>http://yoursite.com/2018/03/15/2018/03/module/</id>
     <published>2018-03-14T16:00:00.000Z</published>
-    <updated>2018-04-03T11:59:13.911Z</updated>
+    <updated>2018-05-14T09:05:00.803Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 前端页面组件化开发可以快速完成页面, 通过组件化的方式, 保证代码重用, 避免重复劳动, 保证页面上线后能够高效运行.</p><p><a id="more"></a></p><h4>1.header(页头)</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码地址：</span><br></pre></td></tr></table></figure></p><h4>2.footer(页脚)</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码地址：</span><br></pre></td></tr></table></figure></p><h4>3.shade(遮罩)</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码地址：</span><br></pre></td></tr></table></figure></p><h4>4.list(列表)</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码地址：</span><br></pre></td></tr></table></figure></p><h4>5.login(登录)</h4><h4>6.search(搜索)</h4><h4>7.carousel(轮播图)</h4><h4>8.loading(加载)</h4><h4>.content-()</h4><h4>.content-()</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 前端页面组件化开发可以快速完成页面, 通过组件化的方式, 保证代码重用, 避免重复劳动, 保证页面上线后能够高效运行.&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="css js" scheme="http://yoursite.com/tags/css-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信公众号开发</title>
+    <link href="http://yoursite.com/2018/03/03/2018/03/wechat/"/>
+    <id>http://yoursite.com/2018/03/03/2018/03/wechat/</id>
+    <published>2018-03-02T16:00:00.000Z</published>
+    <updated>2018-05-14T08:33:44.441Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> 微信公众平台, 给个人、企业和组织提供业务服务与用户管理能力的全新服务平台.</p><p><a id="more"></a></p><h5>公众号开发思维导图</h5><p><img src="/img/wechat.jpg" alt="banner"></p><h5>1.开发环境准备</h5><p>因为微信公众号想要真机测试, 必须要有自己的服务器才能使用, 所以开始会讲解服务器的购买, 备案过程等</p><h4>1.1 服务器搭建过程</h4><p>&lt;!-- 在此解释申明初学者容易疑惑的一个地方, 就是给服务器备案还是给域名备案, --&gt;</p>]]></content>
     
@@ -358,71 +473,6 @@
     
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>eclipse的汉化和主题美化</title>
-    <link href="http://yoursite.com/2018/02/16/2018/02/eclipse/"/>
-    <id>http://yoursite.com/2018/02/16/2018/02/eclipse/</id>
-    <published>2018-02-15T16:00:00.000Z</published>
-    <updated>2018-03-30T14:08:47.344Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）.</p><p><a id="more"></a></p><h2>Quick Start</h2><p>eclipse的汉化有两种方法：</p><p>点击此链接&lt;a href=&quot;http://m.jb51.net/softjc/141995.html&quot;&gt;http://m.jb51.net/softjc/141995.html&lt;/a&gt;，有详细教程。</p><p>eclipse的主题美化也有两种方法(看图)：</p><p><img src="/img/eclipse1.jpg" alt="banner"></p><p>这是我的主题，此方法比较简单，汉化后点击 &lt;a&gt;帮助&lt;/a&gt; - - - &gt; &lt;a&gt;eclipseMarketPlace&lt;/a&gt;,如下图所示</p><p>搜索图片第一个插件，就是Theme（主题），然后自行安装即可。</p><p><img src="/img/eclipse2.jpg" alt="banner"></p><p>&lt;!-- More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3>Power Mode</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"powermode.enabled"</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3>Generate static files</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3>Deploy to remote sites</h3><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a> --&gt;</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; Eclipse 是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）.&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="软件" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手把手教你使用Hexo打造个人博客</title>
-    <link href="http://yoursite.com/2018/02/15/2018/02/hexo%20pro/"/>
-    <id>http://yoursite.com/2018/02/15/2018/02/hexo pro/</id>
-    <published>2018-02-14T16:00:00.000Z</published>
-    <updated>2018-04-03T12:17:15.196Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 我的第一篇<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>文章，用来记录一个小白，从零如何开始使用hexo打造个人博客，希望大家能够喜欢！</p><p><a id="more"></a></p><h4>搭建步骤</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">安装Git Bash</span><br><span class="line">安装NodeJs</span><br><span class="line">安装hexo</span><br><span class="line">修改及配置主题</span><br><span class="line">添加评论</span><br><span class="line">写文章部分</span><br><span class="line">生成SSH并添加到github</span><br><span class="line">部署项目</span><br><span class="line">上传到github</span><br><span class="line">绑定个人域名</span><br></pre></td></tr></table></figure></p><h4>开发环境的搭建</h4><h3>安装git</h3><p>因为git安装包下载被墙可能性较大, 可以<a href="https://pan.baidu.com/s/17sy34uGP097TBzny98hunA" target="_blank" rel="noopener">点此链接</a>下载安装包, 版本号是2.12.2.2(win下64的).</p><h3>安装node.js</h3><p><img src="/img/node1.png" alt="banner"></p><p><img src="/img/node2.png" alt="banner"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">选则自己需要的文件, windows为msi文件</span><br></pre></td></tr></table></figure></p><p><img src="/img/node3.png" alt="banner"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">因为git安装包下载被墙可能性较大, 可以选择node中文网下载, </span><br><span class="line">http://nodejs.cn/download/</span><br></pre></td></tr></table></figure></p><p><img src="/img/node4.png" alt="banner"></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">双击msi文件，除了路径可以自己选择安装位置, 一直默认点击&quot;下一步&quot;,</span><br><span class="line">安装完成后, 打开cmd, 输入node -v, 显示版本号即可.</span><br></pre></td></tr></table></figure></p><h3>安装hexo</h3><p>文件目录解释, 命令解释</p><h3>修改及配置主题</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 我的第一篇&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;文章，用来记录一个小白，从零如何开始使用hexo打造个人博客，希望大家能够喜欢！&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>标题（测试文章）</title>
-    <link href="http://yoursite.com/2018/02/01/2018/02/youzhen/"/>
-    <id>http://yoursite.com/2018/02/01/2018/02/youzhen/</id>
-    <published>2018-02-01T14:01:00.000Z</published>
-    <updated>2018-04-03T11:10:31.554Z</updated>
-    
-    <content type="html"><![CDATA[<p>引言（简介）</p><p><a id="more"></a></p><p>详细内容balabalabalabalabalabala</p><h5>Generate static files</h5><p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 注释</span></span><br><span class="line"><span class="comment"># &#123;％codeblock lang：objc％&#125; </span></span><br><span class="line"><span class="comment"># [rectangle setX：10 y：10 width：20 height：20]; </span></span><br><span class="line"><span class="comment"># &#123;％endcodeblock％&#125;</span></span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>链接格式：More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><p>图片格式：<img src="/img/s.png" alt="banner"></p><h5>1.Quick Start</h5><p><img src="/img/banner1.jpg" alt="banner"></p><h4>1.1</h4>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;引言（简介）&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
     
   </entry>
   
