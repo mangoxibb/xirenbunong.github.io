@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="响应式开发," />
+  <meta name="keywords" content="java 后端," />
 
 
 
@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="摘要: 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&amp;quot;弹性布局&amp;quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.">
-<meta name="keywords" content="响应式开发">
+<meta name="description" content="摘要: ......">
+<meta name="keywords" content="java 后端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="响应式开发（题外篇）Flex布局">
-<meta property="og:url" content="http://yoursite.com/2018/04/15/2018/04/flex/index.html">
+<meta property="og:title" content="java入门">
+<meta property="og:url" content="http://yoursite.com/2018/05/06/2018/05/java入门/index.html">
 <meta property="og:site_name" content="Xiren">
-<meta property="og:description" content="摘要: 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&amp;quot;弹性布局&amp;quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.">
+<meta property="og:description" content="摘要: ......">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/img/flex.jpg">
-<meta property="og:updated_time" content="2018-05-15T14:23:37.497Z">
+<meta property="og:updated_time" content="2018-07-04T15:16:58.583Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="响应式开发（题外篇）Flex布局">
-<meta name="twitter:description" content="摘要: 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&amp;quot;弹性布局&amp;quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.">
-<meta name="twitter:image" content="http://yoursite.com/img/flex.jpg">
+<meta name="twitter:title" content="java入门">
+<meta name="twitter:description" content="摘要: ......">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/15/2018/04/flex/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/06/2018/05/java入门/"/>
 
 
 
 
 
-  <title>响应式开发（题外篇）Flex布局 | Xiren</title>
+  <title>java入门 | Xiren</title>
   
 
 
@@ -249,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/2018/04/flex/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/06/2018/05/java入门/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiren">
@@ -266,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">响应式开发（题外篇）Flex布局</h1>
+          <h1 class="post-title" itemprop="name headline">java入门</h1>
         
 
         <div class="post-meta">
@@ -278,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T00:00:00+08:00">
-                2018-04-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-06T00:00:00+08:00">
+                2018-05-06
               </time>
             
 
@@ -346,27 +344,10 @@
       
 
       
-        <p><strong>摘要:</strong> 2009年, W3C提出了一种新的方案—-Flex布局, 可以简便、完整、响应式地实现各种页面布局. Flex 是 Flexible Box 的缩写, 意为&quot;弹性布局&quot;, 用来为盒状模型提供最大的灵活性.任何一个容器都可以指定为Flex 布局.</p>
+        <p><strong>摘要:</strong> ......</p>
 <p><a id="more"></a></p>
-<h4>概览</h4>
-<p><img src="/img/flex.jpg" alt="banner"></p>
-<h4>1.1一般使用格式(套路)</h4>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">display: flex;  </span><br><span class="line">flex-direction: row;  </span><br><span class="line">justify-content:center;   </span><br><span class="line">align-items:flex-end</span><br></pre></td></tr></table></figure></p>
-<h4>1.2基本概念</h4>
-<h4>2.1父元素属性</h4>
-<p>flex-direction主轴的方向
-justify-content主轴上的对齐方式
-align-items侧轴方向上的对齐方式
-flex-wrap决定项目在一行排不下的情况下是否换行
-flex-flow是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。
-align-content在侧轴方向上有额外空间时，如何每排布一行，当容器只有一行时，它不起作用</p>
-<h4>2.2子元素属性</h4>
-<p>order定义项目的排列顺序，数值越小排列越靠前，默认为0，可能的值为任意整数。
-flex-grow定义项目的放大比例，默认为0，即如果存在剩余空间也不放大。
-flex-shrink定义了项目的缩小比例，默认为1，即如果空间不足该项目将缩小
-flex-basis定义了在分配多余空间之前，项目占据的主轴空间（main-size）。
-flex是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
-align-self允许单个项目有与其他项目不一样的侧轴对齐方式，可覆盖align-items属性</p>
+<h4></h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -427,7 +408,7 @@ align-self允许单个项目有与其他项目不一样的侧轴对齐方式，�
       
         <div class="post-tags">
           
-            <a href="/tags/响应式开发/" rel="tag"># 响应式开发</a>
+            <a href="/tags/java-后端/" rel="tag"># java 后端</a>
           
         </div>
       
@@ -440,8 +421,8 @@ align-self允许单个项目有与其他项目不一样的侧轴对齐方式，�
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/06/2018/04/git/" rel="next" title="git入门基础">
-                <i class="fa fa-chevron-left"></i> git入门基础
+              <a href="/2018/05/06/2018/05/zhengze/" rel="next" title="正则表达式">
+                <i class="fa fa-chevron-left"></i> 正则表达式
               </a>
             
           </div>
@@ -449,10 +430,6 @@ align-self允许单个项目有与其他项目不一样的侧轴对齐方式，�
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/16/2018/04/foundation/" rel="prev" title="响应式开发（一）Foundation">
-                响应式开发（一）Foundation <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -670,7 +647,7 @@ align-self允许单个项目有与其他项目不一样的侧轴对齐方式，�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">概览</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1一般使用格式(套路)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.2基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.1父元素属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.2子元素属性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text"></span></a></li></ol></div>
             
 
           </div>
