@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-04T15:16:58.583Z</updated>
+  <updated>2018-07-05T09:11:19.122Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>java入门</title>
-    <link href="http://yoursite.com/2018/05/06/2018/05/java%E5%85%A5%E9%97%A8/"/>
-    <id>http://yoursite.com/2018/05/06/2018/05/java入门/</id>
-    <published>2018-05-05T16:00:00.000Z</published>
-    <updated>2018-07-04T15:16:58.583Z</updated>
+    <title>好看常用的一些前端页面组件</title>
+    <link href="http://yoursite.com/2018/06/03/2018/06/h-modules/"/>
+    <id>http://yoursite.com/2018/06/03/2018/06/h-modules/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-07-05T09:11:19.122Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header和footer</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p>&lt;!--  --&gt;</p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器报错状态码汇总</title>
+    <link href="http://yoursite.com/2018/06/01/2018/06/browser-num/"/>
+    <id>http://yoursite.com/2018/06/01/2018/06/browser-num/</id>
+    <published>2018-05-31T16:00:00.000Z</published>
+    <updated>2018-07-05T05:34:12.995Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 当用户试图通过HTTP或文件传输协议(FTP)访问一台正在运行Internet信息服务(IIS)的服务器上的内容时，IIS返回一个表示该请求的状态的数字代码。该状态代码记录在IIS日志中，同时也可能在Web浏览器或FTP客户端显示。状态代码可以指明具体请求是否已成功，还可以揭示请求失败的确切原因。</p><p><a id="more"></a></p><h4>1.网页报错代码汇总</h4><p>100 Continue：初始的请求已经接受，客户应当继续发送请求的其余部分。（HTTP 1.1新）</p><p>101 Switching Protocols：服务器将遵从客户的请求转换到另外一种协议（HTTP 1.1新）</p><p>102 Processing：由于一个WebDAV请求可能包含多个涉及文件操作的子请求，可能花费很长的时间才能完成请求。这个状态码是指，服务器已经收到了请求，正在处理请  求，但是还没有任何响应。这防止客户端超时中断、以为请求丢失。</p><p>103 checkpoint：用于可恢复的请求建议，以恢复中止的PUT或POST请求。</p><p>200：OK 一切正常，对GET和POST请求的应答文档跟在后面。</p><p>201 Created：服务器已经创建了文档，Location头给出了它的URL。</p><p>202 Accepted：已经接受请求，但处理尚未完成。</p><p>203 Non-Authoritative Information：文档已经正常地返回，但一些应答头可能不正确，因为使用的是文档的拷贝（HTTP 1.1新）。</p><p>204 No Content：没有新文档，浏览器应该继续显示原来的文档。如果用户定期地刷新页面，而Servlet可以确定用户文档足够新，这个状态代码是很有用的。</p><p>205 Reset Content：没有新的内容，但浏览器应该重置它所显示的内容。用来强制浏览器清除表单输入内容（HTTP 1.1新）。</p><p>206 Partial Content：客户发送了一个带有Range头的GET请求，服务器完成了它（HTTP 1.1新）。</p><p>207 Multi-Status：随后的邮件正文是一个XML消息，可能包含许多单独的响应代码，这取决于有多少个子请求</p><p>208 Already ReportedDAV：binding的成员在之前针对这个请求的答复中已经被列举，不再被计入</p><p>226 IM Used：服务器已执行了对资源的请求，响应代表了对当前实例执行的一个或多个实例处理的结果</p><p>300 Multiple Choices：客户请求的文档可以在多个位置找到，这些位置已经在返回的文档内列出。如果服务器要提出优先选择，则应该在Location应答头指明</p><p>301 Moved Permanently：客户请求的文档在其他地方，新的URL在Location头中给出，浏览器应该自动地访问新的URL</p><p>302 Found：类似于301，但新的URL应该被视为临时性的替代，而不是永久性的。注意，在HTTP1.0中对应的状态信息是“Moved Temporatily”</p><p>出现该状态代码时，浏览器能够自动访问新的URL，因此它是一个很有用的状态代码注意这个状态代码有时候可以和301替换使用。例如，如果浏览器错误地请求http://host/~user:http://host/~user（缺少了后面的斜杠），有的服务器返回301，有的则返回302严格地说，我们只能假定只有当原来的请求是GET时浏览器才会自动重定向。请参见307</p><p>303 See Other：类似于301/302，不同之处在于，如果原来的请求是POST，Location头指定的重定向目标文档应该通过GET提取（HTTP 1.1新）</p><p>304 Not Modified：客户端有缓冲的文档并发出了一个条件性的请求（一般是提供If-Modified-Since头表示客户只想比指定日期更新的文档）。服务器告诉客户，原来缓冲的文     档还可以继续使用</p><p>305 Use Proxy：客户请求的文档应该通过Location头所指明的代理服务器提取（HTTP 1.1新）</p><p>306 Switch Proxy：该状态码不再被使用。最初意味着“后续请求应该使用指定的代理。</p><p>307 Temporary Redirect：和302（Found）相同。许多浏览器会错误地响应302应答进行重定向，即使原来的请求是POST，即使它实际上只能在POST请求的应答是303时才  能重定向。由于这个原因，HTTP 1.1新增了307，以便更加清除地区分几个状态代码：当出现303应答时，浏览器可以跟随重定向的GET和POST请  求；如果是307应答，则浏览器只能跟随对GET请求的重定向。（HTTP 1.1新）</p><p>308 Permanent Redirect：这个请求和以后的请求都应该使用另一个URI来重复。307和308与302和301的行为相似，但是不允许HTTP方法出现变化。所以比如说，向永久重  定向的资源提交表单会继续顺利执行。</p><p>400 Bad Request：请求出现语法错误。</p><p>401 Unauthorized：客户试图未经授权访问受密码保护的页面。应答中会包含一个WWW-Authenticate头，浏览器据此显示用户名字/密码对话框，然后在填写合适的     Authorization头后再次发出请求。</p><p>402 Payment Required：专门留给将来使用。初衷是，该状态码可用作某种数字现金或微支付方案的一部分，但是这种情形还没有出现，所以该状态码不常使用。如果某个开       发人员超出了每日限制的请求数量，Google Developers API就使用该状态。</p><p>403 Forbidden：资源不可用。服务器理解客户的请求，但拒绝处理它。通常由于服务器上文件或目录的权限设置导致。</p><p>404 Not Found：无法找到指定位置的资源。这也是一个常用的应答。</p><p>405 Method Not Allowed：请求方法（GET、POST、HEAD、Delete、PUT、TRACE等）对指定的资源不适用。（HTTP 1.1新）</p><p>406 Not Acceptable：指定的资源已经找到，但它的MIME类型和客户在Accpet头中所指定的不兼容（HTTP 1.1新）。</p><p>407 Proxy Authentication Required：类似于401，表示客户必须先经过代理服务器的授权。（HTTP 1.1新）</p><p>408 Request Timeout：在服务器许可的等待时间内，客户一直没有发出任何请求。客户可以在以后重复同一请求。（HTTP 1.1新）</p><p>409 Conflict：通常和PUT请求有关。由于请求和资源的当前状态相冲突，因此请求不能成功。（HTTP 1.1新）</p><p>410 Gone：所请求的文档已经不再可用，而且服务器不知道应该重定向到哪一个地址。它和404的不同在于，返回407表示文档永久地离开了指定的位置，而404表示由于未知      的原因文档不可用。（HTTP 1.1新）</p><p>411 Length Required：服务器不能处理请求，除非客户发送一个Content-Length头。（HTTP 1.1新）</p><p>412 Precondition Failed：请求头中指定的一些前提条件失败（HTTP 1.1新）。</p><p>413 Request Entity Too Large：目标文档的大小超过服务器当前愿意处理的大小。如果服务器认为自己能够稍后再处理该请求，则应该提供一个Retry-After头（HTTP 1.1    新）。</p><p>414 Request URI Too Long：URI太长（HTTP 1.1新）。</p><p>415 Unsupported Media Type：请求实体的媒体类型不被服务器或资源支持。比如说，客户端上传image/svg+xml格式的图片，但是服务器需要图片使用一种不同的格式。</p><p>416 Requested Range Not Satisfiable：服务器不能满足客户在请求中指定的Range头。（HTTP 1.1新）</p><p>417 Expectation Failed：服务器无法满足Expect（期望）请求头字段的要求。</p><p>418 I'm a teapot：1998年定义的这个代码是传统的IETF愚人节笑话之一，在RFC2324：超文本咖啡壶控制协议（Hyper Text Coffee PotControl Protocol）中予以定义，但是          没有打算由实际的HTTP服务器来实施。RFC指定该状态码应该由请求的茶壶返回给现煮咖啡。该HTTP状态码用于一些网站中的复活节彩蛋，包括Google.com。</p><p>419 Authentication Timeout：419 Authentication Timeout不是HTTP标准的一部分，它表示以前有效的验证已到期失效。它用作替代401 Unauthorized的状态码，目的是为了有别于被拒绝访问特定服务器资源的以其他方式验证的客户端。</p><p>421 Misdirected Request：请求被指向到无法生成响应的服务器（比如由于连接重复使用）。</p><p>422 Unprocessable Entity：请求符合规范，但是由于语法错误，无法得到后续处理。</p><p>423 Locked：访问的资源被锁定。</p><p>424 Failed Dependency：请求因上一个请求失败而失败（比如PROPPATCH）。</p><p>426 Upgrade Required：客户端应该换成不同的协议，比如TLS/1.0，该协议已在Upgrade（升级）头字段里指定。</p><p>428 Precondition Required：原始服务器需要请求有条件。旨在防止出现“‘丢失更新’问题：当客户端GET资源的状态、修改状态，又PUT回给服务器，同时第三方在服务器上      修改状态，导致冲突。”</p><p>429 Too Many Requests：用户在指定的时间里发送了太多的请求。用于与速率限制方案结合使用。</p><p>431 Request Header Fields Too Large：由于单个头字段或者全部头字段太大，服务器不愿意处理请求。</p><p>451 Unavailable For Legal Reasons：在因特网草案“用于法律限制的资源的新HTTP状态码”中予以定义。旨在因法律原因而拒绝访问资源时使用，比如审查制度或政府要求的      禁止访问。</p><p>500 Internal Server Error：服务器遇到了意料不到的情况，不能完成客户的请求。</p><p>501 Not Implemented：服务器不支持实现请求所需要的功能。例如，客户发出了一个服务器不支持的PUT请求。</p><p>502 Bad Gateway：服务器作为网关或者代理时，为了完成请求访问下一个服务器，但该服务器返回了非法的应答。</p><p>503 Service Unavailable：服务器由于维护或者负载过重未能应答。例如，Servlet可能在数据库连接池已满的情况下返回503。服务器返回503时可以提供一个Retry-After头。</p><p>504 Gateway Timeout：由作为代理或网关的服务器使用，表示不能及时地从远程服务器获得应答。（HTTP 1.1新）</p><p>505 HTTP Version Not Supported：服务器不支持请求中所指明的HTTP版本。（HTTP 1.1新）</p><p>506 Variant Also Negotiates：对请求进行透明的内容协商导致循环引用。</p><p>507 Insufficient Storage：服务器无法存储完成请求所必须的内容。</p><p>508 Loop Detected：服务器在处理请求时检测到一个无限循环。</p><p>510 Not Extended：需要请求有额外的扩展内容，服务器才能处理请求。</p><p>511 Network Authentication Required：客户端需要验证以获得网络访问权。原本用于拦截用来控制网络访问的代理（比如，“强制门户网站”用来要求先同意服务条款，之后   才授予通过无线热点全面访问互联网的权限）。</p><p>非官方状态码</p><p>下列状态码并不由任何RFC指定，但被第三方服务用来提供语义错误响应或充分利用REST的错误响应：</p><p>420 Method Failure（Spring框架）：方法失效后，Spring框架使用的废弃响应。</p><p>420 Enhance Your Calm（Twitter）：当客户端的速率受到限制时，TwitterSearch and Trends API的版本1返回该状态码；版本1.1及以后版本改而使用429 Too Many Requests响应码。</p><p>450 Blocked by Windows Parental Controls（微软）：微软扩展代码。当Windows Parental Controls被开启，阻止对特定网页的访问时，显示该错误。</p><p>498 Invalid Token（Esri）：ArcGIS forServer返回的状态码。状态码498表明到期的令牌或其他的无效令牌。</p><p>499 Token Required（Esri）：ArcGIS forServer返回的状态码。状态码499表明需要令牌，但是令牌未提交。</p><p>509 Bandwidth Limit Exceeded（ApacheWeb Server/cPanel）：服务器已超过由服务器管理员指定的带宽；这常常被共享主机托管提供商用来限制客户的带宽。</p><h4>2.经常会用到的错误码（面试必备）</h4><p>200 - 服务器成功返回网页，客户端请求已成功。<br>302 - 对象临时移动。服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来进行以后的请求。<br>304 - 属于重定向。自上次请求后，请求的网页未修改过。服务器返回此响应时，不会返回网页内容。<br>401 - 未授权。请求要求身份验证。 对于需要登录的网页，服务器可能返回此响应。<br>404 - 未找到。服务器找不到请求的网页。<br>2xx - 成功。表示服务器成功地接受了客户端请求。<br>3xx - 重定向。表示要完成请求，需要进一步操作。客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。<br>4xx - 请求错误。这些状态代码表示请求可能出错，妨碍了服务器的处理。<br>5xx - 服务器错误。表示服务器在尝试处理请求时发生内部错误。 这些错误可能是服务器本身的错误，而不是请求出错。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 当用户试图通过HTTP或文件传输协议(FTP)访问一台正在运行Internet信息服务(IIS)的服务器上的内容时，IIS返回一个表示该请求的状态的数字代码。该状态代码记录在IIS日志中，同时也可能在Web浏览器或FTP客户端显示。状态代码可以指明具体请求是否已成功，还可以揭示请求失败的确切原因。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java入门(环境搭建)</title>
+    <link href="http://yoursite.com/2018/05/07/2018/05/java%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2018/05/07/2018/05/java入门/</id>
+    <published>2018-05-06T16:00:00.000Z</published>
+    <updated>2018-07-05T05:34:42.426Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> ......</p><p><a id="more"></a></p><h4></h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
     
@@ -44,9 +90,9 @@
     <link href="http://yoursite.com/2018/05/06/2018/05/zhengze/"/>
     <id>http://yoursite.com/2018/05/06/2018/05/zhengze/</id>
     <published>2018-05-05T16:00:00.000Z</published>
-    <updated>2018-05-21T15:32:09.737Z</updated>
+    <updated>2018-07-05T05:07:46.444Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在编写处理字符串的程序或网页时, 经常会有查找符合某些复杂规则的字符串的需要, 正则表达式就是用于描述这些规则的工具. 换句话说, 正则表达式就是记录文本规则的代码.</p><p><a id="more"></a></p><h4></h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在编写处理字符串的程序或网页时, 经常会有查找符合某些复杂规则的字符串的需要, 正则表达式就是用于描述这些规则的工具. 换句话说, 正则表达式就是记录文本规则的代码.</p><p><a id="more"></a></p><h4>1.思维导图</h4><p>单击图片打开可下载</p><p><img src="/img/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.jpg" alt="banner"></p>]]></content>
     
     <summary type="html">
     
@@ -205,9 +251,9 @@
     <link href="http://yoursite.com/2018/04/05/2018/04/webpack/"/>
     <id>http://yoursite.com/2018/04/05/2018/04/webpack/</id>
     <published>2018-04-05T04:23:58.000Z</published>
-    <updated>2018-03-30T14:06:17.297Z</updated>
+    <updated>2018-07-04T15:44:00.827Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。</p><p><a id="more"></a></p><h3>1.</h3><p>模块之间的依赖关系是由require(commonjs规范)或import(es6规范)实现的。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>2.</h3><p>webpack.config.js配置文件各项说明</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。</p><p><a id="more"></a></p><h3>1.</h3><p>模块之间的依赖关系是由require(commonjs规范)或import(es6规范)实现的。</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>2.</h3><p>webpack.config.js配置文件各项说明</p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p><h3>3.git与node安装</h3><p>1.先git的安装，一直默认next安装就可以了2.git的配置文件.gitconfig放在C盘User/用户名/文件夹下，使用vim .gitconfig3.将配置项敲入即可4.node的安装，一直默认next安装就可以了</p><h3>4.git与远程仓库的联系</h3><p>1.mkdir test创建文件夹2.cd test进入文件夹3.git init初始化本地仓库，多了一个.git文件夹，通过ls -a可以查看4.在test文件夹下即可加入项目文件（通过git status查看状态），使用命令git add或者git add .（.代表所有文件，点前面有空格）添加到仓库5.通过git commit -m “注释”将项目提交到仓库</p><h3>5.生成ssh key</h3><p>1.通过命令ssh-keygen -t rsa -C &quot;m18791744718@163.com&quot;创建本地密钥（gitbash打开位置没有要求）2.生成的密钥在C盘User/用户名/下的.ssh文件夹中3.在github上添加密钥，然后创建项目，记得勾选readme4.将本地仓库与github仓库相关联，使用命令 git remote add origin git@github.com:xirenbunong/test7-3.git，在origin后面的是ssh方式复制的仓库地址</p><h3>6.某个项目与本地仓库之间如何联系</h3><p>1.在github上创建该项目，然后本地如果没有密钥，则在本地通过命令ssh key来配置2.如果本地已经有密钥，则在github上打开项目，找到setting，添加上该项目的密钥（分清楚全局的密钥和项目的密钥）3.通过git clone可以测试得到是否连接成功</p><p>这里有个坑需要注意一下，就是在上面第七步创建远程仓库的时候，如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件），那么到了第九步你将本地仓库内容推送到远程仓库的时候就会报一个failed to push some refs to git@github.com:WAng91An/TEST2.git的错。不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：</p><p>$ git pull --rebase origin master这时你再push就能成功了</p><h3>7.安装webpack</h3><p>1.npm install webpack -g即可2.在本地环境上装一个webpack依赖，防止在部署上与本地的依赖版本不一致造成错误，使用npm install webpack@1.15.0 --save-dev</p>]]></content>
     
     <summary type="html">
     
@@ -427,52 +473,6 @@
     
     
       <category term="软件" scheme="http://yoursite.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>算法概要</title>
-    <link href="http://yoursite.com/2018/02/25/2018/02/algorithm/"/>
-    <id>http://yoursite.com/2018/02/25/2018/02/algorithm/</id>
-    <published>2018-02-24T16:00:00.000Z</published>
-    <updated>2018-04-01T06:14:59.268Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.</p><p><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css入门基础（二）Absolute(绝对定位)</title>
-    <link href="http://yoursite.com/2018/02/19/2018/02/css2/"/>
-    <id>http://yoursite.com/2018/02/19/2018/02/css2/</id>
-    <published>2018-02-18T16:00:00.000Z</published>
-    <updated>2018-04-01T06:19:32.368Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解,并分析其应用场景.Absolute(绝对定位), 在实际的网页构建中有很大的作用.</p><p><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解,并分析其应用场景.Absolute(绝对定位), 在实际的网页构建中有很大的作用.&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   

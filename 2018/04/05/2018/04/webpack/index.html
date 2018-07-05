@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-30T14:06:17.297Z">
+<meta property="og:updated_time" content="2018-07-04T15:44:00.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack入门基础">
 <meta name="twitter:description" content="摘要: webpack是一个前端资源加载打包工具。让前端工程模块化，让我们可以把复杂的程序细化为一个一个小的文件;根据模块间的依赖关系，生成对应的静态资源。">
@@ -352,6 +352,33 @@
 <h3>2.</h3>
 <p>webpack.config.js配置文件各项说明</p>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">敬请期待</span><br></pre></td></tr></table></figure></p>
+<h3>3.git与node安装</h3>
+<p>1.先git的安装，一直默认next安装就可以了
+2.git的配置文件.gitconfig放在C盘User/用户名/文件夹下，使用vim .gitconfig
+3.将配置项敲入即可
+4.node的安装，一直默认next安装就可以了</p>
+<h3>4.git与远程仓库的联系</h3>
+<p>1.mkdir test创建文件夹
+2.cd test进入文件夹
+3.git init初始化本地仓库，多了一个.git文件夹，通过ls -a可以查看
+4.在test文件夹下即可加入项目文件（通过git status查看状态），使用命令git add或者git add .（.代表所有文件，点前面有空格）添加到仓库
+5.通过git commit -m “注释”将项目提交到仓库</p>
+<h3>5.生成ssh key</h3>
+<p>1.通过命令ssh-keygen -t rsa -C &quot;m18791744718@163.com&quot;创建本地密钥（gitbash打开位置没有要求）
+2.生成的密钥在C盘User/用户名/下的.ssh文件夹中
+3.在github上添加密钥，然后创建项目，记得勾选readme
+4.将本地仓库与github仓库相关联，使用命令 git remote add origin git@github.com:xirenbunong/test7-3.git，在origin后面的是ssh方式复制的仓库地址</p>
+<h3>6.某个项目与本地仓库之间如何联系</h3>
+<p>1.在github上创建该项目，然后本地如果没有密钥，则在本地通过命令ssh key来配置
+2.如果本地已经有密钥，则在github上打开项目，找到setting，添加上该项目的密钥（分清楚全局的密钥和项目的密钥）
+3.通过git clone可以测试得到是否连接成功</p>
+<p>这里有个坑需要注意一下，就是在上面第七步创建远程仓库的时候，如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件），那么到了第九步你将本地仓库内容推送到远程仓库的时候就会报一个failed to push some refs to git@github.com:WAng91An/TEST2.git的错。
+不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：</p>
+<p>$ git pull --rebase origin master
+这时你再push就能成功了</p>
+<h3>7.安装webpack</h3>
+<p>1.npm install webpack -g即可
+2.在本地环境上装一个webpack依赖，防止在部署上与本地的依赖版本不一致造成错误，使用npm install webpack@1.15.0 --save-dev</p>
 
       
     </div>
@@ -523,7 +550,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -534,7 +561,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -655,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.git与node安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.git与远程仓库的联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.生成ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">6.某个项目与本地仓库之间如何联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">7.安装webpack</span></a></li></ol></div>
             
 
           </div>
