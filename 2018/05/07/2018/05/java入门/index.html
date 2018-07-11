@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="摘要: ......">
+<meta name="description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 <meta name="keywords" content="java 后端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java入门(环境搭建)">
 <meta property="og:url" content="http://yoursite.com/2018/05/07/2018/05/java入门/index.html">
 <meta property="og:site_name" content="Xiren">
-<meta property="og:description" content="摘要: ......">
+<meta property="og:description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-09T14:21:48.973Z">
+<meta property="og:updated_time" content="2018-07-11T12:15:05.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java入门(环境搭建)">
-<meta name="twitter:description" content="摘要: ......">
+<meta name="twitter:description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 
 
 
@@ -344,21 +344,21 @@
       
 
       
-        <p><strong>摘要:</strong> ......</p>
+        <p><strong>摘要:</strong> Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写</p>
 <p><a id="more"></a></p>
 <h4>1.安装配置jdk</h4>
-<p>一直点击下一步，安装目录可以自定义，但是要记住自己的安装目录在哪。
+<p>一直点击下一步，安装目录可以自定义，但是要记住自己的安装目录在哪。<br>
 然后配置环境变量
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.JAVA_HOME  配置jdk的安装路径</span><br><span class="line">jdk的安装目录</span><br><span class="line">2.CLASS_PATH 配置类库文件的位置(.代表当前路径 ;代表隔开)</span><br><span class="line">.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</span><br><span class="line">3.PATH 配置jdk命令文件的位置</span><br><span class="line">%JAVA_HOME%\bin;</span><br></pre></td></tr></table></figure></p>
 <p>win+R,输入cmd，回车，界面输入java -version，显示版本即为正确。</p>
 <h4>2.安装IDEA</h4>
-<p>一直下一步就可以了
-打开后
-1.选择是否有自己的setting
-2.登录自己的账号或者试用30天
-3.选择界面风格
+<p>一直下一步就可以了<br>
+打开后<br>
+1.选择是否有自己的setting<br>
+2.登录自己的账号或者试用30天<br>
+3.选择界面风格<br>
 4.一直next就可以了</p>
-<h4>记事本创建HelloWorld.java</h4>
+<h4>3.记事本创建HelloWorld.java</h4>
 <p>1.记事本创建HelloWorld.java
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        System.out.println(&quot;HelloWorld!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">代码的HelloWorld要与文件名HelloWorld相同</span><br><span class="line">public static void是固定的</span><br></pre></td></tr></table></figure></p>
@@ -366,54 +366,34 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmd中执行 javac HelloWorld.java</span><br><span class="line">出现HelloWorld.class</span><br></pre></td></tr></table></figure></p>
 <p>3.执行HelloWorld
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在cmd中执行java HelloWorld</span><br></pre></td></tr></table></figure></p>
-<h4>使用eclipse创建java项目</h4>
-<p>1.创建java项目<br>
-new-java project-name<br>
-2.创建程序包<br>
-new-package-name<br>
-注意包名为域名的反向<br>
-3.编写java源程序<br>
-new-class-name<br>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">3与4可以合并为  new-class-name/package</span><br><span class="line">name: 文件名   package: com.项目名</span><br><span class="line">```  </span><br><span class="line">4.运行java源程序  </span><br><span class="line">空白处右击-Run As-java application   </span><br><span class="line">或者点击导航栏的运行按钮</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 基本语法</span><br><span class="line">1.java的变量需要指定数据类型,先声明再使用</span><br><span class="line">整型int a = 1;</span><br><span class="line">浮点型float b = 175.2f;</span><br><span class="line">字符型char c = &apos;A&apos;;</span><br><span class="line">字符串String cc = &quot;AAA&quot;;</span><br><span class="line">布尔型boolean d = true;</span><br></pre></td></tr></table></figure></p>
-<p>关于 float 型和 double 型的区别，以及 char 型和 String 型的不同
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2.强制转换</span><br></pre></td></tr></table></figure></p>
-<p>double a = 12.5;
-int b = (int)a;
-//b = 12
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3.Java常量</span><br><span class="line">语法：final 常量名 = 值;</span><br></pre></td></tr></table></figure></p>
-<p>应用场景：
-final double PI = 3.14;
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">4.运算符</span><br><span class="line">自增++与自减--</span><br><span class="line">处在变量前后位置的不同，结果的不同</span><br><span class="line"></span><br><span class="line">5.Java 常用的 3 种循环： while 、 do...while 、 for</span><br></pre></td></tr></table></figure></p>
-<p>while语法：
-while(判断条件){
-循环操作
-}
-执行过程：
-&lt; 1 &gt;、 判断 while 后面的条件是否成立( true / false )
-&lt; 2 &gt;、 当条件成立时，执行循环内的操作代码 ，然后重复执行&lt; 1 &gt;、&lt; 2 &gt;， 直到循环条件不成立为止
-特点：先判断，后执行
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>do..while语法：
-do{
-循环操作
-}while(判断条件);
-执行过程：
-&lt;1&gt;、 先执行一遍循环操作，然后判断循环条件是否成立
-&lt;2&gt;、 如果条件成立，继续执行&lt; 1 &gt; 、&lt; 2 &gt;，直到循环条件不成立为止
-特点： 先执行，后判断
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>for语法：
-for(循环变量初始值;循环条件;循环变量变化){
-循环操作
-}
-执行过程：
-&lt;1&gt;、 执行循环变量初始化部分，设置循环的初始状态，此部分在整个循环中只执行一次
-&lt;2&gt;、 进行循环条件的判断，如果条件为 true ，则执行循环体内代码；如果为 false ，则直接退出循环
-&lt;3&gt;、 执行循环变量变化部分，改变循环变量的值，以便进行下一次条件判断
-&lt;4&gt;、 依次重新执行&lt; 2 &gt;、&lt; 3 &gt;、&lt; 4 &gt;，直到退出循环
-特点：相比 while 和 do...while 语句结构更加简洁易读</p>
-<pre><code>
-Java循环跳转语句之 break 与 continue</code></pre>
+<h4>4.使用eclipse创建java项目</h4>
+<h3>1.创建java项目</h3>
+<p>new-java project-name</p>
+<h3>2.创建程序包</h3>
+<p>new-package-name<br>
+注意包名为域名的反向</p>
+<h3>3.编写java源程序</h3>
+<p>new-class-name
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2与3可以合并为  new-class-name/package</span><br><span class="line">name: 文件名   package: com.项目名</span><br></pre></td></tr></table></figure></p>
+<h3>4.运行java源程序</h3>
+<p>空白处右击-Run As-java application<br>
+或者点击导航栏的运行按钮</p>
+<h4>5.JAVA基本语法</h4>
+<h3>1.java的变量需要指定数据类型,先声明再使用</h3>
+<p>整型int a = 1;
+浮点型float b = 175.2f;
+字符型char c = 'A';
+字符串String cc = &quot;AAA&quot;;
+布尔型boolean d = true;</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">关于 float 型和 double 型的区别，以及 char 型和 String 型的不同</span><br></pre></td></tr></table></figure></p>
+<h3>2.强制转换</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double a = 12.5;</span><br><span class="line">int b = (int)a;</span><br><span class="line">//b = 12</span><br></pre></td></tr></table></figure></p>
+<h3>3.Java常量</h3>
+<p>语法：final 常量名 = 值;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">应用场景：</span><br><span class="line">final double PI = 3.14;</span><br></pre></td></tr></table></figure></p>
+<h3>4.运算符</h3>
+<p>自增++与自减--
+处在变量前后位置的不同，结果的不同</p>
 
       
     </div>
@@ -717,7 +697,7 @@ Java循环跳转语句之 break 与 continue</code></pre>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.安装配置jdk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.安装IDEA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">记事本创建HelloWorld.java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">使用eclipse创建java项目</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.安装配置jdk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.安装IDEA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.记事本创建HelloWorld.java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4.使用eclipse创建java项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.创建java项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.创建程序包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.编写java源程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.运行java源程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5.JAVA基本语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.java的变量需要指定数据类型,先声明再使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.强制转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.Java常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.运算符</span></a></div>
             
 
           </div>

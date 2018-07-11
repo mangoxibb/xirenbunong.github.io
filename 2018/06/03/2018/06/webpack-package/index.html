@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在我的github中。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-05T13:07:19.871Z">
+<meta property="og:updated_time" content="2018-07-10T09:29:06.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大型项目webpack模板">
 <meta name="twitter:description" content="摘要: 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在我的github中。">
@@ -360,9 +360,34 @@
 [name]</p>
 <p>4.jquery引入方式？
 npm install jquery --save-dev</p>
-<p>5.如何提取出公共模块</p>
-<p>6.样式使用怎样的loader？</p>
-<p>7.如何将css打包成单独的文件？</p>
+<p>5.如何提取出公共模块
+用webpack的CommonsChunkPlugin提取公共代码
+在webpack.config.js文件的plugins加入
+new webpack.optimize.CommonsChunkPlugin(
+name : 'commons',
+filename : 'js/base.js'
+),</p>
+<p>6.样式使用怎样的loader？
+css-loader和style-loader</p>
+<p>7.如何将css打包成单独的文件？
+npm install extract-text-webpack-plugin --save-dev
+如果出错 加上版本号@1.0.1</p>
+<h4>3.webpack对html模板的处理HtmlWebpackPlugin</h4>
+<p>1.将html也打包到dist文件夹下
+npm i --save-dev html-webpack-plugin
+var HtmlWebpackPlugin   = require('html-webpack-plugin');
+要明白各个参数的含义
+new HtmlWebpackPlugin({
+template    : './src/view/index.html',
+filename    : 'view/indx.html',
+inject      : true,
+hash        : true,
+trunks      : ['common', 'index']
+})
+2.解决每次jquery需要每次手动引入的问题
+npm install html-loader --save-dev</p>
+<h4>4.webpack对图片和字体的处理</h4>
+<p>npm install url-loader --save-dev</p>
 
       
     </div>
@@ -662,7 +687,7 @@ npm install jquery --save-dev</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.npm与webpack初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.webpack对脚本和样式的处理问题：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.npm与webpack初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.webpack对脚本和样式的处理问题：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.webpack对html模板的处理HtmlWebpackPlugin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4.webpack对图片和字体的处理</span></a></li></ol></div>
             
 
           </div>
