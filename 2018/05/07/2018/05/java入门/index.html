@@ -84,14 +84,14 @@
 <meta name="description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 <meta name="keywords" content="java 后端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java入门(环境搭建)">
+<meta property="og:title" content="java入门(基础知识)">
 <meta property="og:url" content="http://yoursite.com/2018/05/07/2018/05/java入门/index.html">
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-11T14:38:15.417Z">
+<meta property="og:updated_time" content="2018-07-13T12:43:05.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java入门(环境搭建)">
+<meta name="twitter:title" content="java入门(基础知识)">
 <meta name="twitter:description" content="摘要: Java作为面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。据IDC统计，Java在所有软件开发类人才的需求中，对Java工程师的需求曾达到全部需求量的50%以上。TIOBE指数显示，Java编程已经超过了20%的普及门槛，这意味着每五行源代码当中就有一行采用Java编写">
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>java入门(环境搭建) | Xiren</title>
+  <title>java入门(基础知识) | Xiren</title>
   
 
 
@@ -264,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java入门(环境搭建)</h1>
+          <h1 class="post-title" itemprop="name headline">java入门(基础知识)</h1>
         
 
         <div class="post-meta">
@@ -426,25 +426,6 @@ int[] a = new int[5];</p>
 <p>语法：<br>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">定义方法</span><br><span class="line">访问修饰符 返回值类型 方法名（参数列表）&#123;</span><br><span class="line">    方法体</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">创建对象</span><br><span class="line">类名 对象名 = new 类名()</span><br><span class="line"></span><br><span class="line">调用方法</span><br><span class="line">对象名.方法名()</span><br></pre></td></tr></table></figure></p>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">带参带返回值的方法</span><br><span class="line">主函数&#123;</span><br><span class="line">    创建对象同时传参;</span><br><span class="line">    操作该对象;</span><br><span class="line">&#125;</span><br><span class="line">方法函数&#123;</span><br><span class="line">    接收参数，执行具体方法;</span><br><span class="line">    返回参数给主函数的对象</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4>6.JAVA面向对象</h4>
-<h3>6.1类和对象</h3>
-<p>1.理解类、对象、对象的属性(有什么)、对象的方法(能做什么)</p>
-<p>2.类的组成：属性和方法<br>
-定义类的步骤：<br>
-定义类名：public class 类名{  }（其中class为声明类的关键字，类名首字母大写）<br>
-编写类的属性：属性类型  属性名称；（0或多都可）<br>
-编写类的方法</p>
-<h3>6.2构造方法</h3>
-<p>1.构造方法：是定义在java类中的一个用来初始化对象的方法，它与类同名且没有返回值。<br>
-2.语句格式：public 类名(){}<br>
-3.构造方法可分为无参和有参。<br>
-4.当没有指定构造方法时系统会自动添加无参的构造方法。<br>
-5.当有指定构造方法时，无论是有参、无参的构造方法，都不会自动添加无参的构造方法。<br>
-6.构造方法的重载：方法名相同，但参数不同的多个方法，调用时会自动根据不同的参数选择</p>
-<h3>6.3静态static</h3>
-<p>静态变量的访问可以不创建对象，<br>
-直接用 类名.静态变量 也可以创建对象用 “对象名.静态变量” 访问静态变量。<br>
-还可以通过改变 对象名.静态变量 来改变静态变量的值。</p>
 
       
     </div>
@@ -528,8 +509,8 @@ int[] a = new int[5];</p>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/01/2018/06/browser-num/" rel="prev" title="浏览器报错状态码汇总">
-                浏览器报错状态码汇总 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/16/2018/05/ajax/" rel="prev" title="ajax全接触">
+                ajax全接触 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -616,7 +597,7 @@ int[] a = new int[5];</p>
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">30</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -748,7 +729,7 @@ int[] a = new int[5];</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.安装配置jdk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.安装IDEA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.记事本创建HelloWorld.java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4.使用eclipse创建java项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.1.创建java项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.2.创建程序包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.3.编写java源程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.4.运行java源程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5.JAVA基本语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.1.java的变量需要指定数据类型,先声明再使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.2.强制转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.3.Java常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.4.运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.5.Java 常用的 3 种循环： while 、 do...while 、 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.6.java获取用户输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.7.数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.8.方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">6.JAVA面向对象</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">6.1类和对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">6.2构造方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">6.3静态static</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.安装配置jdk</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.安装IDEA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.记事本创建HelloWorld.java</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4.使用eclipse创建java项目</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.1.创建java项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.2.创建程序包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.3.编写java源程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.4.运行java源程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5.JAVA基本语法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.1.java的变量需要指定数据类型,先声明再使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.2.强制转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.3.Java常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.4.运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.5.Java 常用的 3 种循环： while 、 do...while 、 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.6.java获取用户输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.7.数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.8.方法</span></a></div>
             
 
           </div>
