@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-11T14:35:27.128Z</updated>
+  <updated>2018-07-09T14:49:20.594Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>大型项目webpack模板</title>
-    <link href="http://yoursite.com/2018/06/03/2018/06/webpack-package/"/>
-    <id>http://yoursite.com/2018/06/03/2018/06/webpack-package/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-07-11T14:35:27.128Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.npm与webpack初始化</h4><p>1.npm init生成package.json文件，添加一些字段如description、author（和github远程仓库建立连接的话，git repository字段会自己有远程仓库地址）</p><p>2.npm install webpack -g安装webpack</p><p>3.npm install webpack@1.15.0 --save-dev在本地安装webpack</p><p>4.建立webpack.config.js文件粘贴进去modules相关部分（此目的是为了通过entry和output解决只有一个入口文件和一个出口文件的打包约束）</p><h4>2.webpack对脚本和样式的处理问题：</h4><p>dist是一个打包目录，可以随时删除，执行webpack即可再次生成</p><p>1.Js用什么loader加载？</p><p>2.怎么解决多个entry文件？<br>数组</p><p>3.怎么解决output需要分文件夹存放目标文件？<br>[name]</p><p>4.jquery引入方式？<br>npm install jquery --save-dev</p><p>5.如何提取出公共模块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">用webpack的CommonsChunkPlugin提取公共代码    </span><br><span class="line">在webpack.config.js文件的plugins加入   </span><br><span class="line">new webpack.optimize.CommonsChunkPlugin(</span><br><span class="line">    name : &apos;commons&apos;,</span><br><span class="line">    filename : &apos;js/base.js&apos;</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p><p>6.样式使用怎样的loader？<br>css-loader和style-loader</p><p>7.如何将css打包成单独的文件？<br>npm install extract-text-webpack-plugin --save-dev<br>如果出错 加上版本号@1.0.1</p><h4>3.webpack对html模板的处理HtmlWebpackPlugin</h4><p>1.将html也打包到dist文件夹下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm i --save-dev html-webpack-plugin    </span><br><span class="line">var HtmlWebpackPlugin   = require(&apos;html-webpack-plugin&apos;);    </span><br><span class="line">要明白各个参数的含义    </span><br><span class="line">new HtmlWebpackPlugin(&#123;</span><br><span class="line">            template    : &apos;./src/view/index.html&apos;,</span><br><span class="line">            filename    : &apos;view/indx.html&apos;,</span><br><span class="line">            inject      : true,</span><br><span class="line">            hash        : true,</span><br><span class="line">            trunks      : [&apos;common&apos;, &apos;index&apos;]</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure></p><p>2.解决每次jquery需要每次手动引入的问题<br>npm install html-loader --save-dev</p><h4>4.webpack对图片和字体的处理</h4><p>npm install url-loader --save-dev</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
   
   <entry>
     <title>好看常用的一些前端页面组件</title>
@@ -51,6 +28,29 @@
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大型项目webpack模板</title>
+    <link href="http://yoursite.com/2018/06/03/2018/06/webpack-package/"/>
+    <id>http://yoursite.com/2018/06/03/2018/06/webpack-package/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-07-11T14:35:27.128Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.npm与webpack初始化</h4><p>1.npm init生成package.json文件，添加一些字段如description、author（和github远程仓库建立连接的话，git repository字段会自己有远程仓库地址）</p><p>2.npm install webpack -g安装webpack</p><p>3.npm install webpack@1.15.0 --save-dev在本地安装webpack</p><p>4.建立webpack.config.js文件粘贴进去modules相关部分（此目的是为了通过entry和output解决只有一个入口文件和一个出口文件的打包约束）</p><h4>2.webpack对脚本和样式的处理问题：</h4><p>dist是一个打包目录，可以随时删除，执行webpack即可再次生成</p><p>1.Js用什么loader加载？</p><p>2.怎么解决多个entry文件？<br>数组</p><p>3.怎么解决output需要分文件夹存放目标文件？<br>[name]</p><p>4.jquery引入方式？<br>npm install jquery --save-dev</p><p>5.如何提取出公共模块<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">用webpack的CommonsChunkPlugin提取公共代码    </span><br><span class="line">在webpack.config.js文件的plugins加入   </span><br><span class="line">new webpack.optimize.CommonsChunkPlugin(</span><br><span class="line">    name : &apos;commons&apos;,</span><br><span class="line">    filename : &apos;js/base.js&apos;</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p><p>6.样式使用怎样的loader？<br>css-loader和style-loader</p><p>7.如何将css打包成单独的文件？<br>npm install extract-text-webpack-plugin --save-dev<br>如果出错 加上版本号@1.0.1</p><h4>3.webpack对html模板的处理HtmlWebpackPlugin</h4><p>1.将html也打包到dist文件夹下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">npm i --save-dev html-webpack-plugin    </span><br><span class="line">var HtmlWebpackPlugin   = require(&apos;html-webpack-plugin&apos;);    </span><br><span class="line">要明白各个参数的含义    </span><br><span class="line">new HtmlWebpackPlugin(&#123;</span><br><span class="line">            template    : &apos;./src/view/index.html&apos;,</span><br><span class="line">            filename    : &apos;view/indx.html&apos;,</span><br><span class="line">            inject      : true,</span><br><span class="line">            hash        : true,</span><br><span class="line">            trunks      : [&apos;common&apos;, &apos;index&apos;]</span><br><span class="line">        &#125;)</span><br></pre></td></tr></table></figure></p><p>2.解决每次jquery需要每次手动引入的问题<br>npm install html-loader --save-dev</p><h4>4.webpack对图片和字体的处理</h4><p>npm install url-loader --save-dev</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
 &lt;p&gt;
     
     </summary>
@@ -228,9 +228,9 @@
     <link href="http://yoursite.com/2018/04/20/2018/04/wechatApp/"/>
     <id>http://yoursite.com/2018/04/20/2018/04/wechatApp/</id>
     <published>2018-04-19T16:00:00.000Z</published>
-    <updated>2018-04-03T12:02:41.680Z</updated>
+    <updated>2018-07-16T12:02:41.602Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.</p><p><a id="more"></a></p><h4>概览</h4>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 2017年1月9日, 微信小程序正式上线. 微信小程序无需下载, 无需安装, 即扫即用, 属于轻量型应用.小程序是一种新的开放能力, 开发者可以快速地开发一个小程序. 小程序可以在微信内被便捷地获取和传播, 同时具有出色的使用体验.</p><p><a id="more"></a></p><h4>1.概览</h4><h4>2.环境搭建</h4><h3>2.1申请APPID</h3><p>打开:<a href="https://developers.weixin.qq.com/miniprogram/dev/index.html?t=2018712" target="_blank" rel="noopener">微信开发者文档</a><br>点击 <a href="https://mp.weixin.qq.com/wxopen/waregister?action=step1" target="_blank" rel="noopener">注册</a>, 申请APPid<br>注册成功后, 在<a href="https://mp.weixin.qq.com" target="_blank" rel="noopener">登录</a>之后, 在&quot;开发&quot;--&quot;基本配置&quot;即可获取APPid</p><h3>2.2下载开发者工具</h3><p>进入<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html?t=2018712" target="_blank" rel="noopener">下载页面</a>下载开发者工具</p><h4>3.创建第一个小程序</h4><p>&quot;新建项目&quot;--&quot;项目目录&quot;--&quot;APPID&quot;--&quot;项目名称&quot;--&quot;点击确定&quot;</p>]]></content>
     
     <summary type="html">
     
