@@ -90,7 +90,7 @@
 <meta property="og:description" content="摘要: 微信公众平台, 给个人、企业和组织提供业务服务与用户管理能力的全新服务平台.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/wechat.jpg">
-<meta property="og:updated_time" content="2018-05-14T08:33:44.441Z">
+<meta property="og:updated_time" content="2018-07-17T14:36:14.483Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公众号开发">
 <meta name="twitter:description" content="摘要: 微信公众平台, 给个人、企业和组织提供业务服务与用户管理能力的全新服务平台.">
@@ -353,7 +353,15 @@
 <h5>1.开发环境准备</h5>
 <p>因为微信公众号想要真机测试, 必须要有自己的服务器才能使用, 所以开始会讲解服务器的购买, 备案过程等</p>
 <h4>1.1 服务器搭建过程</h4>
-<p>&lt;!-- 在此解释申明初学者容易疑惑的一个地方, 就是给服务器备案还是给域名备案, --&gt;</p>
+<p>&lt;!-- 在此解释申明初学者容易疑惑的一个地方, 就是给服务器备案还是给域名备案, --&gt;
+使用<a href="www.ngrok.cc">ngrok</a>注册一个代理服务器, 用来转发我们的微信文件, 快速开发微信程序<br>
+下载客户端, 在根目录下打开命令行工具, 输入./sunny clientid 隧道id,</p>
+<h4>1.2接入微信公众号</h4>
+<p>1.2.1 配置微信公众号后台
+1.2.2 验证公众号
+将token、timestamp、nonce三个参数字典序排序
+将这三个参数拼接成一个字符串并sh1加密
+将加密后的字符串与signature对比，如果相同，表示这个请求来源于微信，则返回echostr参数内容</p>
 
       
     </div>
@@ -657,7 +665,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">公众号开发思维导图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1.开发环境准备</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 服务器搭建过程</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">公众号开发思维导图</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1.开发环境准备</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 服务器搭建过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.2接入微信公众号</span></a></div>
             
 
           </div>
