@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: Git 是一个为了更好地管理 Linux 内核开发而创立的分布式版本控制和软件配置管理软件. 国内外知名 Git 代码托管网站有： GitHub.com Coding.net code.csdn.net ...">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-06T01:57:11.943Z">
+<meta property="og:updated_time" content="2018-07-22T14:02:04.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git入门基础">
 <meta name="twitter:description" content="摘要: Git 是一个为了更好地管理 Linux 内核开发而创立的分布式版本控制和软件配置管理软件. 国内外知名 Git 代码托管网站有： GitHub.com Coding.net code.csdn.net ...">
@@ -355,16 +355,29 @@
 3.将配置项敲入即可
 4.node的安装，一直默认next安装就可以了</p>
 <h3>3.git与远程仓库的联系</h3>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">cd是用来进入某个目录的，白色的字是自己打的（前面那个美元符号是自动生成的），然后现在就进入了我们要上传路径的目录下。  </span><br><span class="line">输入git init，这个意思是在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）  </span><br><span class="line">输入git add.，这个是将项目上所有的文件添加到仓库中的意思，如果想添加某个特定的文件，只需把.换成这个特定的文件名即可。  </span><br><span class="line">rm -rf 文件名/文件夹  是删除  </span><br><span class="line">mkdir 文件名/文件夹  是创建文件夹  </span><br><span class="line">vim 文件  是编辑文件  </span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">1.mkdir test创建文件夹</span><br><span class="line">2.cd test进入文件夹</span><br><span class="line">3.git init初始化本地仓库，多了一个.git文件夹，通过ls -a可以查看</span><br><span class="line">4.在test文件夹下即可加入项目文件（通过git status查看状态），使用命令git add或者git add .（.代表所有文件，点前面有空格）添加到仓库</span><br><span class="line">5.通过git commit -m “注释”将项目提交到仓库</span><br><span class="line"></span><br><span class="line">### 4.生成ssh key</span><br><span class="line">1.通过命令ssh-keygen -t rsa -C &quot;m18791744718@163.com&quot;创建本地密钥（gitbash打开位置没有要求）</span><br><span class="line">2.生成的密钥在C盘User/用户名/下的.ssh文件夹中</span><br><span class="line">3.在github上添加密钥，然后创建项目，记得勾选readme</span><br><span class="line">4.将本地仓库与github仓库相关联，使用命令 git remote add origin git@github.com:xirenbunong/test7-3.git，在origin后面的是ssh方式复制的仓库地址(把当前文件夹和git仓库的文件夹对应起来)  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 5.某个项目与本地仓库之间如何联系</span><br><span class="line">1.在github上创建该项目，然后本地如果没有密钥，则在本地通过命令ssh key来配置</span><br><span class="line">2.如果本地已经有密钥，则在github上打开项目，找到setting，添加上该项目的密钥（分清楚全局的密钥和项目的密钥）</span><br><span class="line">3.通过git clone可以测试得到是否连接成功</span><br><span class="line">4.git init</span><br><span class="line">5.git add .</span><br><span class="line">6.git commit -m &quot;说明&quot;</span><br><span class="line">7.git remote add origin git@github.com:xirenbunong/WebHtml_Modules.git</span><br><span class="line">8.git push origin master</span><br></pre></td></tr></table></figure></p>
-<p>这里有个坑需要注意一下，就是在上面第七步创建远程仓库的时候，如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件），那么到了第九步你将本地仓库内容推送到远程仓库的时候就会报一个failed to push some refs to git@github.com:WAng91An/TEST2.git的错。
-不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：</p>
-<p>$ git pull --rebase origin master
-这时你再push就能成功了
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>git push -f origin master
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
-<p>git checkout -b pro_v1.0  切换分支到V1.0版本的分支 -b参数表示该分支是新建的</p>
-<pre><code></code></pre>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd是用来进入某个目录的，白色的字是自己打的（前面那个美元符号是自动生成的），然后现在就进入了我们要上传路径的目录下。  </span><br><span class="line">输入git init，这个意思是在当前项目的目录中生成本地的git管理（会发现在当前目录下多了一个.git文件夹）  </span><br><span class="line">输入git add.，这个是将项目上所有的文件添加到仓库中的意思，如果想添加某个特定的文件，只需把.换成这个特定的文件名即可。  </span><br><span class="line">rm -rf 文件名/文件夹  是删除  </span><br><span class="line">mkdir 文件名/文件夹  是创建文件夹</span><br><span class="line">vim 文件  是编辑文件</span><br></pre></td></tr></table></figure></p>
+<p>1.mkdir test创建文件夹<br>
+2.cd test进入文件夹<br>
+3.git init初始化本地仓库，多了一个.git文件夹，通过ls -a可以查看<br>
+4.在test文件夹下即可加入项目文件（通过git status查看状态），使用命令git add或者git add .（.代表所有文件，点前面有空格）添加到仓库<br>
+5.通过git commit -m “注释”将项目提交到仓库</p>
+<h3>4.生成ssh key</h3>
+<p>1.通过命令ssh-keygen -t rsa -C &quot;m18791744718@163.com&quot;创建本地密钥（gitbash打开位置没有要求）<br>
+2.生成的密钥在C盘User/用户名/下的.ssh文件夹中<br>
+3.在github上添加密钥，然后创建项目，记得勾选readme<br>
+4.将本地仓库与github仓库相关联，使用命令 git remote add origin git@github.com:xirenbunong/test7-3.git，在origin后面的是ssh方式复制的仓库地址(把当前文件夹和git仓库的文件夹对应起来)</p>
+<h3>5.某个项目与本地仓库之间如何联系</h3>
+<p>1.在github上创建该项目，然后本地如果没有密钥，则在本地通过命令ssh key来配置<br>
+2.如果本地已经有密钥，则在github上打开项目，找到setting，添加上该项目的密钥（分清楚全局的密钥和项目的密钥）<br>
+3.通过git clone可以测试得到是否连接成功<br>
+4.git init<br>
+5.git add .<br>
+6.git commit -m &quot;说明&quot;<br>
+7.git remote add origin git@github.com:xirenbunong/WebHtml_Modules.git<br>
+8.git push origin master</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">这里有个坑需要注意一下，就是在上面第七步创建远程仓库的时候，如果你勾选了Initialize this repository with a README（就是创建仓库的时候自动给你创建一个README文件），那么到了第九步你将本地仓库内容推送到远程仓库的时候就会报一个failed to push some refs to git@github.com:WAng91An/TEST2.git的错。</span><br><span class="line">不在本地仓库目录中，这时我们可以通过以下命令先将内容合并以下：</span><br><span class="line"></span><br><span class="line">$ git pull --rebase origin master</span><br><span class="line"> 这时你再push就能成功了</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f origin master</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b pro_v1.0  切换分支到V1.0版本的分支 -b参数表示该分支是新建的</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -668,7 +681,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.git介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.git安装与配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.git与远程仓库的联系</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.git介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.git安装与配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.git与远程仓库的联系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">4.生成ssh key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">5.某个项目与本地仓库之间如何联系</span></a></li></ol></div>
             
 
           </div>
