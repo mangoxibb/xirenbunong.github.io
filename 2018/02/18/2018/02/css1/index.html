@@ -90,7 +90,12 @@
 <meta property="og:description" content="摘要: 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/css1.png">
-<meta property="og:updated_time" content="2018-04-01T06:19:32.368Z">
+<meta property="og:image" content="http://yoursite.com/img/css2.png">
+<meta property="og:image" content="http://yoursite.com/img/css3.png">
+<meta property="og:image" content="http://yoursite.com/img/css4.png">
+<meta property="og:image" content="http://yoursite.com/img/css5.png">
+<meta property="og:image" content="http://yoursite.com/img/css6.png">
+<meta property="og:updated_time" content="2018-07-23T12:29:12.440Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css入门基础（一）Float(浮动)">
 <meta name="twitter:description" content="摘要: 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.">
@@ -301,8 +306,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日记/" itemprop="url" rel="index">
-                    <span itemprop="name">日记</span>
+                  <a href="/categories/转载/" itemprop="url" rel="index">
+                    <span itemprop="name">转载</span>
                   </a>
                 </span>
 
@@ -353,6 +358,26 @@
 <h4>2.应用场景</h4>
 <p>瀑布流布局 (如下图例子中, 图片在左边, 文字都在右边)
 <img src="/img/css1.png" alt="banner"></p>
+<h4>3.几个实例</h4>
+<h3>3.1float: none</h3>
+<p>float默认为none
+<img src="/img/css2.png" alt="banner"></p>
+<h3>3.2float: left/right</h3>
+<p>float为left时，left脱离文档流，紫色的none盒子会上来一行
+<img src="/img/css3.png" alt="banner"></p>
+<p>float为left和right时，因为脱离文档流所以绿色的none盒子还在同一行<br>
+<img src="/img/css4.png" alt="banner"></p>
+<h3>3.3clear: both</h3>
+<p>关于清除浮动：</p>
+<pre><code>清除浮动并不是说让浮动元素回到文档流
+
+清除浮动只会改变改元素自身的位置
+并且只针对排在该元素前面的元素
+</code></pre>
+<p>绿色块独占一行：给<a href="">绿色块</a>加clear: both
+<img src="/img/css5.png" alt="banner"></p>
+<p>紫色块也独占一行：给<a href="">紫色块</a>也加clear: both
+<img src="/img/css6.png" alt="banner"></p>
 
       
     </div>
@@ -656,7 +681,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.清除浮动的四种方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.应用场景</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.清除浮动的四种方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.应用场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.几个实例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.1float: none</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.2float: left/right</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.3clear: both</span></a></div>
             
 
           </div>
