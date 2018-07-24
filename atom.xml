@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-11T14:35:27.128Z</updated>
+  <updated>2018-07-24T11:02:06.037Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好看常用的一些前端页面组件</title>
+    <link href="http://yoursite.com/2018/06/03/2018/06/h-modules/"/>
+    <id>http://yoursite.com/2018/06/03/2018/06/h-modules/</id>
+    <published>2018-06-02T16:00:00.000Z</published>
+    <updated>2018-07-24T11:02:06.037Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header(页头)和footer(页脚)</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p><img src="/img/lbt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>5.导航栏(带三角形)</h4><p><img src="/img/header-list.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>6.中部高度与宽度响适应布局</h4><p><img src="/img/sfy.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>7.中部高度与宽度响适应布局</h4><p><img src="/img/zzt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>大型项目webpack模板</title>
@@ -28,29 +51,6 @@
     <summary type="html">
     
       &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我将webpack模板构建出来，方便快速搭建项目环境。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>好看常用的一些前端页面组件</title>
-    <link href="http://yoursite.com/2018/06/03/2018/06/h-modules/"/>
-    <id>http://yoursite.com/2018/06/03/2018/06/h-modules/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-07-23T13:17:19.431Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header(页头)和footer(页脚)</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p><img src="/img/lbt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>5.导航栏(带三角形)</h4><p><img src="/img/header-list.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>6.中部高度与宽度响适应布局</h4><p><img src="/img/sfy.png" alt="banner"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在&lt;a href=&quot;https://github.com/xirenbunong&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;我的github&lt;/a&gt;中。&lt;/p&gt;
 &lt;p&gt;
     
     </summary>
