@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-24T13:15:36.807Z</updated>
+  <updated>2018-07-25T14:55:13.491Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>SQLyog图形化</title>
-    <link href="http://yoursite.com/2018/06/03/2018/07/SQLyog/"/>
-    <id>http://yoursite.com/2018/06/03/2018/07/SQLyog/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-07-24T13:15:36.807Z</updated>
+    <title>Java Web入门基础</title>
+    <link href="http://yoursite.com/2018/07/03/2018/07/DynamicWeb/"/>
+    <id>http://yoursite.com/2018/07/03/2018/07/DynamicWeb/</id>
+    <published>2018-07-02T16:00:00.000Z</published>
+    <updated>2018-07-25T14:55:13.491Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong></p><p><a id="more"></a></p><h4>1.mysql的安装配置</h4><h4>2.SQLyog的安装与使用</h4><h4>3.新建数据库</h4><pre><code>右击选择&quot;创建数据库&quot;--输入数据库名，   基字符集&quot;UTF-8&quot;，数据库排序规则默认.</code></pre><h4>4.新建数据库</h4>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong></p><p><a id="more"></a></p><h5>1. SQLyog的使用</h5><h4>1.1 mysql的安装配置</h4><h4>1.2 SQLyog的安装与使用</h4><p><img src="/img/javaweb1.png" alt="banner"></p><pre><code>第一个框中的mysql是我自己取的名字(随便取)连接本地数据库的话localhost和3306不变用户名和密码是自己设置的</code></pre><h4>1.3 新建数据库</h4><p><img src="/img/javaweb2.png" alt="banner"></p><pre><code>左边空白处右击选择&quot;创建数据库&quot;--输入数据库名，   基字符集&quot;UTF-8&quot;，数据库排序规则默认.</code></pre><h5>2. Eclipse创建Web项目</h5><h4>2.1 tomcat的安装配置</h4><pre><code>下载，解压缩打开conf/server.xml，搜索8080，在最后加入URIEncoding=&quot;UTF-8&quot;，并保存配置环境变量，变量名CATALINA_HOME，变量值为tomcat路径(不要加;号)双击bin目录下的startup.bat执行浏览器输入localhost:8080双击bin目录下shutdown.bat停止服务</code></pre><h4>2.2</h4><h4>2.3</h4><h4>2.4</h4><h4>2.5</h4>]]></content>
     
     <summary type="html">
     
