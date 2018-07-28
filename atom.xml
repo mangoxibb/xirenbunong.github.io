@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-25T14:55:13.491Z</updated>
+  <updated>2018-07-28T06:52:15.546Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react入门基础</title>
+    <link href="http://yoursite.com/2018/07/17/2018/07/react/"/>
+    <id>http://yoursite.com/2018/07/17/2018/07/react/</id>
+    <published>2018-07-16T16:00:00.000Z</published>
+    <updated>2018-07-28T06:52:15.546Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。</p><p><a id="more"></a></p><h5>1.</h5><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/react/16.4.0/umd/react.development.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function HelloMessage(props) &#123;</span><br><span class="line">    return &lt;h1&gt;Hello World!&lt;/h1&gt;;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line">const element = &lt;HelloMessage /&gt;;</span><br><span class="line"> </span><br><span class="line">ReactDOM.render(</span><br><span class="line">    element,</span><br><span class="line">    document.getElementById(&apos;example&apos;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p><p>1.函数</p><p>2.变量接收函数</p><p>3.放入变量，并确定插入位置</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>Java Web入门基础</title>
@@ -41,10 +64,10 @@
   
   <entry>
     <title>好看常用的一些前端页面组件</title>
-    <link href="http://yoursite.com/2018/06/03/2018/06/h-modules/"/>
-    <id>http://yoursite.com/2018/06/03/2018/06/h-modules/</id>
-    <published>2018-06-02T16:00:00.000Z</published>
-    <updated>2018-07-25T14:22:17.985Z</updated>
+    <link href="http://yoursite.com/2018/06/24/2018/06/h-modules/"/>
+    <id>http://yoursite.com/2018/06/24/2018/06/h-modules/</id>
+    <published>2018-06-23T16:00:00.000Z</published>
+    <updated>2018-07-28T06:52:33.715Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header(页头)和footer(页脚)</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p><img src="/img/lbt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>5.导航栏(带三角形)</h4><p><img src="/img/header-list.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>6.中部高度与宽度响适应布局</h4><p><img src="/img/sfy.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>7.根据数值显示</h4><p><img src="/img/zzt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>8.有遮罩层的登录和注册</h4><p><img src="/img/shade.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p>]]></content>
     
@@ -438,29 +461,6 @@
     <updated>2018-04-01T09:26:47.444Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>3.Math方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p><h3>3.1min()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.min(num1, ...);</span><br><span class="line">返回最小值.</span><br></pre></td></tr></table></figure></p><h3>3.2max()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.max(num1, ...);</span><br><span class="line">返回最大值.</span><br></pre></td></tr></table></figure></p><h3>3.3ceil()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.ceil(num);</span><br><span class="line">向上取整.</span><br></pre></td></tr></table></figure></p><h3>3.4floor()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(num);</span><br><span class="line">向下取整.</span><br></pre></td></tr></table></figure></p><h3>3.5round()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.round(num);</span><br><span class="line">四舍五入取整.</span><br></pre></td></tr></table></figure></p><h3>3.6abs()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.abs(num);</span><br><span class="line">返回绝对值.</span><br></pre></td></tr></table></figure></p><h3>3.7random()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Math.random();</span><br><span class="line">返回一个大于等于0小于1的随机数.</span><br><span class="line">n~m之间的随机数公式：</span><br><span class="line">r = Math.floor(Math.random() * (m -n +1) +n).</span><br></pre></td></tr></table></figure></p><h4>4.Date方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var date = new Date();</span><br><span class="line">getFullYear(): 返回四位数年份.</span><br><span class="line">getMonth(): 返回月份，返回值0~11.</span><br><span class="line">getDate(): 返回日.</span><br><span class="line">getDay(): 返回星期，返回值0~6.</span><br><span class="line">getHours(): 返回小时.</span><br><span class="line">getMinutes(): 返回分.</span><br><span class="line">getSeconds(): 返回秒.</span><br><span class="line">getTime(): 返回 1970年 1月 1日至今的毫秒数.</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置年月日星期时分秒的Math方法为：</span><br><span class="line">将get替换为set</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">返回星期值的代码：</span><br><span class="line">var date = new Date();</span><br><span class="line">var weeks = [&quot;日&quot;, &quot;一&quot;, &quot;二&quot;, &quot;三&quot;, &quot;四&quot;, &quot;五&quot;, &quot;六&quot;];</span><br><span class="line">var week = date.getDay();</span><br><span class="line">&quot;星期&quot; + weeks[week]</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript入门基础（二）内置对象（String）</title>
-    <link href="http://yoursite.com/2018/03/17/2018/03/js2/"/>
-    <id>http://yoursite.com/2018/03/17/2018/03/js2/</id>
-    <published>2018-03-16T16:00:00.000Z</published>
-    <updated>2018-04-01T09:25:55.429Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>2.字符串方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的字符串方法：</span><br><span class="line">charAt()、charCodeAt()、indexOf()、lastIndexOf()、slice()、substring()、substr()、split()、replace()、touUpperCase()、toLowerCase()...</span><br></pre></td></tr></table></figure></p><h3>2.1chatAt()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.chatAt(index);</span><br><span class="line">返回字符串索引为index的字符.</span><br></pre></td></tr></table></figure></p><h3>2.2charCodeAt()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.charCodeAt(index);</span><br><span class="line">返回字符串中索引为index字符的字符编码.</span><br></pre></td></tr></table></figure></p><h3>2.3indexOf()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.indexOf(&quot;element&quot;);</span><br><span class="line">返回元素或字符串在字符串中的索引.</span><br></pre></td></tr></table></figure></p><h3>2.4lastIndexOf()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.lastIndexOf(&quot;element&quot;);</span><br><span class="line">在字符串末尾检测元素位置，但索引值还是正序.</span><br></pre></td></tr></table></figure></p><h3>2.5slice()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.slice(start, end);</span><br><span class="line">返回所选区段字符串.</span><br></pre></td></tr></table></figure></p><h3>2.6substring()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">同slice();</span><br><span class="line">区别: 参数为负数时，自动转换为0.</span><br></pre></td></tr></table></figure></p><h3>2.7substr()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str.substr(start, len);</span><br><span class="line">start: 字符串开始位置的索引值(必选).</span><br><span class="line">len：截取字符串长度(可选).</span><br><span class="line">返回所选区段字符串.</span><br></pre></td></tr></table></figure></p><h3>2.8split()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.split(separator);</span><br><span class="line">separator: 字符串的分隔符(&quot;2018/03/19&quot;中的&quot;/&quot;; &quot;hello-world&quot;中的&quot;-&quot;).</span><br></pre></td></tr></table></figure></p><h3>2.9replace()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str.replace(substr, replace);</span><br><span class="line">substr: 需要被替换的元素；</span><br><span class="line">replace：替换元素</span><br><span class="line">将字符串中的元素替换.</span><br></pre></td></tr></table></figure></p><h3>2.10touUpperCase()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.touUpperCase();</span><br><span class="line">将字符串转换为大写.</span><br></pre></td></tr></table></figure></p><h3>2.11toLowerCase()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str.toLowerCase();</span><br><span class="line">将字符串转换为小写.</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
