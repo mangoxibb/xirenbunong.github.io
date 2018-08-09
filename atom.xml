@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-09T08:55:40.831Z</updated>
+  <updated>2018-08-09T15:17:41.367Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>react入门基础</title>
+    <title>前端面试总结</title>
     <link href="http://yoursite.com/2018/08/03/2018/08/writtenExam/"/>
     <id>http://yoursite.com/2018/08/03/2018/08/writtenExam/</id>
     <published>2018-08-02T16:00:00.000Z</published>
-    <updated>2018-08-09T08:55:40.831Z</updated>
+    <updated>2018-08-09T15:17:41.367Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等</p><p><a id="more"></a></p><h4>1. JavaScript方面</h4><h4>2.Html</h4><h4>3.Css</h4><h4>4.ECMAScript</h4><h4>5.ajax</h4><h4>6.前端安全</h4><h4>7.</h4>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等</p><p><a id="more"></a></p><p>拿到试题思考考点</p><h4>1. JavaScript方面</h4><h4>2.Html</h4><h4>3.Css</h4><h4>4.ECMAScript</h4><h4>5.ajax</h4><h4>6.前端安全</h4><h4>7.</h4>]]></content>
     
     <summary type="html">
     
