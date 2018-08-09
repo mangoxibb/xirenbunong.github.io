@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-30T02:43:11.497Z</updated>
+  <updated>2018-08-09T08:55:40.831Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react入门基础</title>
+    <link href="http://yoursite.com/2018/08/03/2018/08/writtenExam/"/>
+    <id>http://yoursite.com/2018/08/03/2018/08/writtenExam/</id>
+    <published>2018-08-02T16:00:00.000Z</published>
+    <updated>2018-08-09T08:55:40.831Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等</p><p><a id="more"></a></p><h4>1. JavaScript方面</h4><h4>2.Html</h4><h4>3.Css</h4><h4>4.ECMAScript</h4><h4>5.ajax</h4><h4>6.前端安全</h4><h4>7.</h4>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>react入门基础</title>
@@ -67,9 +90,9 @@
     <link href="http://yoursite.com/2018/06/24/2018/06/h-modules/"/>
     <id>http://yoursite.com/2018/06/24/2018/06/h-modules/</id>
     <published>2018-06-23T16:00:00.000Z</published>
-    <updated>2018-07-28T06:52:33.715Z</updated>
+    <updated>2018-08-09T07:03:28.626Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header(页头)和footer(页脚)</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p><img src="/img/lbt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>5.导航栏(带三角形)</h4><p><img src="/img/header-list.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>6.中部高度与宽度响适应布局</h4><p><img src="/img/sfy.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>7.根据数值显示</h4><p><img src="/img/zzt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>8.有遮罩层的登录和注册</h4><p><img src="/img/shade.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 在本篇文章中，我汇总了常见的一些在前端页面会用到的组件，比如登录框、搜索框、轮播图、基于flex的header和footer等。源代码都在<a href="https://github.com/xirenbunong" target="_blank" rel="noopener">我的github</a>中。</p><p><a id="more"></a></p><h4>1.好看常见的两个搜索框</h4><p><img src="/img/search1.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p><img src="/img/search2.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>2.基于flex的header(页头)和footer(页脚)</h4><p><img src="/img/header.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a><img src="/img/footer.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>3.登录框</h4><p><img src="/img/login.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>4.基于Unslider插件的轮播图</h4><p><img src="/img/lbt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>5.导航栏(带三角形)</h4><p><img src="/img/header-list.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>6.中部高度与宽度响适应布局</h4><p><img src="/img/sfy.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>7.根据数值显示</h4><p><img src="/img/zzt.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><h4>8.有遮罩层的登录和注册</h4><p><img src="/img/shade.png" alt="banner"></p><p>More info: <a href="https://www.baidu.com" target="_blank" rel="noopener">预留链接</a></p><p>关键代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">.shade&#123;</span><br><span class="line">    display: none;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">    background: rgba(0, 0, 0, 0.5);</span><br><span class="line">    position: fixed;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    z-index: 999;</span><br><span class="line">&#125;</span><br><span class="line">.box&#123;</span><br><span class="line">    display: none;</span><br><span class="line">    width: 400px;</span><br><span class="line">    height: 250px;</span><br><span class="line">    background-color: #fff;</span><br><span class="line">    position: fixed;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin: -125px 0 0 -200px;</span><br><span class="line">    z-index: 1000;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h4>9.滑动门</h4>]]></content>
     
     <summary type="html">
     
@@ -438,29 +461,6 @@
     <updated>2018-03-27T13:41:03.693Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.getElementById()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过id获取.</span><br></pre></td></tr></table></figure></p><h4>2.getElementsByTagName()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过标签名称获取(数组).</span><br></pre></td></tr></table></figure></p><h4>3.设置元素样式</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.style.styleName = &apos;styleValue&apos;;</span><br><span class="line">element:需要被设置样式的DOM对象</span><br><span class="line">styleName:样式名称, 如: color, fontSize(不能font-size), backgroundColor...</span><br><span class="line">styleValue: 样式值</span><br></pre></td></tr></table></figure></p><h4>4.innerHTML</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.innerHTML;</span><br><span class="line">返回element之间的html内容。</span><br><span class="line">element.innerHTML= &quot;html&quot;;</span><br><span class="line">设置element之间的html内容。</span><br></pre></td></tr></table></figure></p><h4>5.className</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.className;</span><br><span class="line">获取element的class值。</span><br><span class="line">element.className = &quot;class&quot;;</span><br><span class="line">改变element的class值。</span><br></pre></td></tr></table></figure></p><h4>6.gitAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.getAttribute(&quot;attribute&quot;);</span><br><span class="line">attribute: 属性, 如: id align color </span><br><span class="line">获取自定义的属性</span><br></pre></td></tr></table></figure></p><h4>7.setAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.setAttribute(&quot;attribute&quot;, &quot;value&quot;);</span><br><span class="line">设置element元素的属性</span><br></pre></td></tr></table></figure></p><h4>8.removeAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.removeAttribute(&quot;attribute&quot;);</span><br><span class="line">移除元素的属性</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript入门基础（三）内置对象（Math和Date）</title>
-    <link href="http://yoursite.com/2018/04/01/2018/04/js3/"/>
-    <id>http://yoursite.com/2018/04/01/2018/04/js3/</id>
-    <published>2018-03-31T16:00:00.000Z</published>
-    <updated>2018-04-01T09:26:47.444Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>3.Math方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p><h3>3.1min()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.min(num1, ...);</span><br><span class="line">返回最小值.</span><br></pre></td></tr></table></figure></p><h3>3.2max()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.max(num1, ...);</span><br><span class="line">返回最大值.</span><br></pre></td></tr></table></figure></p><h3>3.3ceil()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.ceil(num);</span><br><span class="line">向上取整.</span><br></pre></td></tr></table></figure></p><h3>3.4floor()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.floor(num);</span><br><span class="line">向下取整.</span><br></pre></td></tr></table></figure></p><h3>3.5round()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.round(num);</span><br><span class="line">四舍五入取整.</span><br></pre></td></tr></table></figure></p><h3>3.6abs()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Math.abs(num);</span><br><span class="line">返回绝对值.</span><br></pre></td></tr></table></figure></p><h3>3.7random()</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Math.random();</span><br><span class="line">返回一个大于等于0小于1的随机数.</span><br><span class="line">n~m之间的随机数公式：</span><br><span class="line">r = Math.floor(Math.random() * (m -n +1) +n).</span><br></pre></td></tr></table></figure></p><h4>4.Date方法</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的Math方法：</span><br><span class="line">min()、max()、ceil()、floor()、round()、abs()、random()...</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var date = new Date();</span><br><span class="line">getFullYear(): 返回四位数年份.</span><br><span class="line">getMonth(): 返回月份，返回值0~11.</span><br><span class="line">getDate(): 返回日.</span><br><span class="line">getDay(): 返回星期，返回值0~6.</span><br><span class="line">getHours(): 返回小时.</span><br><span class="line">getMinutes(): 返回分.</span><br><span class="line">getSeconds(): 返回秒.</span><br><span class="line">getTime(): 返回 1970年 1月 1日至今的毫秒数.</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">设置年月日星期时分秒的Math方法为：</span><br><span class="line">将get替换为set</span><br></pre></td></tr></table></figure></p><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">返回星期值的代码：</span><br><span class="line">var date = new Date();</span><br><span class="line">var weeks = [&quot;日&quot;, &quot;一&quot;, &quot;二&quot;, &quot;三&quot;, &quot;四&quot;, &quot;五&quot;, &quot;六&quot;];</span><br><span class="line">var week = date.getDay();</span><br><span class="line">&quot;星期&quot; + weeks[week]</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
