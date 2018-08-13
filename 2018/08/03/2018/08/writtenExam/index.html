@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-12T16:31:38.794Z">
+<meta property="og:updated_time" content="2018-08-13T06:12:04.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -453,10 +453,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">同源策略</span><br><span class="line">跨域条件：协议、域名、端口</span><br><span class="line">可以跨域的三个标签：&lt;img src=xxx&gt;&lt;link href=xxx&gt;&lt;script src=xxx&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3>1.9 开发环境</h3>
-<ol>
-<li></li>
-</ol>
 <h3>1.10 运行环境</h3>
+<ol>
+<li>
+<p>性能优化
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">加载页面和静态资源</span><br><span class="line">(1)静态资源的压缩合并(webpack的commonJS)</span><br><span class="line">(2)静态资源缓存(本地缓存)</span><br><span class="line">(3)使用CDN让资源加载更快</span><br><span class="line">(4)使用SSR后端渲染, 数据直接输出到HTML中</span><br><span class="line"></span><br><span class="line">页面渲染</span><br><span class="line">(1)CSS放在前面, JS放在后面</span><br><span class="line">(2)懒加载</span><br><span class="line">(3)减少DOM查询, 对DOM查询做缓存</span><br><span class="line">(4)减少DOM操作, 多个操作尽量合并在一起执行(DOM操作是十分昂贵的)</span><br><span class="line">(5)事件节流</span><br><span class="line">(6)尽早执行操作</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>安全性
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">XSS(跨站请求攻击)</span><br><span class="line">在输入内容中加入&lt;script&gt;脚本</span><br><span class="line"></span><br><span class="line">XSRF(跨站请求伪造)</span><br><span class="line">在邮件的&lt;img src=&quot;付费链接&quot;&gt;隐藏付费链接</span><br></pre></td></tr></table></figure></p>
+</li>
+</ol>
 <h4>2. Html</h4>
 <h4>3. Css</h4>
 <h4>4. ECMAScript</h4>
