@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-01T06:14:59.269Z">
+<meta property="og:updated_time" content="2018-08-23T08:34:58.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法概要">
 <meta name="twitter:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
@@ -346,6 +346,26 @@
       
         <p><strong>摘要:</strong> 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.</p>
 <p><a id="more"></a></p>
+<h4>1. 树</h4>
+<h3>1.1 二叉排序树查找</h3>
+<pre><code>从左往右依次, 只看前一个数
+小于前一个数放左边, 大于前一个数放右边
+最后以第一个数为基准判断是否都小于或大于第一个树
+</code></pre>
+<h3>1.2 二叉树遍历</h3>
+<pre><code>前序遍历：root {左} {右}
+中序遍历：{左} root {右}
+后序遍历：{左} {右} root
+
+根据前序遍历第一个确定根节点, 或者
+根据后续遍历最后一个确定根节点
+</code></pre>
+<h4>2. 排序</h4>
+<h3>2.1 快速排序</h3>
+<pre><code>根据一个基准数
+大于基准数放右边
+小于基准数放左边
+每经过一趟快排，轴点元素都必然就位，也就是说，一趟下来至少有1个元素在其最终位置，所以考察各个选项，看有几个元素就位即可。</code></pre>
 
       
     </div>
@@ -488,8 +508,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -630,6 +659,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 二叉排序树查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 快速排序</span></a></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
