@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: leetcode">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-27T06:33:02.515Z">
+<meta property="og:updated_time" content="2018-08-27T06:39:29.071Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode试题解析">
 <meta name="twitter:description" content="摘要: leetcode">
@@ -347,13 +347,13 @@
         <p><strong>摘要:</strong> leetcode</p>
 <p><a id="more"></a></p>
 <h4>1. 简单类型</h4>
-<h3>1.1</h3>
-<h3>1.1</h3>
-<h3>1.1</h3>
-<h3>1.1</h3>
-<h3>1.1 排列硬币</h3>
+<h3>1.1 1比特与2比特字符(717)</h3>
+<h3>1.2 二进制求和(67)</h3>
+<h3>1.3 各位相加(258)</h3>
+<h3>1.4 字符串相加(415)</h3>
+<h3>1.5 排列硬币(441)</h3>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class solution&#123;</span><br><span class="line">    public:</span><br><span class="line">    int arrangeCoins(int n)&#123;</span><br><span class="line">        //n为输入的硬币个数，cur+1用来记录下一行应该有的硬币个数，故cur为这一行个数</span><br><span class="line">        //rem为记录剩余硬币个数</span><br><span class="line">        int cur = 1, rem = n -1;</span><br><span class="line">        //判断条件就是剩余个数是否大于下一行行数</span><br><span class="line">        while(rem &gt;= cur+1)&#123;</span><br><span class="line">            ++cur;</span><br><span class="line">            //条件通过就减去当前行的硬币数得到剩余硬币数</span><br><span class="line">            rem = rem - cur;</span><br><span class="line">        &#125;</span><br><span class="line">        //遍历结束，判断输入结构是否为0，否输出上一行个数</span><br><span class="line">        return n == 0 ? 0 : cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3>1.6 数组拆分</h3>
+<h3>1.6 数组拆分(561)</h3>
 
       
     </div>
@@ -653,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 简单类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 排列硬币</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 数组拆分</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 简单类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 1比特与2比特字符(717)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二进制求和(67)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 各位相加(258)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 字符串相加(415)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.5 排列硬币(441)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 数组拆分(561)</span></a></div>
             
 
           </div>
