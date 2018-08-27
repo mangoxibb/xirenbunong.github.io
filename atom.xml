@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-24T03:55:01.511Z</updated>
+  <updated>2018-08-27T06:33:02.515Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode试题解析</title>
+    <link href="http://yoursite.com/2018/08/23/2018/08/leetcode/"/>
+    <id>http://yoursite.com/2018/08/23/2018/08/leetcode/</id>
+    <published>2018-08-22T16:00:00.000Z</published>
+    <updated>2018-08-27T06:33:02.515Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> leetcode</p><p><a id="more"></a></p><h4>1. 简单类型</h4><h3>1.1</h3><h3>1.1</h3><h3>1.1</h3><h3>1.1</h3><h3>1.1 排列硬币</h3><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class solution&#123;</span><br><span class="line">    public:</span><br><span class="line">    int arrangeCoins(int n)&#123;</span><br><span class="line">        //n为输入的硬币个数，cur+1用来记录下一行应该有的硬币个数，故cur为这一行个数</span><br><span class="line">        //rem为记录剩余硬币个数</span><br><span class="line">        int cur = 1, rem = n -1;</span><br><span class="line">        //判断条件就是剩余个数是否大于下一行行数</span><br><span class="line">        while(rem &gt;= cur+1)&#123;</span><br><span class="line">            ++cur;</span><br><span class="line">            //条件通过就减去当前行的硬币数得到剩余硬币数</span><br><span class="line">            rem = rem - cur;</span><br><span class="line">        &#125;</span><br><span class="line">        //遍历结束，判断输入结构是否为0，否输出上一行个数</span><br><span class="line">        return n == 0 ? 0 : cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3>1.6 数组拆分</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; leetcode&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+    
+      <category term="面试 算法" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95-%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>前端面试总结</title>
@@ -438,29 +461,6 @@
     <updated>2018-04-08T15:15:33.664Z</updated>
     
     <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.HTML事件</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">关于this指向: 在事件触发的函数中, this是对该DOM对象的引用, 该函数需要有参数接收</span><br><span class="line">&lt;tag 事件 = &quot;执行脚本&quot;&gt;&lt;/tag&gt;或者函数名称Fn(this)</span><br></pre></td></tr></table></figure></p><h3>鼠标事件</h3><p>onload:页面加载时触发<br>onclick: 鼠标点击时触发<br>onmouseover: 鼠标滑过时触发<br>onmouseout: 鼠标离开时触发<br>onfocus: 获得焦点时触发<br>onblur: 失去焦点时触发<br>onchange: 域的内容改变时触发(一般作用于select、checkbox、radio)<br>onscroll: 拖动滚动条滚动时触发<br>onsubmit: 表单中的确认按钮被点击时发生(绑定在form表单上, 而不是按钮上)<br>onmousedown: 鼠标的按钮在元素上按下时<br>onmousemove: 在鼠标指针移动时触发<br>onresize: 调整浏览器窗口大小时触发</p><h4>2.DOM0级事件</h4><p>element.事件 = 执行脚本</p><h4>3.键盘事件</h4><p>(顺序)onkeydown: 用户按下一个键盘按键时发生<br>onkeypress: 在键盘按键被按下并释放一个键时发生<br>onkeyup: 在键盘按键被松开时发生<br>(keyCode: 返回事件触发的键值)</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
-&lt;p&gt;
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript入门基础（四）DOM基础</title>
-    <link href="http://yoursite.com/2018/04/02/2018/04/js4/"/>
-    <id>http://yoursite.com/2018/04/02/2018/04/js4/</id>
-    <published>2018-04-01T16:00:00.000Z</published>
-    <updated>2018-03-27T13:41:03.693Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> JavaScript 是世界上最流行的编程语言。这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。</p><p><a id="more"></a></p><h4>1.getElementById()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过id获取.</span><br></pre></td></tr></table></figure></p><h4>2.getElementsByTagName()</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">通过标签名称获取(数组).</span><br></pre></td></tr></table></figure></p><h4>3.设置元素样式</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.style.styleName = &apos;styleValue&apos;;</span><br><span class="line">element:需要被设置样式的DOM对象</span><br><span class="line">styleName:样式名称, 如: color, fontSize(不能font-size), backgroundColor...</span><br><span class="line">styleValue: 样式值</span><br></pre></td></tr></table></figure></p><h4>4.innerHTML</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.innerHTML;</span><br><span class="line">返回element之间的html内容。</span><br><span class="line">element.innerHTML= &quot;html&quot;;</span><br><span class="line">设置element之间的html内容。</span><br></pre></td></tr></table></figure></p><h4>5.className</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">element.className;</span><br><span class="line">获取element的class值。</span><br><span class="line">element.className = &quot;class&quot;;</span><br><span class="line">改变element的class值。</span><br></pre></td></tr></table></figure></p><h4>6.gitAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">element.getAttribute(&quot;attribute&quot;);</span><br><span class="line">attribute: 属性, 如: id align color </span><br><span class="line">获取自定义的属性</span><br></pre></td></tr></table></figure></p><h4>7.setAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.setAttribute(&quot;attribute&quot;, &quot;value&quot;);</span><br><span class="line">设置element元素的属性</span><br></pre></td></tr></table></figure></p><h4>8.removeAttribute</h4><p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">element.removeAttribute(&quot;attribute&quot;);</span><br><span class="line">移除元素的属性</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
