@@ -89,10 +89,16 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-23T08:34:58.694Z">
+<meta property="og:image" content="http://yoursite.com/img/charu.png">
+<meta property="og:image" content="http://yoursite.com/img/xier1.png">
+<meta property="og:image" content="http://yoursite.com/img/xier2.png">
+<meta property="og:image" content="http://yoursite.com/img/maopao.png">
+<meta property="og:image" content="http://yoursite.com/img/xuanze.png">
+<meta property="og:updated_time" content="2018-09-16T07:11:14.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法概要">
 <meta name="twitter:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
+<meta name="twitter:image" content="http://yoursite.com/img/charu.png">
 
 
 
@@ -361,11 +367,38 @@
 根据后续遍历最后一个确定根节点
 </code></pre>
 <h4>2. 排序</h4>
-<h3>2.1 快速排序</h3>
+<h3>2.1 快速排序(分治法)</h3>
 <pre><code>根据一个基准数
 大于基准数放右边
 小于基准数放左边
-每经过一趟快排，轴点元素都必然就位，也就是说，一趟下来至少有1个元素在其最终位置，所以考察各个选项，看有几个元素就位即可。</code></pre>
+每经过一趟快排，轴点元素都必然就位，也就是说，一趟下来至少有1个元素在其最终位置，所以考察各个选项，看有几个元素就位即可。
+</code></pre>
+<h3>2.2 插入排序</h3>
+<pre><code>i = 0时第一个数为基准数放入数组
+i = 1时第二个数与第一个数比较放入合适的位置
+i = 2时第三个数与前两个数比较放入合适的位置
+...
+</code></pre>
+<p><img src="/img/charu.png" alt="banner"></p>
+<h3>2.3 希尔排序</h3>
+<p>在数组中采用跳跃式分组的策略，通过某个增量将数组元素划分为若干组，然后分组进行插入排序</p>
+<pre><code>跳跃式分为两两一组，两两比较，小的在前，大的在后
+跳跃式分为三三或者四四、五五一组，组中进行比较，小的在前，大的在后
+得到的有序化程度提高，但不一定是有序结果，仅需微调，无需大量移动
+</code></pre>
+<p><img src="/img/xier1.png" alt="banner">
+<img src="/img/xier2.png" alt="banner"></p>
+<h3>2.4 冒泡排序</h3>
+<pre><code>对相邻的元素进行两两比较，顺序相反则进行交换，
+这样，每一趟会将最小或最大的元素“浮”到顶端，最终达到完全有序
+</code></pre>
+<p><img src="/img/maopao.png" alt="banner"></p>
+<h3>2.2 选择排序</h3>
+<pre><code>在要排序的一组数中，选出最小（或者最大）的一个数与第1个位置的数交换；
+然后在剩下的数当中再找最小（或者最大）的与第2个位置的数交换，
+依次类推，直到第n-1个元素（倒数第二个数）和第n个元素（最后一个数）比较为止。
+</code></pre>
+<p><img src="/img/xuanze.png" alt="banner"></p>
 
       
     </div>
@@ -669,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 二叉排序树查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 快速排序</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 二叉排序树查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 快速排序(分治法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 选择排序</span></a></div>
             
 
           </div>

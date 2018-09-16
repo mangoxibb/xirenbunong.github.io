@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-30T02:43:11.497Z">
+<meta property="og:updated_time" content="2018-09-16T03:11:33.279Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react入门基础">
 <meta name="twitter:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
@@ -370,6 +370,91 @@ $ cd my-app/
 $ npm start
 </code></pre>
 <h5>3. 在已有项目项目中添加</h5>
+<p>A. git</p>
+<ol>
+<li>vim .gitconfig</li>
+<li>密钥</li>
+<li>在github中创建项目，在项目中添加密钥</li>
+<li>git clone项目到本地项目目录</li>
+<li>vim .gitignore(node_modules、dist、*.log)</li>
+</ol>
+<p>B.nodeJs、yarn</p>
+<ol>
+<li>安装nodeJs@6.12.3</li>
+<li>安装yarn@1.3.2 (npm install yarn -g)</li>
+</ol>
+<p>C.项目初始化</p>
+<ol>
+<li>yarn init(自动生成package.json)</li>
+</ol>
+<p>D. webpack</p>
+<ol>
+<li>安装webpack(yarn add webpack@3.10.0 --dev)</li>
+<li>新建webpack.config.js文件(文件内容参照官网)</li>
+<li>新建src文件夹及其下app.js</li>
+<li>修改entry的路径为./src/app.js, filename为app.js</li>
+</ol>
+<p>F. 对html的处理(安装配置Html单独打包插件)</p>
+<ol>
+<li>安装(yarn add html-webpack-plugin@2.30.1 --dev)</li>
+<li>配置(const HtmlWebpackPlugin的require引入，然后在plugin中添加new HtmlWebpackPlugin(),
+自己在src下写一个Html模板, 在()中插入
+{
+template: './src/index.html'
+})</li>
+</ol>
+<p>G. 对脚本的处理(babel、react)</p>
+<ol>
+<li>处理ES6语法(yarn add babel-core@6.26.0 babel-preset-env@1.6.1 babel-loader@7.1.2 --dev)</li>
+<li>处理react语法(yarn add babel-preset-react@6.24.1 --dev)</li>
+<li>安装react(yarn add react@16.2.0 react-dom@16.2.0)</li>
+<li>修改配置 //添加modules: {
+rules: [
+{
+test: /.jsx$/,
+esclude: /(node_modules)/,
+use: {
+loader: 'babel-loader',
+options: {
+presets: ['env', 'react']
+}
+}
+}
+]
+}</li>
+</ol>
+<p>H. 对CSS的处理(style-loader、css-loader)</p>
+<ol>
+<li></li>
+</ol>
+<p>I. 对文件的处理(图片、文字)</p>
+<ol>
+<li></li>
+</ol>
+<p>J. 提出通用模块</p>
+<ol>
+<li></li>
+</ol>
+<p>K. 规划文件打包位置</p>
+<ol>
+<li></li>
+</ol>
+<p>L. 热跟新(devServer)</p>
+<ol>
+<li>安装(yarn add webpack-dev-server@2.9.7 --dev)</li>
+<li>配置
+devServer:{
+port: 8086
+}
+在output中添加publicPath: '/dist/'</li>
+<li>简化打包命令，在package.json中添加
+&quot;scripts&quot;: {
+&quot;test&quot;: &quot;echo &quot;Error: no test specified&quot; &amp;&amp; exit 1&quot;,
+&quot;dev&quot;: &quot;node_modules/.bin/webpack-dev-server&quot;,
+&quot;dist&quot;: &quot;node_modules/.bin/webpack -p&quot;
+}</li>
+<li>使用yarn run dev</li>
+</ol>
 
       
     </div>
