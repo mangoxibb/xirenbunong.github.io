@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-17T11:35:58.801Z">
+<meta property="og:updated_time" content="2018-09-17T14:28:22.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -356,9 +356,9 @@
 <li>
 <p>typeof</p>
 <p>只能用于区分值类型
-字符串（string）、数值（number）、布尔值（boolean）、undefined
+字符串（string）、数值（number）、布尔值（boolean）、undefined、空指针(null)
 不能区分出引用类型
-对象（Object）、数组（Array）、函数（Function）、空指针(null)</p>
+对象（Object）、数组（Array）、函数（Function）</p>
 </li>
 </ol>
 <ol start="3">
@@ -400,7 +400,7 @@
 </li>
 <li>
 <p>闭包
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">闭包的使用场景：</span><br><span class="line">(1)函数作为返回值return function()&#123;&#125;</span><br><span class="line">(2)函数作为参数传递function(a, function()&#123;&#125;)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">闭包的使用场景：</span><br><span class="line">(1)函数作为返回值return function()&#123;&#125;</span><br><span class="line">(2)函数作为参数传递function(a, function()&#123;&#125;)</span><br><span class="line"></span><br><span class="line">闭包的优缺点：</span><br><span class="line">优点： </span><br><span class="line">    1.保护函数内的变量安全,加强了封装性 </span><br><span class="line">    2.在内存中维持一个变量</span><br><span class="line">缺点：</span><br><span class="line">    内存浪费问题</span><br></pre></td></tr></table></figure></p>
 </li>
 </ol>
 <h3>1.4 异步与单线程</h3>
