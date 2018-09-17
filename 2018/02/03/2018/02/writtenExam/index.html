@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-16T14:04:41.354Z">
+<meta property="og:updated_time" content="2018-09-17T11:35:58.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -356,7 +356,9 @@
 <li>
 <p>typeof</p>
 <p>只能用于区分值类型
-不能区分出引用类型</p>
+字符串（string）、数值（number）、布尔值（boolean）、undefined
+不能区分出引用类型
+对象（Object）、数组（Array）、函数（Function）、空指针(null)</p>
 </li>
 </ol>
 <ol start="3">
@@ -462,6 +464,10 @@
 <li>
 <p>安全性
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">XSS(跨站请求攻击)</span><br><span class="line">在输入内容中加入&lt;script&gt;脚本</span><br><span class="line"></span><br><span class="line">XSRF(跨站请求伪造)</span><br><span class="line">在邮件的&lt;img src=&quot;付费链接&quot;&gt;隐藏付费链接</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>浏览器
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">http和https的区别?</span><br><span class="line">http主要有三点：</span><br><span class="line">1. 通信采用明文会被窃听</span><br><span class="line">2. 无法确认通信方的身份</span><br><span class="line">3. 无法确认报文内容的完整性</span><br><span class="line">https:</span><br><span class="line">https = http + 加密 + 认证 + 完整性保护</span><br><span class="line">      = http + SSL(安全套接层)</span><br></pre></td></tr></table></figure></p>
 </li>
 </ol>
 <h4>2. Html</h4>

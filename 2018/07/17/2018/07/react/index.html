@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-16T13:15:09.034Z">
+<meta property="og:updated_time" content="2018-09-16T14:34:09.665Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react入门基础">
 <meta name="twitter:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
@@ -441,19 +441,27 @@ presets: ['env', 'react']
 </ol>
 <p>L. 热跟新(devServer)</p>
 <ol>
-<li>安装(yarn add webpack-dev-server@2.9.7 --dev)</li>
-<li>配置
+<li>
+<p>安装(yarn add webpack-dev-server@2.9.7 --dev)</p>
+</li>
+<li>
+<p>配置
 devServer:{
 port: 8086
 }
-在output中添加publicPath: '/dist/'</li>
-<li>简化打包命令，在package.json中添加
-&quot;scripts&quot;: {
+在output中添加  publicPath: '/dist/'</p>
+</li>
+<li>
+<p>简化打包命令，在package.json中添加</p>
+<p>&quot;scripts&quot;: {
 &quot;test&quot;: &quot;echo &quot;Error: no test specified&quot; &amp;&amp; exit 1&quot;,
 &quot;dev&quot;: &quot;node_modules/.bin/webpack-dev-server&quot;,
 &quot;dist&quot;: &quot;node_modules/.bin/webpack -p&quot;
-}</li>
-<li>使用yarn run dev</li>
+}</p>
+</li>
+<li>
+<p>使用yarn run dev</p>
+</li>
 </ol>
 <h5>4. React组件</h5>
 <ol>
