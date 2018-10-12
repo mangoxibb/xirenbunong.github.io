@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="css," />
+  <meta name="keywords" content="面试," />
 
 
 
@@ -81,25 +81,18 @@
 
 
 
-<meta name="description" content="摘要: 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.">
-<meta name="keywords" content="css">
+<meta name="description" content="摘要: 前段面试常考的手撕代码题">
+<meta name="keywords" content="面试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css入门基础（一）Float(浮动)">
-<meta property="og:url" content="http://yoursite.com/2018/02/18/2018/02/css1/index.html">
+<meta property="og:title" content="前端面试手撕代码总结">
+<meta property="og:url" content="http://yoursite.com/2018/02/04/2018/02/WEcode/index.html">
 <meta property="og:site_name" content="Xiren">
-<meta property="og:description" content="摘要: 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.">
+<meta property="og:description" content="摘要: 前段面试常考的手撕代码题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/img/css1.png">
-<meta property="og:image" content="http://yoursite.com/img/css2.png">
-<meta property="og:image" content="http://yoursite.com/img/css3.png">
-<meta property="og:image" content="http://yoursite.com/img/css4.png">
-<meta property="og:image" content="http://yoursite.com/img/css5.png">
-<meta property="og:image" content="http://yoursite.com/img/css6.png">
-<meta property="og:updated_time" content="2018-07-23T12:29:12.440Z">
+<meta property="og:updated_time" content="2018-10-12T08:16:14.334Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css入门基础（一）Float(浮动)">
-<meta name="twitter:description" content="摘要: 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.">
-<meta name="twitter:image" content="http://yoursite.com/img/css1.png">
+<meta name="twitter:title" content="前端面试手撕代码总结">
+<meta name="twitter:description" content="摘要: 前段面试常考的手撕代码题">
 
 
 
@@ -129,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/18/2018/02/css1/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/04/2018/02/WEcode/"/>
 
 
 
 
 
-  <title>css入门基础（一）Float(浮动) | Xiren</title>
+  <title>前端面试手撕代码总结 | Xiren</title>
   
 
 
@@ -254,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/18/2018/02/css1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/04/2018/02/WEcode/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Xiren">
@@ -271,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css入门基础（一）Float(浮动)</h1>
+          <h1 class="post-title" itemprop="name headline">前端面试手撕代码总结</h1>
         
 
         <div class="post-meta">
@@ -283,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-18T00:00:00+08:00">
-                2018-02-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-04T00:00:00+08:00">
+                2018-02-04
               </time>
             
 
@@ -306,8 +299,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/转载/" itemprop="url" rel="index">
-                    <span itemprop="name">转载</span>
+                  <a href="/categories/原创/" itemprop="url" rel="index">
+                    <span itemprop="name">原创</span>
                   </a>
                 </span>
 
@@ -351,33 +344,41 @@
       
 
       
-        <p><strong>摘要:</strong> 层叠样式表（Cascading Style Sheet）是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言. 接下来会对css中一些重要的样式进行讲解, 并分析其应用场景. Float(浮动), 在实际的网页构建中有很大的作用.</p>
+        <p><strong>摘要:</strong> 前段面试常考的手撕代码题</p>
 <p><a id="more"></a></p>
-<h4>1.清除浮动的四种方法</h4>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.&quot;overflow: hidden;&quot;</span><br><span class="line">给父元素添加;</span><br><span class="line">2.&quot;clear: both;&quot;</span><br><span class="line">给元素的同级盒子添加(会增加标签)</span><br><span class="line">3.伪元素</span><br><span class="line">4.双伪元素</span><br></pre></td></tr></table></figure></p>
-<h4>2.应用场景</h4>
-<p>瀑布流布局 (如下图例子中, 图片在左边, 文字都在右边)
-<img src="/img/css1.png" alt="banner"></p>
-<h4>3.几个实例</h4>
-<h3>3.1float: none</h3>
-<p>float默认为none
-<img src="/img/css2.png" alt="banner"></p>
-<h3>3.2float: left/right</h3>
-<p>float为left时，left脱离文档流，紫色的none盒子会上来一行
-<img src="/img/css3.png" alt="banner"></p>
-<p>float为left和right时，因为脱离文档流所以绿色的none盒子还在同一行<br>
-<img src="/img/css4.png" alt="banner"></p>
-<h3>3.3clear: both</h3>
-<p>关于清除浮动：</p>
-<pre><code>清除浮动并不是说让浮动元素回到文档流
-
-清除浮动只会改变改元素自身的位置
-并且只针对排在该元素前面的元素
-</code></pre>
-<p>绿色块独占一行：给<a href="">绿色块</a>加clear: both
-<img src="/img/css5.png" alt="banner"></p>
-<p>紫色块也独占一行：给<a href="">紫色块</a>也加clear: both
-<img src="/img/css6.png" alt="banner"></p>
+<h4>1. JavaScript代码</h4>
+<ol>
+<li>
+<p>继承的例子
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 动物</span><br><span class="line">function Animal() &#123;</span><br><span class="line">    this.eat = function () &#123;       //this的用法, 在构造函数中</span><br><span class="line">        console.log(&apos;animal eat&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 狗</span><br><span class="line">function Dog() &#123;</span><br><span class="line">    this.bark = function () &#123;       //this的用法, 在构造函数中</span><br><span class="line">        console.log(&apos;dog bark&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Dog.prototype = new Animal()     ***</span><br><span class="line">// 哈士奇</span><br><span class="line">var husky = new Dog();</span><br><span class="line">husky.eat();         //animal eat</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>ajax请求
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//new一个XMLHttpRequest对象</span><br><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">//发送请求, 请求方法get, 请求地址api, 异步请求false</span><br><span class="line">xht.open(&quot;GET&quot;, &quot;/api&quot;, false);</span><br><span class="line">//一直监听readyState状态码的变化</span><br><span class="line">xhr.onreadystatechange = function()&#123;</span><br><span class="line">    //4表示已经返回, 200表示返回成功</span><br><span class="line">    if(xhr.readyState == 4)&#123;</span><br><span class="line">        if(xhr.status == 200)&#123;</span><br><span class="line">            //执行事件, responseText是服务端返回的内容</span><br><span class="line">            alter(xhr.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//将信息发送到服务器</span><br><span class="line">xhr.send();</span><br><span class="line"></span><br><span class="line">或者：</span><br><span class="line">request : function()&#123;</span><br><span class="line">    var _this = this;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            type        : param.method  || &apos;get&apos;,   //请求方式</span><br><span class="line">            url         : param.url     || &apos;&apos;,      //请求路径</span><br><span class="line">            dataType    : param.type    || &apos;json&apos;,  //请求数据类型</span><br><span class="line">            data        : param.data    || &apos;&apos;,      //请求数据</span><br><span class="line">            success     : function(res)&#123;</span><br><span class="line">                //请求成功</span><br><span class="line">            &#125;,</span><br><span class="line">            error       : function(err)&#123;</span><br><span class="line">                //请求失败</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>数组去重
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">思路1：定义一个新数组为空，indexOf()方法是获取元素在数组中的所有，</span><br><span class="line">如果没有该元素，返回-1。所以原数组每个元素凡是不在新数组中的，</span><br><span class="line">都使用push()方法加入新数组。</span><br><span class="line">(本思路关键点在于：indexOf()方法会对非数组元素返回-1)</span><br><span class="line">function mvRepeat(arr)&#123;</span><br><span class="line">    var tempArr = [];</span><br><span class="line">    for(var i=0, len = arr.length; i &lt; len; i++)&#123;</span><br><span class="line">        if(tempArr.indexOf(arr[i]) == -1)&#123;</span><br><span class="line">            tempArr.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return tempArr;</span><br><span class="line">&#125;</span><br><span class="line">var a = [1, 2, 3, 3, 5, 7, 2, 6, 8];</span><br><span class="line">console.log(mvRepeat(a));</span><br></pre></td></tr></table></figure></p>
+</li>
+</ol>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">思路2：如果原数组的第i项在当前数组中第一次出现的位置是i，才存入数组；否则代表是重复的</span><br><span class="line">(本思路关键点在于：indexOf()方法只返回该元素第一次出现的索引值)</span><br><span class="line">function mvRepeat(arr)&#123;</span><br><span class="line">    var tempArr = [];</span><br><span class="line">    for(var i=0, len = arr.length; i &lt; len; i++)&#123;</span><br><span class="line">        if(arr.indexOf(arr[i]) == i)&#123;</span><br><span class="line">            tempArr.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return tempArr;</span><br><span class="line">&#125;</span><br><span class="line">var a = [1,2,3,3,4,5,5,6,3,7];</span><br><span class="line">console.log(mvRepeat(a));</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">思路3：先将原数组排序，在与新数组最后一个元素进行比较，如果不同则存入新数组。</span><br><span class="line">(本思路关键点在于：</span><br><span class="line">①新数组初始化时存入原数组第一个元素</span><br><span class="line">②原数组排序</span><br><span class="line">③原数组每个元素是否等于新数组最后一个（length-1号）元素)</span><br><span class="line">function mvRepeat(arr)&#123;</span><br><span class="line">    var tempArr = [arr[0]];</span><br><span class="line">    arr.sort(function(a,b)&#123;</span><br><span class="line">        return a - b;</span><br><span class="line">    &#125;);</span><br><span class="line">    for(var i=1, len = arr.length; i &lt; len; i++)&#123;</span><br><span class="line">        if(tempArr[tempArr.length - 1] !== arr[i])&#123;</span><br><span class="line">            tempArr.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return tempArr;</span><br><span class="line">&#125;</span><br><span class="line">var a = [1, 2, 3, 3, 5, 7, 2, 6, 8];</span><br><span class="line">console.log(mvRepeat(a));</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">思路4：利用对象属性存在的特性，如果没有该属性则存入新数组。</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">思路5（最常用）：使用es6 set</span><br><span class="line">let arr= [1, 2, 3, 3, 5, 7, 2, 6, 8];</span><br><span class="line">console.log([...new Set(arr)]);         //(7) [1, 2, 3, 5, 7, 6, 8]</span><br></pre></td></tr></table></figure></p>
+<ol start="4">
+<li>
+<p>获取url中的参数
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function getParm(val)&#123;</span><br><span class="line">    var url = window.location.search;</span><br><span class="line">    if(url.indexOf(&apos;?&apos;) !== -1)&#123;</span><br><span class="line">        var arr = url.substr(1).split(&quot;&amp;&quot;);</span><br><span class="line">        var temp = [];</span><br><span class="line">        for(var i = 0, len = arr.length; i &lt; len; i++)&#123;</span><br><span class="line">            var res = arr[i].split(&quot;=&quot;);</span><br><span class="line">            if(res[0] == val)&#123;</span><br><span class="line">                return res[1];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getParm(&quot;ie&quot;);</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>点击li弹出对应的索引值
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var lis = document.getElementById(&quot;ul&quot;).childNodes;</span><br><span class="line">var len = (lis.length-1)/2;</span><br><span class="line">for (var i = 0; i &lt; len; i++)&#123;</span><br><span class="line">    (function(i)&#123;</span><br><span class="line">        lis[i*2+1].addEventListener(&apos;click&apos;, function(e)&#123;</span><br><span class="line">            e.preventDefault();</span><br><span class="line">            alert(i);</span><br><span class="line">        &#125;)</span><br><span class="line">        </span><br><span class="line">    &#125;)(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>闭包的例子(每次调用函数都加一)
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var conAdd = (function()</span><br><span class="line">&#123;</span><br><span class="line">    var i = 0;</span><br><span class="line">    return function()&#123;</span><br><span class="line">        return i ++;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)();</span><br><span class="line">console.log(conAdd());</span><br><span class="line">console.log(conAdd());</span><br></pre></td></tr></table></figure></p>
+</li>
+</ol>
 
       
     </div>
@@ -438,7 +439,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/面试/" rel="tag"># 面试</a>
           
         </div>
       
@@ -451,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/16/2018/02/eclipse/" rel="next" title="eclipse的汉化和主题美化">
-                <i class="fa fa-chevron-left"></i> eclipse的汉化和主题美化
+              <a href="/2018/02/03/2018/02/writtenExam/" rel="next" title="前端面试总结">
+                <i class="fa fa-chevron-left"></i> 前端面试总结
               </a>
             
           </div>
@@ -461,8 +462,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/19/2018/02/css2/" rel="prev" title="css入门基础（二）Absolute(绝对定位)">
-                css入门基础（二）Absolute(绝对定位) <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/15/2018/02/hexo pro/" rel="prev" title="手把手教你使用Hexo打造个人博客">
+                手把手教你使用Hexo打造个人博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -681,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.清除浮动的四种方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.应用场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3.几个实例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.1float: none</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.2float: left/right</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">3.3clear: both</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. JavaScript代码</span></a></li></ol></div>
             
 
           </div>
