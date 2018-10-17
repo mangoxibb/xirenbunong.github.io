@@ -89,10 +89,13 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 前段面试常考的手撕代码题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-12T08:16:14.334Z">
+<meta property="og:image" content="http://yoursite.com/img/shengbei.png">
+<meta property="og:image" content="http://yoursite.com/img/shuangfeiyi.png">
+<meta property="og:updated_time" content="2018-10-17T14:38:07.098Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试手撕代码总结">
 <meta name="twitter:description" content="摘要: 前段面试常考的手撕代码题">
+<meta name="twitter:image" content="http://yoursite.com/img/shengbei.png">
 
 
 
@@ -350,11 +353,24 @@
 <ol>
 <li>
 <p>继承的例子
+(要点：
+1.构造函数的属性、函数定义用this
+2.子构造函数 点 prototype = new 父构造函数
+3.实例化子构造函数的对象)
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 动物</span><br><span class="line">function Animal() &#123;</span><br><span class="line">    this.eat = function () &#123;       //this的用法, 在构造函数中</span><br><span class="line">        console.log(&apos;animal eat&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 狗</span><br><span class="line">function Dog() &#123;</span><br><span class="line">    this.bark = function () &#123;       //this的用法, 在构造函数中</span><br><span class="line">        console.log(&apos;dog bark&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">Dog.prototype = new Animal()     ***</span><br><span class="line">// 哈士奇</span><br><span class="line">var husky = new Dog();</span><br><span class="line">husky.eat();         //animal eat</span><br></pre></td></tr></table></figure></p>
 </li>
 <li>
 <p>ajax请求
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//new一个XMLHttpRequest对象</span><br><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">//发送请求, 请求方法get, 请求地址api, 异步请求false</span><br><span class="line">xht.open(&quot;GET&quot;, &quot;/api&quot;, false);</span><br><span class="line">//一直监听readyState状态码的变化</span><br><span class="line">xhr.onreadystatechange = function()&#123;</span><br><span class="line">    //4表示已经返回, 200表示返回成功</span><br><span class="line">    if(xhr.readyState == 4)&#123;</span><br><span class="line">        if(xhr.status == 200)&#123;</span><br><span class="line">            //执行事件, responseText是服务端返回的内容</span><br><span class="line">            alter(xhr.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//将信息发送到服务器</span><br><span class="line">xhr.send();</span><br><span class="line"></span><br><span class="line">或者：</span><br><span class="line">request : function()&#123;</span><br><span class="line">    var _this = this;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            type        : param.method  || &apos;get&apos;,   //请求方式</span><br><span class="line">            url         : param.url     || &apos;&apos;,      //请求路径</span><br><span class="line">            dataType    : param.type    || &apos;json&apos;,  //请求数据类型</span><br><span class="line">            data        : param.data    || &apos;&apos;,      //请求数据</span><br><span class="line">            success     : function(res)&#123;</span><br><span class="line">                //请求成功</span><br><span class="line">            &#125;,</span><br><span class="line">            error       : function(err)&#123;</span><br><span class="line">                //请求失败</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+(要点：
+1.创建一个XMLHttpRequest对象
+2.open函数
+3.对象 点 onreadystate
+4.监听状态和状态码
+5.send函数
+或者：
+1.请求方式请求路径请求数据请求数据类型
+2.成功回调函数失败回调函数)
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">//new一个XMLHttpRequest对象</span><br><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">//发送请求, 请求方法get, 请求地址api, 异步请求false</span><br><span class="line">xht.open(&quot;GET&quot;, &quot;/api&quot;, false);</span><br><span class="line">//一直监听readyState状态码的变化</span><br><span class="line">xhr.onreadystatechange = function()&#123;</span><br><span class="line">    //4表示已经返回, 200表示返回成功</span><br><span class="line">    if(xhr.readyState == 4)&#123;</span><br><span class="line">        if(xhr.status == 200)&#123;</span><br><span class="line">            //执行事件, responseText是服务端返回的内容</span><br><span class="line">            alter(xhr.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//将信息发送到服务器</span><br><span class="line">xhr.send();</span><br><span class="line"></span><br><span class="line">或者：</span><br><span class="line">request : function()&#123;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        type        : param.method  || &apos;get&apos;,   //请求方式</span><br><span class="line">        url         : param.url     || &apos;&apos;,      //请求路径</span><br><span class="line">        dataType    : param.type    || &apos;json&apos;,  //请求数据类型</span><br><span class="line">        data        : param.data    || &apos;&apos;,      //请求数据</span><br><span class="line">        success     : function(res)&#123;</span><br><span class="line">            //请求成功</span><br><span class="line">        &#125;,</span><br><span class="line">        error       : function(err)&#123;</span><br><span class="line">            //请求失败</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </li>
 <li>
 <p>数组去重
@@ -368,6 +384,11 @@
 <ol start="4">
 <li>
 <p>获取url中的参数
+(要点：
+1.location.search
+2.判断是否为空
+3.截取、按照'&amp;'符号分数组
+4.截取每个元素，判断'='前为传入值，则返回数组第二个元素)
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function getParm(val)&#123;</span><br><span class="line">    var url = window.location.search;</span><br><span class="line">    if(url.indexOf(&apos;?&apos;) !== -1)&#123;</span><br><span class="line">        var arr = url.substr(1).split(&quot;&amp;&quot;);</span><br><span class="line">        var temp = [];</span><br><span class="line">        for(var i = 0, len = arr.length; i &lt; len; i++)&#123;</span><br><span class="line">            var res = arr[i].split(&quot;=&quot;);</span><br><span class="line">            if(res[0] == val)&#123;</span><br><span class="line">                return res[1];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getParm(&quot;ie&quot;);</span><br></pre></td></tr></table></figure></p>
 </li>
 <li>
@@ -378,7 +399,38 @@
 <p>闭包的例子(每次调用函数都加一)
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var conAdd = (function()</span><br><span class="line">&#123;</span><br><span class="line">    var i = 0;</span><br><span class="line">    return function()&#123;</span><br><span class="line">        return i ++;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)();</span><br><span class="line">console.log(conAdd());</span><br><span class="line">console.log(conAdd());</span><br></pre></td></tr></table></figure></p>
 </li>
+<li>
+<p>事件监听与事件委托
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>求最大连续递增串
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 字符串转数组：str.split(&quot;&quot;);</span><br><span class="line">2. 从第一个开始遍历数组，两个条件(是数字，下一个元素大于该元素1)</span><br><span class="line">3. push进temp[]数组</span><br><span class="line">4. temp[]数组转为字符串存入a[i]数组第i个位置</span><br><span class="line">5. 最后比较长度，取出最大的元素</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>字符串转数组与数组转字符串
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.split(&apos;spt&apos;);</span><br><span class="line"></span><br><span class="line">2.jion(&quot;&quot;);</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>绑定事件
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">通用事件绑定函数</span><br><span class="line">//封装通用绑定事件函数</span><br><span class="line">// 参数为事件三要素：元素、事件类型、触发函数</span><br><span class="line">function bindEvent(elem, type, fn)&#123;</span><br><span class="line">    elem.addEventListener(type, fn);</span><br><span class="line">&#125;</span><br><span class="line">var link1 = document.getElementById(&apos;link1&apos;);</span><br><span class="line">//使用通用函数</span><br><span class="line">bindEvent(link1, &apos;click&apos;, function(e)&#123;</span><br><span class="line">    //阻止默认行为，在a标签就是阻止跳转页面</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    //要执行的事件</span><br><span class="line">    console.log(123);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+</li>
+<li>
+<p>圣杯布局与双飞翼布局
+两者区别：</p>
+</li>
+<li>
+<p>圣杯布局
+<img src="/img/shengbei.png" alt="banner"></p>
+</li>
+<li>
+<p>双飞翼布局
+<img src="/img/shuangfeiyi.png" alt="banner"></p>
+</li>
 </ol>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">如果有父盒子，则父盒子overflow: hidden;</span><br><span class="line">1. 盒子顺序：main、left、right</span><br><span class="line">2. 三个盒子都float: left</span><br><span class="line">3. 先安排左盒子：margin-left: -100%</span><br><span class="line">4. 再安排右边盒子：margin-left：-200px</span><br><span class="line">5. 安排main：padding: 0 200px</span><br><span class="line">6. 解决left和right跟着main走的问题：position: relative; 再设置left值</span><br><span class="line">完成圣杯布局</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">如何让它们呈现出一行三列的效果呢？</span><br><span class="line">那就要让左边的盒子要到中间盒子的最左边，右边的盒子到中间盒子的最右边。</span><br><span class="line">换个想法，如果中间盒子不是100%的宽度，那么按照文档流，左边的盒子一定会在中间盒子的后面显示，接着显示右边的盒子。</span><br><span class="line">但是现在中间盒子是满屏了的，所以左右两个盒子被挤到下一行显示。我们要做到的是让左右两个盒子都上去。</span><br><span class="line">此时，CSS的负边距(negative margin)该上阵了。</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如何解决left和right跟着main走的问题？</span><br><span class="line">通过对left和right设置position: relative，</span><br><span class="line">改变left值：left: -200px, right: -200px</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
