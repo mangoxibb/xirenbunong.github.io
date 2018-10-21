@@ -89,6 +89,9 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/img/timeComplexity.jpg">
+<meta property="og:image" content="http://yoursite.com/img/timeCom1.png">
+<meta property="og:image" content="http://yoursite.com/img/timeCom2.png">
 <meta property="og:image" content="http://yoursite.com/img/charu.png">
 <meta property="og:image" content="http://yoursite.com/img/xier1.png">
 <meta property="og:image" content="http://yoursite.com/img/xier2.png">
@@ -97,11 +100,11 @@
 <meta property="og:image" content="http://yoursite.com/img/duipaixu.png">
 <meta property="og:image" content="http://yoursite.com/img/dui1.png">
 <meta property="og:image" content="http://yoursite.com/img/guibing.png">
-<meta property="og:updated_time" content="2018-10-17T08:46:40.573Z">
+<meta property="og:updated_time" content="2018-10-21T13:53:53.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法概要">
 <meta name="twitter:description" content="摘要: 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.">
-<meta name="twitter:image" content="http://yoursite.com/img/charu.png">
+<meta name="twitter:image" content="http://yoursite.com/img/timeComplexity.jpg">
 
 
 
@@ -356,7 +359,13 @@
         <p><strong>摘要:</strong> 在数学和计算机科学之中, 算法（Algorithm）为一个计算的具体步骤, 常用于计算、数据处理和自动推理. 精确而言, 算法是一个表示为有限长列表的有效方法. 算法应包含清晰定义的指令用于计算函数.</p>
 <p><a id="more"></a></p>
 <h4>1. 树</h4>
-<p>概念：</p>
+<p>概念：
+二叉树    ：二叉树是每个节点最多有两个子树的树结构。
+根节点    ：一棵树最上面的节点称为根节点。
+叶子节点  ：没有任何子节点的节点称为叶子节点。
+节点度    ：节点拥有的子树数
+树的深度  ：从根节点开始（其深度为0）自顶向下逐层累加的
+树的高度  ：从叶子节点开始（其高度为0）自底向上逐层累加的。</p>
 <h3>1.1 二叉排序树查找</h3>
 <pre><code>从左往右依次, 只看前一个数
 小于前一个数放左边, 大于前一个数放右边
@@ -370,12 +379,15 @@
 根据前序遍历第一个确定根节点, 或者
 根据后续遍历最后一个确定根节点
 </code></pre>
-<h3>1.3 二叉树遍历</h3>
 <h4>2. 排序</h4>
 <p>稳定排序<br>
 插入排序，冒泡排序，二叉树排序，归并排序</p>
 <p>不稳定排序<br>
 快速排序（快），希尔排序（些），选择排序（选），堆排序（一堆）</p>
+<p>时间复杂度（常数阶、线性阶O(n)、对数阶O(logn)、平方阶O(n²)）</p>
+<p><img src="/img/timeComplexity.jpg" alt="banner">
+<img src="/img/timeCom1.png" alt="banner">
+<img src="/img/timeCom2.png" alt="banner"></p>
 <h3>2.1 快速排序(分治法)</h3>
 <pre><code>根据一个基准数
 大于基准数放右边
@@ -732,7 +744,7 @@ i = 2时第三个数与前两个数比较放入合适的位置
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 二叉排序树查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二叉树遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 快速排序(分治法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.5 选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 归并排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3. 查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4. 数据结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5. 基本概念</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. 树</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 二叉排序树查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 二叉树遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. 排序</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 快速排序(分治法)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.5 选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 归并排序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3. 查找</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4. 数据结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5. 基本概念</span></a></li></ol></div>
             
 
           </div>

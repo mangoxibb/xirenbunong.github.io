@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/software.jpg">
 <meta property="og:image" content="http://yoursite.com/img/getANDpost.jpg.png">
-<meta property="og:updated_time" content="2018-10-21T13:23:58.399Z">
+<meta property="og:updated_time" content="2018-10-21T13:28:16.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -481,11 +481,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 </li>
 <li>
-<p>清除浮动
-给父元素添加class-clearfix
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before,</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    content: &quot; &quot;;</span><br><span class="line">    display: table;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">缺点：</span><br><span class="line">代码量较多，原理相对其他几种清除方法稍复杂</span><br></pre></td></tr></table></figure></p>
+<p>清除浮动</p>
 </li>
 </ol>
+<p>给父元素添加class-clearfix
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before,</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    content: &quot; &quot;;</span><br><span class="line">    display: table;</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">缺点：</span><br><span class="line">代码量较多，原理相对其他几种清除方法稍复杂</span><br></pre></td></tr></table></figure></p>
 <p>浮动元素后添加空元素并clear: both;
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;cl&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">.cl&#123;</span><br><span class="line">    clear: both;</span><br><span class="line">&#125;</span><br><span class="line">缺点：</span><br><span class="line">添加多少无意义的空标签，有违结构与表现的分离</span><br></pre></td></tr></table></figure></p>
 <p>给父元素添加 overflow: hidden;
