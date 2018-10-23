@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 笔试面试考前速记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-23T09:00:46.412Z">
+<meta property="og:updated_time" content="2018-10-23T09:10:57.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端笔试面试考前速记">
 <meta name="twitter:description" content="摘要: 笔试面试考前速记">
@@ -348,50 +348,56 @@
 <p><a id="more"></a></p>
 <h3></h3>
 <ol>
-<li>
-<p>数据类型</p>
-<p>值类型(引用类型)：string,number,boolean,null,undefined,symbol
-引用类型： Function,Array,Object</p>
-</li>
-<li>
-<p>typeof
-Null        &quot;object&quot;   ***
-返回值均为小写</p>
-</li>
-<li>
-<p>原型链
-当试图得到对象某个属性时,
-如果没有这个属性,
-则会去它的__proto__中寻找,
-即等于在它的构造函数的显示原型去寻找,
-如果没有, 构造函数的显示原型(Foo.prototype)可以看作一个对象,
-故可以继续找对象的隐式原型。
-这种寻找方式就叫做原型链(即f.<strong>proto</strong>.<strong>proto</strong>)</p>
-</li>
-<li>
-<p>闭包
-闭包的使用场景：
-(1)函数作为返回值return function(){}
-(2)函数作为参数传递function(a, function(){})</p>
-<p>闭包的优缺点：
-优点：
-1.保护函数内的变量安全,加强了封装性
-2.在内存中维持一个变量
-缺点：
-内存浪费问题</p>
-</li>
-<li>
-<p>数组与字符串相互转换
-split()
-join()</p>
-</li>
-<li>
-<p>跨域</p>
-<p>JSONP : 客户端动态&lt;script&gt;,
-服务器端GET方法名date数据callback返回</p>
-</li>
+<li>数据类型</li>
 </ol>
-<pre><code>CORS  ：http请求和http响应加字段
+<pre><code>值类型(引用类型)：string,number,boolean,null,undefined,symbol
+引用类型： Function,Array,Object
+</code></pre>
+<ol start="2">
+<li>typeof</li>
+</ol>
+<pre><code>Null        &quot;object&quot;   ***
+返回值均为小写
+</code></pre>
+<ol start="3">
+<li>原型链</li>
+</ol>
+<pre><code>当试图得到对象某个属性时, 
+如果没有这个属性, 
+则会去它的__proto__中寻找,
+即等于在它的构造函数的显示原型去寻找, 
+如果没有, 构造函数的显示原型(Foo.prototype)可以看作一个对象, 
+故可以继续找对象的隐式原型。
+这种寻找方式就叫做原型链(即f.__proto__.__proto__)
+</code></pre>
+<ol start="4">
+<li>闭包</li>
+</ol>
+<pre><code>闭包的使用场景：
+(1)函数作为返回值return function(){}
+(2)函数作为参数传递function(a, function(){})
+
+闭包的优缺点：
+优点： 
+    1.保护函数内的变量安全,加强了封装性 
+    2.在内存中维持一个变量
+缺点：
+    内存浪费问题
+</code></pre>
+<ol start="5">
+<li>数组与字符串相互转换</li>
+</ol>
+<pre><code>split()
+join()
+</code></pre>
+<ol start="6">
+<li>跨域</li>
+</ol>
+<pre><code>JSONP : 客户端动态&lt;script&gt;,
+服务器端GET方法名date数据callback返回
+
+
+CORS  ：http请求和http响应加字段
 
 
 window.postMessage(message,targetOrigin)
@@ -400,47 +406,47 @@ window.postMessage(message,targetOrigin)
 location.hash + iframe ：a到b, b到c, c到a。
 </code></pre>
 <ol start="7">
-<li>
-<p>性能优化</p>
-<p>减少页面体积 ：
+<li>性能优化</li>
+</ol>
+<pre><code>减少页面体积 ：
 静态资源的压缩合并、
 静态资源缓存(本地缓存)、
-使用CDN</p>
-</li>
-</ol>
-<pre><code>优化页面渲染 ：
+使用CDN
+
+
+优化页面渲染 ：
 CSS放在前面, JS放在后面、
 懒加载、
 减少DOM查询, 减少DOM操作
 尽早执行操作
 </code></pre>
 <ol start="8">
-<li>
-<p>TCP和UDP</p>
-<p>TCP和UDP区别？
-连接与无连接、<br>
-可靠与不可靠、<br>
-实时性、<br>
-点到点与多对多、<br>
-资源要求</p>
-</li>
+<li>TCP和UDP</li>
 </ol>
+<pre><code>TCP和UDP区别？
+连接与无连接、                
+可靠与不可靠、                
+实时性、                      
+点到点与多对多、              
+资源要求            
+</code></pre>
 <ol start="9">
-<li>
-<p>GET和POST</p>
-<p>信息获取和修改资源
+<li>GET和POST</li>
+</ol>
+<pre><code>信息获取和修改资源
 地址栏和表单
-数据量限制</p>
-</li>
-<li>
-<p>排序</p>
-<p>快速排序
+数据量限制
+</code></pre>
+<ol start="10">
+<li>排序</li>
+</ol>
+<pre><code>快速排序
 大于基准数放右边
 小于基准数放左边
-每经过一趟快排，轴点元素都必然就位，也就是说，一趟下来至少有1个元素在其最终位置，所以考察各个选项，看有几个元素就位即可。</p>
-</li>
-</ol>
-<pre><code>插入排序
+每经过一趟快排，轴点元素都必然就位，也就是说，一趟下来至少有1个元素在其最终位置，所以考察各个选项，看有几个元素就位即可。
+
+
+插入排序
 i = 0时第一个数为基准数放入数组
 i = 1时第二个数与第一个数比较放入合适的位置
 i = 2时第三个数与前两个数比较放入合适的位置
@@ -452,71 +458,73 @@ i = 2时第三个数与前两个数比较放入合适的位置
 依次类推，直到第n-1个元素（倒数第二个数）和第n个元素（最后一个数）比较为止。
 </code></pre>
 <ol start="11">
-<li>
-<p>cookie、sessionStorage和localStorage</p>
-<p>cookie:
+<li>cookie、sessionStorage和localStorage</li>
+</ol>
+<pre><code>cookie:
 存储量太小, 只有4KB
 所有http请求都带着, 影响获取资源效率
-API简单, 需要封装才能用</p>
-<p>sessionStorage, localStorage：
+API简单, 需要封装才能用
+
+sessionStorage, localStorage：
 存储量5M
 不是每次在请求
-API易用</p>
-</li>
-<li>
-<p>url到得到html的详细过程</p>
-<p>网络层面：
+API易用
+</code></pre>
+<ol start="12">
+<li>url到得到html的详细过程</li>
+</ol>
+<pre><code>网络层面：
 DNS解析
 TCP连接 三次握手
 发送HTTP请求
 服务器处理请求并返回HTTP报文
 浏览器解析渲染页面
-连接结束</p>
-<p>前端层面：
+连接结束
+
+前端层面：
 根据HTML结构生成DOM Tree
 根据CSS生成CSSOM
 将DOM和CSSOM整合形成RenderTree
 根据RenderTree开始渲染和展示
-遇到&lt;script&gt;时, 会执行并阻塞渲染</p>
-</li>
-</ol>
+遇到&lt;script&gt;时, 会执行并阻塞渲染
+</code></pre>
 <ol start="13">
-<li>
-<p>继承的例子<br>
-(要点：
-1.构造函数的属性、函数定义用this
-2.子构造函数 点 prototype = new 父构造函数
-3.实例化子构造函数的对象)</p>
-<p>// 动物
+<li>继承的例子<br>
+(要点：<br>
+1.构造函数的属性、函数定义用this<br>
+2.子构造函数 点 prototype = new 父构造函数<br>
+3.实例化子构造函数的对象)</li>
+</ol>
+<pre><code>// 动物
 function Animal() {
-this.eat = function () {
-console.log('animal eat')
-}
+    this.eat = function () {
+        console.log('animal eat')
+    }
 }
 // 狗
 function Dog() {
-this.bark = function () {
-console.log('dog bark')
-}
+    this.bark = function () {
+        console.log('dog bark')
+    }
 }
 Dog.prototype = new Animal()     ***
 // 哈士奇
-var 二狗子 = new Dog()</p>
-</li>
-<li>
-<p>ajax请求</p>
-</li>
+var 二狗子 = new Dog()
+</code></pre>
+<ol start="14">
+<li>ajax请求</li>
 </ol>
 <p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">(要点：</span><br><span class="line">1.创建一个XMLHttpRequest对象</span><br><span class="line">2.open函数</span><br><span class="line">3.对象 点 onreadystate</span><br><span class="line">4.监听状态和状态码</span><br><span class="line">5.send函数</span><br><span class="line">或者：</span><br><span class="line">1.请求方式请求路径请求数据请求数据类型</span><br><span class="line">2.成功回调函数失败回调函数)</span><br><span class="line"></span><br><span class="line">//new一个XMLHttpRequest对象</span><br><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">//发送请求, 请求方法get, 请求地址api, 异步请求false</span><br><span class="line">xht.open(&quot;GET&quot;, &quot;/api&quot;, false);</span><br><span class="line">//一直监听readyState状态码的变化</span><br><span class="line">xhr.onreadystatechange = function()&#123;</span><br><span class="line">    //4表示已经返回, 200表示返回成功</span><br><span class="line">    if(xhr.readyState == 4)&#123;</span><br><span class="line">        if(xhr.status == 200)&#123;</span><br><span class="line">            //执行事件, responseText是服务端返回的内容</span><br><span class="line">            alter(xhr.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//将信息发送到服务器</span><br><span class="line">xhr.send();</span><br></pre></td></tr></table></figure></p>
 <ol start="15">
-<li>
-<p>数组去重
-indexOf()方法会对非数组元素返回-1</p>
-<p>indexOf()方法只返回该元素第一次出现的索引值</p>
-<p>排序数组与新数组最后一个元素进行比较</p>
-<p>ES6 set : [...new Set(arr)]</p>
-</li>
+<li>数组去重</li>
 </ol>
+<pre><code>indexOf()方法会对非数组元素返回-1
+
+indexOf()方法只返回该元素第一次出现的索引值
+
+排序数组与新数组最后一个元素进行比较
+
+ES6 set : [...new Set(arr)]</code></pre>
 
       
     </div>
