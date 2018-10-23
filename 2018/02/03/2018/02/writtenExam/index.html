@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/software.jpg">
 <meta property="og:image" content="http://yoursite.com/img/getANDpost.jpg.png">
-<meta property="og:updated_time" content="2018-10-21T13:28:16.541Z">
+<meta property="og:updated_time" content="2018-10-23T09:01:10.963Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -503,7 +503,9 @@
 <p>css的box-sizing属性及区别
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">content-box，border和padding不计算入width之内</span><br><span class="line"></span><br><span class="line">border-box，border和padding计算入width之内</span><br></pre></td></tr></table></figure></p>
 </li>
+<li></li>
 </ol>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">style&gt;ID（#content）&gt;class(.content)=伪类(:hover)&gt;标签选择器(div,span)&gt;通配符(*)</span><br></pre></td></tr></table></figure></p>
 <h4>4. ECMAScript6</h4>
 <ol>
 <li>promise 用法
@@ -519,6 +521,7 @@
 <li>跨域
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">同源策略</span><br><span class="line">跨域条件：协议、域名、端口</span><br><span class="line">可以跨域的三个标签：&lt;img src=xxx&gt;&lt;link href=xxx&gt;&lt;script src=xxx&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">1. jsonp</span><br><span class="line">JSONP的方式其实是在末尾加入script标签，src指向后端地址/后台文件，？后的参数callback等于前端要处理数据的函数名。后端文件需要通过GET方法得到前端处理数据的函数名，并且将数据计入数组，通过callback回调函数输出返回数据。</span><br><span class="line">【JSONP的优缺点】</span><br><span class="line">优点：兼容性好（兼容低版本IE）</span><br><span class="line">缺点：1.JSONP只支持GET请求； 2.XMLHttpRequest相对于JSONP有着更好的错误处理机制</span><br><span class="line"></span><br><span class="line">2. CORS</span><br><span class="line">CORS 是W3C 推荐的一种新的官方方案，</span><br><span class="line">能使服务器支持 XMLHttpRequest 的跨域请求。</span><br><span class="line">只需要增加一些 HTTP 头，让服务器能声明允许的访问来源。</span><br><span class="line">简单请求:在http请求中origin字段标明跨域地址，</span><br><span class="line">在http响应加入Access-Control-Allow-Origin: *（访问控制允许同源），</span><br><span class="line">表明该资源可以被任意外域访问。</span><br><span class="line">通俗讲就是浏览器在发现跨域请求的时候会附加一些头信息和服务器进行沟通，</span><br><span class="line">来确定跨域请求通不通过。</span><br><span class="line"></span><br><span class="line">3.window.postMessage(message,targetOrigin)</span><br><span class="line">window.postMessage(message,targetOrigin) 方法是html5新引进的特性，</span><br><span class="line">可以使用它来向其它的window对象发送消息，</span><br><span class="line">无论这个window对象是属于同源或不同源。</span><br><span class="line">otherWindow.postMessage(message, targetOrigin, [transfer]);</span><br><span class="line">message 属性是要发送的消息，类型为 String、Object 。</span><br><span class="line">targetOrigin:属性来指定哪些窗口能接收到消息事件，</span><br><span class="line">其值可以是字符串&quot;*&quot;（表示无限制）或者一个URI。</span><br><span class="line"></span><br><span class="line">4.location.hash + iframe</span><br><span class="line">location.hash + iframe 跨域通信的实现是这样的：</span><br><span class="line"></span><br><span class="line">不同域的 a 页面与 b 页面进行通信，在 a 页面中通过 iframe 嵌入 b 页面，并给 iframe 的 src 添加一个 hash 值。</span><br><span class="line">b 页面接收到了 hash 值后，确定 a 页面在尝试着与自己通信，然后通过修改 parent.location.hash 的值，将要通信的数据传递给 a 页面的 hash 值。</span><br><span class="line">但由于在 IE 和 Chrmoe 下不允许子页面直接修改父页面的 hash 值，所以需要一个代理页面，通过与 a 页面同域的 c 页面来传递数据。</span><br><span class="line">同样的在 b 页面中通过 iframe 嵌入 c 页面，将要传递的数据通过 iframe 的 src 链接的 hash 值传递给 c 页面，由于 a 页面与 c 页面同域，c 页面可以直接修改 a 页面的 hash 值或者调用 a 页面中的全局函数。</span><br><span class="line">总结一下就是a页面嵌入iframe指向b，b页面嵌入iframe指向c，c页面修改a的hash值</span><br></pre></td></tr></table></figure></p>
 <h4>6. 性能优化、前端安全与网络知识</h4>
 <ol>
 <li>
@@ -596,6 +599,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">索引就是加快检索表中数据的方法</span><br><span class="line">几个基本的索引类型：普通索引、唯一索引、主键索引、全文索引</span><br></pre></td></tr></table></figure></p>
 <p>什么是事务？
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">所谓的事务，它是一个操作序列，</span><br><span class="line">这些操作要么都执行，要么都不执行，</span><br><span class="line">它是一个不可分割的工作单位。</span><br></pre></td></tr></table></figure></p>
+<p>点击链接查看: <a href="https://xirenbunong.github.io/2018/02/04/2018/02/WEcode/" target="_blank" rel="noopener">笔试面试手撕代码</a></p>
 
       
     </div>
@@ -669,8 +673,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/01/2018/02/z ceshimoban/" rel="next" title="标题（测试文章）">
-                <i class="fa fa-chevron-left"></i> 标题（测试文章）
+              <a href="/2018/02/02/2018/02/face-to-face/" rel="next" title="前端笔试面试考前速记">
+                <i class="fa fa-chevron-left"></i> 前端笔试面试考前速记
               </a>
             
           </div>
@@ -767,7 +771,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
