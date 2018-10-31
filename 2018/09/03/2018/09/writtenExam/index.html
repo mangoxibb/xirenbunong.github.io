@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/software.jpg">
 <meta property="og:image" content="http://yoursite.com/img/getANDpost.jpg.png">
-<meta property="og:updated_time" content="2018-10-31T01:05:34.079Z">
+<meta property="og:updated_time" content="2018-10-31T03:31:27.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -497,7 +497,7 @@
 <ol start="7">
 <li>块元素与行元素</li>
 </ol>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">常见的行级元素:&lt;a&gt;,&lt;b&gt;,&lt;i&gt;,&lt;em&gt;,&lt;img&gt;,&lt;input&gt;,&lt;span&gt;</span><br><span class="line">常见的块级元素:&lt;h1&gt;,&lt;li&gt;,&lt;div&gt;,&lt;form&gt;,&lt;p&gt;等</span><br></pre></td></tr></table></figure></p>
 <ol start="8">
 <li>
 <p>移动端适配方案
@@ -513,56 +513,58 @@
 <h4>4. ECMAScript6</h4>
 <ol>
 <li>
-<p>let和const
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let定义变量，const定义常量</span><br><span class="line">不能重复定义</span><br><span class="line">有块级作用域的特性</span><br><span class="line">不存在变量提升</span><br></pre></td></tr></table></figure></p>
-</li>
-<li>
-<p>箭头函数
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">参数=&gt;表达式/语句</span><br><span class="line">继承外层作用域</span><br><span class="line">不能用作构造函数</span><br><span class="line">没有prototype属性</span><br></pre></td></tr></table></figure></p>
-</li>
-<li>
-<p>模板字符V换
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">3. promise 用法</span><br></pre></td></tr></table></figure></p>
+<p>let和const：</p>
+<p>let定义变量，const定义常量(比如PI)
+不能重复定义(避免造成变量命名冲突)
+块级作用域({只在这里面生效}、for循环里面let i=0)
+不存在变量提升(指的是先使用再声明)</p>
 </li>
 </ol>
-<p>定义
-var promise = new Promise(function(resolve, reject) {
-// ... some code
-if (/* 异步操作成功 */){
-resolve(value);
-} else {
-reject(error);
+<ol start="2">
+<li>
+<p>箭头函数：</p>
+<p>参数 =&gt; 表达式/语句
+let a = elem =&gt; {
+do something;
+}</p>
+<p>继承外层作用域
+不能用作构造函数(箭头函数没有构造方法)
+没有prototype属性</p>
+</li>
+</ol>
+<ol start="3">
+<li>
+<p>模板字符串</p>
+<p>基本用法
+let str = '&lt;div&gt;123&lt;/div&gt;';</p>
+<p>嵌套变量
+let num = 123;
+let str = '&lt;div&gt;${num}&lt;/div&gt;';</p>
+<p>嵌套函数
+let fn = () =&gt; {
+//do something
 }
-});
-使用
-promise.then(function(value) {
-// success
-}, function(error) {
-// failure
-});
-//等价于：
-promise.then(function(){
-//success
-}).catch(function(){
-//failure
-})
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 5. ajax</span><br><span class="line">1. XMLHttpRequest</span><br></pre></td></tr></table></figure></p>
-<p>//new一个XMLHttpRequest对象
-var xhr = new XMLHttpRequest();
-//发送请求, 请求方法get, 请求地址api, 异步请求false
-xht.open(&quot;GET&quot;, &quot;/api&quot;, false);
-//一直监听readyState状态码的变化
-xhr.onreadystatechange = function(){
-//4表示已经返回, 200表示返回成功
-if(xhr.readyState == 4){
-if(xhr.status == 200){
-//执行事件, responseText是服务端返回的内容
-alter(xhr.responseText);
+let str = '&lt;div&gt;${fn()}&lt;/div&gt;';</p>
+<p>循环嵌套
+let nums = [1, 2, 3];
+let str = ' &lt;ul&gt;
+${
+nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
 }
-}
-}
-xhr.send(null);
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">readyState:</span><br><span class="line">0 - (未初始化)还没有调用send()方法</span><br><span class="line">1 - (载入) 已调用send()方法, 正在发送请求</span><br><span class="line">2 - (载入完成) send()方法执行完成, 已经收到全部响应内容</span><br><span class="line">3 - (交互) 正在解析响应内容</span><br><span class="line">4 - (完成) 响应内容解析完成, 可以在客户端调用了</span><br></pre></td></tr></table></figure></p>
+&lt;/ul&gt;
+';</p>
+</li>
+</ol>
+<ol start="3">
+<li>promise 用法
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">定义</span><br><span class="line">var promise = new Promise(function(resolve, reject) &#123;</span><br><span class="line">  // ... some code</span><br><span class="line">  if (/* 异步操作成功 */)&#123;</span><br><span class="line">    resolve(value);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    reject(error);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line">使用</span><br><span class="line">promise.then(function(value) &#123;</span><br><span class="line">  // success</span><br><span class="line">&#125;, function(error) &#123;</span><br><span class="line">  // failure</span><br><span class="line">&#125;);</span><br><span class="line">//等价于：</span><br><span class="line">promise.then(function()&#123;</span><br><span class="line">  //success</span><br><span class="line">&#125;).catch(function()&#123;</span><br><span class="line">  //failure</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4>5. ajax</h4>
+<ol>
+<li>XMLHttpRequest
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//new一个XMLHttpRequest对象</span><br><span class="line">var xhr = new XMLHttpRequest();</span><br><span class="line">//发送请求, 请求方法get, 请求地址api, 异步请求false</span><br><span class="line">xht.open(&quot;GET&quot;, &quot;/api&quot;, false);</span><br><span class="line">//一直监听readyState状态码的变化</span><br><span class="line">xhr.onreadystatechange = function()&#123;</span><br><span class="line">    //4表示已经返回, 200表示返回成功</span><br><span class="line">    if(xhr.readyState == 4)&#123;</span><br><span class="line">        if(xhr.status == 200)&#123;</span><br><span class="line">            //执行事件, responseText是服务端返回的内容</span><br><span class="line">            alter(xhr.responseText);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">xhr.send(null);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">readyState:</span><br><span class="line">0 - (未初始化)还没有调用send()方法</span><br><span class="line">1 - (载入) 已调用send()方法, 正在发送请求</span><br><span class="line">2 - (载入完成) send()方法执行完成, 已经收到全部响应内容</span><br><span class="line">3 - (交互) 正在解析响应内容</span><br><span class="line">4 - (完成) 响应内容解析完成, 可以在客户端调用了</span><br></pre></td></tr></table></figure></p>
 <ol start="2">
 <li>跨域
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">同源策略</span><br><span class="line">跨域条件：协议、域名、端口</span><br><span class="line">可以跨域的三个标签：&lt;img src=xxx&gt;&lt;link href=xxx&gt;&lt;script src=xxx&gt;</span><br></pre></td></tr></table></figure></li>
@@ -951,7 +953,7 @@ xhr.send(null);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. JavaScript方面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 变量类型和计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 原型和原型链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 作用域和闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 异步与单线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.5 API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 DOM和BOM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.7 事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. Html</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3. Css和Css3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4. ECMAScript6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">6. 性能优化、前端安全与网络知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">7.开发工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">8. 必备算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">9. 例题解析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">10. 数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">11. 非技术</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. JavaScript方面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 变量类型和计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 原型和原型链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 作用域和闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 异步与单线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.5 API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.6 DOM和BOM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.7 事件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. Html</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">3. Css和Css3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">4. ECMAScript6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5. ajax</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">6. 性能优化、前端安全与网络知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">7.开发工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">8. 必备算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">9. 例题解析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">10. 数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">11. 非技术</span></a></li></ol></div>
             
 
           </div>
