@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 笔试面试考前速记">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-23T09:10:57.677Z">
+<meta property="og:updated_time" content="2018-10-26T13:16:24.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端笔试面试考前速记">
 <meta name="twitter:description" content="摘要: 笔试面试考前速记">
@@ -373,7 +373,13 @@
 <ol start="4">
 <li>闭包</li>
 </ol>
-<pre><code>闭包的使用场景：
+<pre><code>闭包包含以下要点：
+（声明 -&gt; 独立作用域 -&gt; 相互访问 -&gt; 作用域链）
+1.函数声明的时候，会生成一个独立的作用域
+2.同一作用域的对象可以互相访问
+3.作用域呈层级包含状态，形成作用域链，子作用域的对象可以访问父作用域的对象，反之不能；另外子作用域会使用最近的父作用域的对象
+
+闭包的使用场景：
 (1)函数作为返回值return function(){}
 (2)函数作为参数传递function(a, function(){})
 
@@ -383,6 +389,21 @@
     2.在内存中维持一个变量
 缺点：
     内存浪费问题
+
+闭包实例：
+计时器
+
+如何理解计时器：
+由于js是单线程的，所以在执行for循环的时候
+定时器setTimeout被安排到任务队列中排队等待执行，
+而在等待过程中for循环就已经在执行，
+等到setTimeout可以执行的时候，for循环已经结束，
+i的值也已经编程5，所以打印出来五个5
+
+如何修改为正确的计时器：
+将setTimeout放入立即执行函数中，
+将for循环中的循环值i作为参数传递，
+100毫秒后同时打印出1 2 3 4 5
 </code></pre>
 <ol start="5">
 <li>数组与字符串相互转换</li>
@@ -524,7 +545,21 @@ indexOf()方法只返回该元素第一次出现的索引值
 
 排序数组与新数组最后一个元素进行比较
 
-ES6 set : [...new Set(arr)]</code></pre>
+ES6 set : [...new Set(arr)]
+</code></pre>
+<ol start="16">
+<li>非技术问题</li>
+</ol>
+<pre><code>面试结束后，面试官问还有什么想要了解的？
+技术面试官：
+1. 公司项目中运用到的技术；
+2. 如果自己有幸被贵公司选中，需要掌握什么技术，需要掌握到什么程度，大概需要在什么时间范围内；
+3. 公司业务流程和团队建设等等；
+
+HR：
+1. 公司福利；
+2. 假期和加班；
+3. 薪资</code></pre>
 
       
     </div>
