@@ -91,7 +91,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/software.jpg">
 <meta property="og:image" content="http://yoursite.com/img/getANDpost.jpg.png">
-<meta property="og:updated_time" content="2018-10-31T03:31:27.788Z">
+<meta property="og:updated_time" content="2018-11-02T06:37:04.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端面试总结">
 <meta name="twitter:description" content="摘要: 转载一些前人总结的前端笔试面试常见题型，包括ES、Ajax、前端安全等">
@@ -114,11 +114,11 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: 'EL1H1FIVN9',
+      apiKey: 'd2ca5eeb2a8f6e37cf0812c01c95bf34',
+      indexName: 'blog',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"找不到关于: ${query} 的文章","hits_stats":"共找到 ${hits} 个结果， 花费 ${time} ms"}
     }
   };
 </script>
@@ -219,9 +219,45 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -574,7 +610,7 @@ nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
 <ol>
 <li>
 <p>性能优化
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">加载页面和静态资源</span><br><span class="line">(1)静态资源的压缩合并(webpack的commonJS和AMD)</span><br><span class="line">(2)静态资源缓存(本地缓存)&lt;link rel=&quot;dns-perfetch&quot; href=&quot;www.xizi.top&quot;&gt;</span><br><span class="line">(3)使用CDN让资源加载更快</span><br><span class="line">(4)使用SSR后端渲染, 数据直接输出到HTML中</span><br><span class="line"></span><br><span class="line">页面渲染</span><br><span class="line">(1)CSS放在前面, JS放在后面</span><br><span class="line">(2)懒加载</span><br><span class="line">(3)减少DOM查询, 对DOM查询做缓存</span><br><span class="line">(4)减少DOM操作, 多个操作尽量合并在一起执行(DOM操作是十分昂贵的)</span><br><span class="line">(5)事件节流</span><br><span class="line">(6)尽早执行操作</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">减少页面体积：</span><br><span class="line">(1)静态资源的压缩合并(webpack的commonJS和AMD)</span><br><span class="line">(2)静态资源缓存(本地缓存)&lt;link rel=&quot;dns-perfetch&quot; href=&quot;www.xizi.top&quot;&gt;</span><br><span class="line">(3)使用CDN让资源加载更快</span><br><span class="line">(4)使用SSR后端渲染, 数据直接输出到HTML中</span><br><span class="line"></span><br><span class="line">优化页面渲染：</span><br><span class="line">(1)CSS放在前面, JS放在后面</span><br><span class="line">(2)懒加载</span><br><span class="line">(3)减少DOM查询, 对DOM查询做缓存</span><br><span class="line">(4)减少DOM操作, 多个操作尽量合并在一起执行(DOM操作是十分昂贵的)</span><br><span class="line">(5)事件节流</span><br><span class="line">(6)尽早执行操作</span><br></pre></td></tr></table></figure></p>
 </li>
 <li>
 <p>安全性
@@ -821,7 +857,7 @@ nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1043,6 +1079,9 @@ nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
 
 
 
+  
+  
+
 
 
 
@@ -1075,6 +1114,16 @@ nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
   
 
 
@@ -1147,6 +1196,19 @@ nums.map(num =&gt; '&lt;li&gt;${num&lt;/li&gt;').join(' ')
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
