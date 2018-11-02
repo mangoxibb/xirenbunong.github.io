@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 本篇文章详细阐述前端三座大山：作用域和闭包、原型和原型链、异步与单线程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-02T09:27:22.565Z">
+<meta property="og:updated_time" content="2018-11-02T09:29:28.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端三座大山详解">
 <meta name="twitter:description" content="摘要: 本篇文章详细阐述前端三座大山：作用域和闭包、原型和原型链、异步与单线程">
@@ -397,16 +397,17 @@
 <pre><code>一个拥有许多变量和绑定了这些变量的环境的表达式（通常是一个函数）
 </code></pre>
 <ol start="2">
-<li>
-<p>面试讲解流程</p>
-<p>原因：
-从JS的执行开始讲、一个函数执行前后的内存回收过程，
-再阐述闭包形成的原因，这样又会导致什么问题，应该怎么解决。
-最后再讲有什么用途，或者说自己曾经有什么需求需要闭包来实现。
-这么一轮讲下来，会让面试官觉得这位同学至少对闭包是有研究了，而不是死记硬背了一些面试题之类的。</p>
-</li>
+<li>面试讲解流程</li>
 </ol>
-<pre><code>js的执行：
+<pre><code>原因：
+    从JS的执行开始讲、一个函数执行前后的内存回收过程，
+    再阐述闭包形成的原因，这样又会导致什么问题，应该怎么解决。
+    最后再讲有什么用途，或者说自己曾经有什么需求需要闭包来实现。
+    这么一轮讲下来，会让面试官觉得这位同学至少对闭包是有研究了，而不是死记硬背了一些面试题之类的。
+
+
+
+js的执行：
     1.在js中定义的全局变量是不会被销毁的
     2.但是在函数中定义的变量就不一定了
         如果这个函数有被外部的变量引用就不会销毁，否则销毁
