@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 本篇文章详细阐述前端三座大山：作用域和闭包、原型和原型链、异步与单线程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-02T04:42:27.722Z">
+<meta property="og:updated_time" content="2018-11-02T09:27:22.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端三座大山详解">
 <meta name="twitter:description" content="摘要: 本篇文章详细阐述前端三座大山：作用域和闭包、原型和原型链、异步与单线程">
@@ -384,17 +384,18 @@
 <p><a id="more"></a></p>
 <h3>作用域和闭包</h3>
 <ol>
-<li>
-<p>基本概念
-第一种说法：</p>
-<p>JS 的闭包包含以下要点：
-函数声明的时候，会生成一个独立的作用域
-同一作用域的对象可以互相访问
-作用域呈层级包含状态，形成作用域链，子作用域的对象可以访问父作用域的对象，反之不能；
-另外子作用域会使用最近的父作用域的对象</p>
-</li>
+<li>基本概念
+第一种说法：</li>
 </ol>
+<pre><code>JS 的闭包包含以下要点：
+    函数声明的时候，会生成一个独立的作用域
+    同一作用域的对象可以互相访问
+    作用域呈层级包含状态，形成作用域链，子作用域的对象可以访问父作用域的对象，反之不能；
+    另外子作用域会使用最近的父作用域的对象
+</code></pre>
 <p>第二种说法：</p>
+<pre><code>一个拥有许多变量和绑定了这些变量的环境的表达式（通常是一个函数）
+</code></pre>
 <ol start="2">
 <li>
 <p>面试讲解流程</p>
