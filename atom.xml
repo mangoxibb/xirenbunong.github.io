@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-10T03:58:56.404Z</updated>
+  <updated>2018-12-10T06:26:14.688Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://yoursite.com/2018/12/01/2018/12/vue/"/>
     <id>http://yoursite.com/2018/12/01/2018/12/vue/</id>
     <published>2018-11-30T16:00:00.000Z</published>
-    <updated>2018-12-10T03:58:56.404Z</updated>
+    <updated>2018-12-10T06:26:14.688Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘要:</strong> 快速上手vue.js。 vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。</p><p><a id="more"></a></p><h5>1. 通过CDN使用react</h5><h5>2. vue用法</h5><h4>2.1 第一个示例</h4><pre><code>HTML部分    &lt;div id=&quot;app&quot;&gt;        {％raw％}             {{message}}         {％endraw％}        &lt;/div&gt;js部分    new Vue({        el: '#app',        data: {            message: 'hello!'        }    })</code></pre><h4>2.2 js内重要的选项</h4><p>data：{}数据methods：{}方法watch：{}监听</p><h4>2.3 HTML内模板指令</h4><p>v-text=''、v-html=''、{}：数据渲染v-if=''、v-show=''：控制模块显示隐藏v-for='item in items'：渲染循环列表v-on:click || @click =&quot;&quot;</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>摘要:</strong> 快速上手vue.js。 vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层...</p><p><a id="more"></a></p><h5>1. 通过CDN使用vue</h5><h5>2. vue用法</h5><h4>2.1 第一个示例</h4><pre><code>HTML部分    &lt;div id=&quot;app&quot;&gt;        {％raw％}             {{message}}         {％endraw％}        &lt;/div&gt;js部分    new Vue({        el: '#app',        data: {            message: 'hello!'        }    })</code></pre><h4>2.2 js内重要的选项</h4><p>data：{}数据<br>methods：{}方法<br>watch：{}监听</p><h4>2.3 HTML内模板指令</h4><p>v-text=''、v-html=''、{}：数据渲染<br>v-if=''、v-show=''：控制模块显示隐藏<br>v-for='item in items'：渲染循环列表<br>v-on:click || @click =&quot;&quot;</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 快速上手vue.js。 vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;摘要:&lt;/strong&gt; 快速上手vue.js。 vue是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层...&lt;/p&gt;
 &lt;p&gt;
     
     </summary>
