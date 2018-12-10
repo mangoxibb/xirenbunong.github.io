@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-31T01:46:24.567Z">
+<meta property="og:updated_time" content="2018-12-10T03:42:06.371Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react入门基础">
 <meta name="twitter:description" content="摘要: React 是一个用于构建用户界面的 javascript 库。React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站，并于 2013 年 5 月开源。拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。">
@@ -404,6 +404,34 @@ $ cd my-app/
 
 //启动项目
 $ npm start
+
+或者：
+//生成package.json文件
+npm init
+
+//安装三个必要的包
+npm install --save react react-dom babelify babel-preset-react
+
+//es2015的支持
+npm install babel-preset-es2015 --save
+
+//添加webpack.config.js文件
+[文件内容](http://www.xizishuhua.top/code.html)
+
+//全局安装wenpack
+npm install -g webpack
+
+//全局安装热跟新
+npm install -g webpack-dev-server
+
+//项目目录安装热跟新
+npm install webpack-dev-server --save
+
+//启动热跟新
+webpack-dev-server --contentbase src --inline --hot
+
+//打开浏览器输入
+localhost:8080
 </code></pre>
 <h5>3. 在已有项目项目中添加</h5>
 <p>A. git</p>
@@ -499,7 +527,11 @@ port: 8086
 <p>使用yarn run dev</p>
 </li>
 </ol>
-<h5>4. React组件</h5>
+<h5>4. virtual DOM</h5>
+<ol>
+<li>diff算法</li>
+</ol>
+<h5>5. React组件</h5>
 <ol>
 <li>
 <p>注意的点</p>
@@ -512,7 +544,11 @@ Index组件名, example需要加载的div的Id</p>
 var index = &lt;Index/&gt;; //使用时</p>
 </li>
 </ol>
-<h4>5. 生命周期</h4>
+<ol start="2">
+<li>写法
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">子组件header：</span><br><span class="line">    //必要的两行</span><br><span class="line">    var React = require(&apos;react&apos;);</span><br><span class="line">    var ReactDOM = require(&apos;react-dom&apos;);</span><br><span class="line">    //暴露出去, header类继承于React.Component子类</span><br><span class="line">    export default class ComponentHeader extends React.Component&#123;</span><br><span class="line">        //render()方法解析类的输出</span><br><span class="line">        render()&#123;</span><br><span class="line">            return(</span><br><span class="line">                &lt;header&gt;</span><br><span class="line">                    &lt;h1&gt;header头部&lt;/h1&gt;</span><br><span class="line">                &lt;/header&gt;</span><br><span class="line">            )</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">父组件index：</span><br><span class="line">    //必要的两行</span><br><span class="line">    var React = require(&apos;react&apos;);</span><br><span class="line">    var ReactDOM = require(&apos;react-dom&apos;);</span><br><span class="line">    //引入子组件</span><br><span class="line">    import ComponentHeader from &apos;./header.js&apos;;</span><br><span class="line">    //Index类继承于React.Component子类</span><br><span class="line">    class Index extends React.Component&#123;</span><br><span class="line">        //render()方法解析类的输出</span><br><span class="line">        render()&#123;</span><br><span class="line">            return(</span><br><span class="line">                //使用子组件</span><br><span class="line">                &lt;ComponentHeader&gt;</span><br><span class="line">            )</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    //绑定到html标签</span><br><span class="line">    React.render(&lt;Index/&gt;, document.getElementById(&apos;example&apos;));</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    07第三小节</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4>6. 生命周期</h4>
 <ol>
 <li>
 <p>两个函数</p>
@@ -524,7 +560,7 @@ var index = &lt;Index/&gt;; //使用时</p>
 }</p>
 </li>
 </ol>
-<h4>6. React属性与事件</h4>
+<h4>7. React属性与事件</h4>
 <ol>
 <li>
 <p>state(属于组件的属性)
@@ -537,7 +573,7 @@ var index = &lt;Index/&gt;; //使用时</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">传递参数: &lt;Index username=&quot;xiren&quot;&gt;</span><br><span class="line">接收参数：&lt;p&gt;&#123;this.state.username&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
 </li>
 </ol>
-<h4>7. React样式</h4>
+<h4>8. React样式</h4>
 
       
     </div>
@@ -709,7 +745,7 @@ var index = &lt;Index/&gt;; //使用时</p>
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -841,7 +877,7 @@ var index = &lt;Index/&gt;; //使用时</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. 通过CDN使用react</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">2. 通过命令行create-react-app</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">3. 在已有项目项目中添加</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">4. React组件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">5. 生命周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">6. React属性与事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">7. React样式</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. 通过CDN使用react</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">2. 通过命令行create-react-app</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">3. 在已有项目项目中添加</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">4. virtual DOM</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">5. React组件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">6. 生命周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">7. React属性与事件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">8. React样式</span></a></div>
             
 
           </div>

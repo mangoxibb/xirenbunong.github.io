@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2018/12/01/2018/12/vue/</loc>
+    <lastmod>2018-12-10T03:48:22.007Z</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2018/08/17/2018/08/react/</loc>
+    <lastmod>2018-12-10T03:42:06.371Z</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2018/11/03/2018/11/handlebars/</loc>
+    <lastmod>2018-11-29T09:37:15.588Z</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2017/02/15/2018/02/temp/</loc>
+    <lastmod>2018-11-28T02:21:31.469Z</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2018/09/03/2018/09/writtenExam/</loc>
+    <lastmod>2018-11-06T07:30:16.111Z</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2018/10/30/2018/10/three-mon/</loc>
     <lastmod>2018-11-02T12:19:35.517Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2018/02/15/2018/02/hexo%20pro/</loc>
     <lastmod>2018-11-02T07:23:06.574Z</lastmod>
   </url>  <url>
-    <loc>http://yoursite.com/2018/09/03/2018/09/writtenExam/</loc>
-    <lastmod>2018-11-02T06:37:04.039Z</lastmod>
-  </url>  <url>
     <loc>http://yoursite.com/2018/10/02/2018/10/face-to-face/</loc>
     <lastmod>2018-10-31T03:25:40.283Z</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2018/08/17/2018/08/react/</loc>
-    <lastmod>2018-10-31T01:46:24.567Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2018/09/04/2018/09/WEcode/</loc>
     <lastmod>2018-10-31T01:28:04.173Z</lastmod>
@@ -24,9 +33,6 @@
   </url>  <url>
     <loc>http://yoursite.com/2018/02/25/2018/02/algorithm/</loc>
     <lastmod>2018-10-26T11:34:39.651Z</lastmod>
-  </url>  <url>
-    <loc>http://yoursite.com/2017/02/15/2018/02/temp/</loc>
-    <lastmod>2018-10-12T08:41:35.638Z</lastmod>
   </url>  <url>
     <loc>http://yoursite.com/2018/06/24/2018/06/h-modules/</loc>
     <lastmod>2018-08-22T09:23:01.079Z</lastmod>
