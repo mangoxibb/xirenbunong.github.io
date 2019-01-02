@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-02T09:43:33.516Z">
+<meta property="og:updated_time" content="2019-01-02T10:39:21.340Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="0基础学习node及其框架Express">
 <meta name="twitter:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
@@ -388,55 +388,62 @@
 <p><a id="more"></a></p>
 <h5>1. Node</h5>
 <h4>1.1 URL 模块</h4>
-<h5>1. Express</h5>
-<p>先学会用，再学会意义~
+<p>未跟新</p>
+<h5>2. Express</h5>
+<p>先学会用，再学会意义~<br>
 express的几个核心的类（对象）：</p>
-<h4>1.1 express（前三个不常用）</h4>
-<p>express.json()
-express.static()
-express.urlencoded()
-express.Router()：创建一个新的路由器对象。</p>
-<h4>1.2 Application</h4>
-<p>例如
-const express = require('express');
-const app = express();
-方法：<br>
-app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。
-中间件就是处理HTTP请求的函数，用来完成各种特定的任务，
-比如检查用户是否登录、检测用户是否有权限访问等。
-如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。
-app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。
-app.enable()：将参数设置为true。
-app.enabled()：将参数设置为false。
-app.get(path, function(req, res){})：根据请求路径来处理客户端发出的GET等各种请求。
-第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。
-app.listen()：绑定并侦听指定主机和端口上的连接。
-app.param(paramName, callback)：用来批量处理路径中的参数
-app.set(key, val)：用来设置参数，例如渲染模板
+<h4>2.1 express（前三个不常用）</h4>
+<pre><code>express.json()  
+express.static()   
+express.urlencoded()   
+express.Router()：创建一个新的路由器对象。  
+</code></pre>
+<h4>2.2 Application</h4>
+<p>例如<br>
+const express = require('express');<br>
+const app = express();</p>
+<p>方法：<br>
+app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。<br>
+中间件就是处理HTTP请求的函数，用来完成各种特定的任务，<br>
+比如检查用户是否登录、检测用户是否有权限访问等。<br>
+如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。<br>
+app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。<br>
+app.enable()：将参数设置为true。<br>
+app.enabled()：将参数设置为false。<br>
+app.get(path, function(req, res){})：根据请求路径来处理客户端发出的GET等各种请求。<br>
+第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。<br>
+app.listen()：绑定并侦听指定主机和端口上的连接。<br>
+app.param(paramName, callback)：用来批量处理路径中的参数<br>
+app.set(key, val)：用来设置参数，例如渲染模板<br>
 app.engin()：规定文件用何种方式来进行渲染</p>
-<h4>1.3 Request</h4>
-<p>app.get('/', function (req, res) {
-res.send('Hello World');
-})中的req
-req.query：获取URL的查询参数串
-req.route：获取当前匹配的路由
-req.protocol：获取协议类型
-req.path：获取请求路径</p>
-<h4>1.4 Response</h4>
-<p>app.get('/', function (req, res) {
-res.send('Hello World');
+<h4>2.3 Request</h4>
+<pre><code>app.get('/', function (req, res) {
+   res.send('Hello World');
+})中的req 
+
+req.query：获取URL的查询参数串   
+req.route：获取当前匹配的路由    
+req.protocol：获取协议类型   
+req.path：获取请求路径   
+</code></pre>
+<h4>2.4 Response</h4>
+<pre><code>app.get('/', function (req, res) {
+   res.send('Hello World');
 })中的res
-res.send()：传送HTTP响应
-res.clearCookie()：清除Cookie</p>
-<h4>1.5 Router</h4>
-<p>router.all()：最好使用app.all()来代替router.all()。
-router.METHOD()：提供了路由功能。
-其中METHOD是小写的HTTP方法之一，如GET，PUT，POST等。
-因此，实际的方法是router.get()，router.post()，router.put()等。
-router.param()：设置路由参数。
-router.route()：返回单个路由的实例。
-router.use()：主要是针对指定路径下中间件的处理。</p>
-<h4>1.5 一些接口的区别</h4>
+
+res.send()：传送HTTP响应  
+res.clearCookie()：清除Cookie  
+</code></pre>
+<h4>2.5 Router</h4>
+<pre><code>router.all()：最好使用app.all()来代替router.all()。  
+router.METHOD()：提供了路由功能。  
+其中METHOD是小写的HTTP方法之一，如GET，PUT，POST等。  
+因此，实际的方法是router.get()，router.post()，router.put()等。  
+router.param()：设置路由参数。  
+router.route()：返回单个路由的实例。  
+router.use()：主要是针对指定路径下中间件的处理。  
+</code></pre>
+<h4>2.6 一些接口的区别</h4>
 <p>...</p>
 
       
@@ -737,7 +744,7 @@ router.use()：主要是针对指定路径下中间件的处理。</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. Node</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 URL 模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. Express</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 express（前三个不常用）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 Application</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 Request</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.4 Response</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.5 Router</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.5 一些接口的区别</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. Node</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 URL 模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">2. Express</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 express（前三个不常用）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 Application</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 Request</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 Response</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.5 Router</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 一些接口的区别</span></a></div>
             
 
           </div>
