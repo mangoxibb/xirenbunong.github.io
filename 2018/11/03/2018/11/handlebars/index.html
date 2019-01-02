@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Xiren">
 <meta property="og:description" content="摘要: 快速上手模板引擎Handlebars和Hogan">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-29T09:37:15.588Z">
+<meta property="og:updated_time" content="2019-01-02T10:31:41.008Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Handlebars和Hogan">
 <meta name="twitter:description" content="摘要: 快速上手模板引擎Handlebars和Hogan">
@@ -104,7 +104,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -339,8 +339,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/原创/" itemprop="url" rel="index">
-                    <span itemprop="name">原创</span>
+                  <a href="/categories/转载/" itemprop="url" rel="index">
+                    <span itemprop="name">转载</span>
                   </a>
                 </span>
 
@@ -387,9 +387,17 @@
         <p><strong>摘要:</strong> 快速上手模板引擎Handlebars和Hogan</p>
 <p><a id="more"></a></p>
 <h4>1. Handlebars入门</h4>
-<h3>1.1</h3>
+<h3>1.1 未跟新</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;title&#125;&#125;</span><br><span class="line">if else</span><br><span class="line">unless</span><br><span class="line">each</span><br><span class="line">with</span><br><span class="line">lookup</span><br><span class="line">partial</span><br></pre></td></tr></table></figure></p>
 <h4>2. Hogan入门</h4>
-<h3>2.1</h3>
+<h3>2.1 Hogan语法</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;name&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 数据：</span><br><span class="line">    &#123; name : &apos;Xiren&apos; &#125;;</span><br><span class="line"></span><br><span class="line">    // 模板：</span><br><span class="line">    &lt;div&gt;Hey! I am &#123;&#123;name&#125;&#125;!&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    // 结果：</span><br><span class="line">    &lt;div&gt;Hey! I am Xiren!&lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">这就是读取一个变量，假如name是个html片段，这里会对html编码，如果放到dom里，就显示成了一段html代码。</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;name&#125;&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 数据：</span><br><span class="line">    &#123; name : &apos;&lt;span color=&quot;red&quot;&gt;Xiren&lt;/span&gt;&apos; &#125;;</span><br><span class="line"></span><br><span class="line">    // 模板</span><br><span class="line">    &lt;div&gt;Hey! I am &#123;&#123;&#123;name&#125;&#125;&#125;!&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    // 结果</span><br><span class="line">    &lt;div&gt;Hey! I am &lt;span color=&quot;red&quot;&gt;Xiren&lt;/span&gt;!&lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">大括号能怎么样？还是读取一个变量，只不过name是个html片段的话，这里不对html编码，放在dom里就是一段dom。</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;#list&#125;&#125; &#123;&#123;/list&#125;&#125;</span><br><span class="line">这个老复杂了，是个循环呢！当然#标记还可以当做bool型的判断。</span><br><span class="line"></span><br><span class="line">    // 数据:</span><br><span class="line">    &#123;</span><br><span class="line">        list : [</span><br><span class="line">            &#123;name : &apos;Xiren&apos;&#125;,</span><br><span class="line">            &#123;name : &apos;JIM&apos;&#125;</span><br><span class="line">        ],</span><br><span class="line">        isXiren : true</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 数组型用法：</span><br><span class="line">    &#123;&#123;#list&#125;&#125;</span><br><span class="line">        &lt;span&gt;&#123;&#123;name&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &#123;&#123;/list&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // bool型用法：</span><br><span class="line">    &#123;&#123;#isXiren&#125;&#125;我就是Xiren啊！&#123;&#123;/isXiren&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 数组型结果：</span><br><span class="line">    &lt;span&gt;Xiren&lt;/span&gt;&lt;span&gt;JIM&lt;/span&gt;</span><br><span class="line"></span><br><span class="line">    // bool型结果：</span><br><span class="line">    我就是Xiren啊！</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;^list&#125;&#125; &#123;&#123;/list&#125;&#125;</span><br><span class="line">这货和上一个是相反的，就是非的逻辑。如果列表为空，或者非真值都会进这个分支，其中包括false，null，undefined，0什么的。</span><br><span class="line"></span><br><span class="line">    // 数据:</span><br><span class="line">    &#123;</span><br><span class="line">        list : [],</span><br><span class="line">        isXiren : false</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 数组型用法：</span><br><span class="line">    &#123;&#123;^list&#125;&#125;</span><br><span class="line">        这列表抠搜的，啥玩意都没有！</span><br><span class="line">    &#123;&#123;/list&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // bool型用法：</span><br><span class="line">    &#123;&#123;^isXiren&#125;&#125;谁是Xiren? 不认识！&#123;&#123;/isXiren&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 数组型结果：</span><br><span class="line">    这列表抠搜的，啥玩意都没有！</span><br><span class="line"></span><br><span class="line">    // bool型结果：</span><br><span class="line">    谁是Xiren? 不认识！</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;.&#125;&#125;</span><br><span class="line">代表枚举类型里的当前元素，枚举类型没有索引名，只能用&#123;&#123;.&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 数据:</span><br><span class="line">    &#123;</span><br><span class="line">        list : [&apos;Xiren&apos;, &apos;JIM&apos;]</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // &#123;&#123;.&#125;&#125;用法：</span><br><span class="line">    &#123;&#123;#list&#125;&#125;</span><br><span class="line">        &lt;span&gt;&#123;&#123;.&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &#123;&#123;/list&#125;&#125;</span><br><span class="line"></span><br><span class="line">    // 结果：</span><br><span class="line">    &lt;span&gt;Xiren&lt;/span&gt;&lt;span&gt;JIM&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;!&#125;&#125;</span><br><span class="line">我就是个注释，知道你们都不乐意用我</span><br><span class="line"></span><br><span class="line">    // 用法:</span><br><span class="line">    &#123;&#123;! 楼下是二货&#125;&#125;</span><br><span class="line">    &lt;span&gt;我最厉害！&lt;/span&gt;</span><br><span class="line"></span><br><span class="line">    // 执行结果:</span><br><span class="line">    &lt;span&gt;我最厉害！&lt;/span&gt;</span><br></pre></td></tr></table></figure></p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">这些就是hogan的常用语法，还有个引入片段的语法基本用不到，这里就不讲了。</span><br><span class="line">然后会是什么呢？然后就没有然后了，就这些！</span><br><span class="line"></span><br><span class="line">总结：Hogan，不就这么几句</span><br><span class="line">&#123;&#123;data&#125;&#125; 转义的变量</span><br><span class="line"></span><br><span class="line">&#123;&#123;&#123;data&#125;&#125;&#125; 不转义的变量</span><br><span class="line"></span><br><span class="line">&#123;&#123;#list&#125;&#125; &#123;&#123;/list&#125;&#125; 列表循环 / 真值判断</span><br><span class="line"></span><br><span class="line">&#123;&#123;^list&#125;&#125; &#123;&#123;/list&#125;&#125; 空列表 / 非真值判断</span><br><span class="line"></span><br><span class="line">&#123;&#123;.&#125;&#125; 枚举的当前元素</span><br><span class="line"></span><br><span class="line">&#123;&#123;!&#125;&#125; 我是注释</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -561,7 +569,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -693,7 +701,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. Handlebars入门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. Hogan入门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1. Handlebars入门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 未跟新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2. Hogan入门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 Hogan语法</span></a></div>
             
 
           </div>
@@ -713,7 +721,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -829,13 +837,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
