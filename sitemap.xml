@@ -4,7 +4,14 @@
   <url>
     <loc>http://yoursite.com/2019/01/01/2018/12/node/</loc>
     
-    <lastmod>2019-01-02T10:39:21.340Z</lastmod>
+    <lastmod>2019-01-14T08:37:39.315Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/04/15/2018/04/flex/</loc>
+    
+    <lastmod>2019-01-14T03:35:11.205Z</lastmod>
     
   </url>
   
@@ -194,13 +201,6 @@
     <loc>http://yoursite.com/2018/04/05/2018/04/webpack/</loc>
     
     <lastmod>2018-07-05T11:55:41.870Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/15/2018/04/flex/</loc>
-    
-    <lastmod>2018-07-05T09:38:44.963Z</lastmod>
     
   </url>
   
