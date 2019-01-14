@@ -94,7 +94,7 @@
 <meta property="og:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/node-url.png">
-<meta property="og:updated_time" content="2019-01-14T08:48:33.126Z">
+<meta property="og:updated_time" content="2019-01-14T08:52:53.771Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="0基础学习node及其框架Express">
 <meta name="twitter:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
@@ -427,23 +427,12 @@ express.urlencoded()
 express.Router()：创建一个新的路由器对象。  
 </code></pre>
 <h4>2.2 Application</h4>
-<p>例如<br>
-const express = require('express');<br>
-const app = express();</p>
-<p>方法：<br>
-app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。<br>
-中间件就是处理HTTP请求的函数，用来完成各种特定的任务，<br>
-比如检查用户是否登录、检测用户是否有权限访问等。<br>
-如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。<br>
-app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。<br>
-app.enable()：将参数设置为true。<br>
-app.enabled()：将参数设置为false。<br>
-app.get(path, function(req, res){})：根据请求路径来处理客户端发出的GET等各种请求。<br>
-第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。<br>
-app.listen()：绑定并侦听指定主机和端口上的连接。<br>
-app.param(paramName, callback)：用来批量处理路径中的参数<br>
-app.set(key, val)：用来设置参数，例如渲染模板<br>
-app.engin()：规定文件用何种方式来进行渲染</p>
+<p>例如</p>
+<pre><code>const express = require('express');   
+const app = express();  
+</code></pre>
+<p>方法：
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。   </span><br><span class="line">中间件就是处理HTTP请求的函数，用来完成各种特定的任务，   </span><br><span class="line">比如检查用户是否登录、检测用户是否有权限访问等。   </span><br><span class="line">如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。   </span><br><span class="line">app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。   </span><br><span class="line">app.enable()：将参数设置为true。   </span><br><span class="line">app.enabled()：将参数设置为false。   </span><br><span class="line">app.get(path, function(req, res)&#123;&#125;)：根据请求路径来处理客户端发出的GET等各种请求。    </span><br><span class="line">第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。  </span><br><span class="line">app.listen()：绑定并侦听指定主机和端口上的连接。   </span><br><span class="line">app.param(paramName, callback)：用来批量处理路径中的参数   </span><br><span class="line">app.set(key, val)：用来设置参数，例如渲染模板   </span><br><span class="line">app.engin()：规定文件用何种方式来进行渲染</span><br></pre></td></tr></table></figure></p>
 <h4>2.3 Request</h4>
 <pre><code>app.get('/', function (req, res) {
    res.send('Hello World');
