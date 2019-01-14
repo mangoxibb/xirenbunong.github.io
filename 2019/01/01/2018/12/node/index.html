@@ -94,7 +94,7 @@
 <meta property="og:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/img/node-url.png">
-<meta property="og:updated_time" content="2019-01-14T08:45:50.404Z">
+<meta property="og:updated_time" content="2019-01-14T08:48:33.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="0基础学习node及其框架Express">
 <meta name="twitter:description" content="摘要:  Node.js 是运行在服务端的 JavaScript。Express 是一个简洁而灵活的 node.js Web应用框架。">
@@ -395,192 +395,84 @@
 <img src="/img/node-url.png" alt="banner"><br>
 不难看出url具有Url、parse、resolve、format...这些模块<br>
 使用步骤（访问地址http://localhost:3000/?userName=xiren&amp;userAge=20）：
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">// 1. 引入 url 模块</span><br><span class="line">var url = require(&quot;url&quot;);</span><br><span class="line">// 2. 使用 url 的 parse 方法</span><br><span class="line">/**</span><br><span class="line"> * parse 方法需要两个参数：</span><br><span class="line"> * 第一个参数是地址</span><br><span class="line"> * 第二个参数是 true 的话表示把 get 传值转换成对象</span><br><span class="line"> */ </span><br><span class="line">var result = url.parse(req.url, true);</span><br><span class="line">console.log(result);</span><br><span class="line">/**</span><br><span class="line"> * Url &#123;</span><br><span class="line"> *   protocol: null,</span><br><span class="line"> *   slashes: null,</span><br><span class="line"> *   auth: null,</span><br><span class="line"> *   host: null,</span><br><span class="line"> *   port: null,</span><br><span class="line"> *   hostname: null,</span><br><span class="line"> *   hash: null,</span><br><span class="line"> *   search: &apos;?userName=xiren&amp;userAge=22&apos;,</span><br><span class="line"> *   query: &#123; userName: &apos;xiren&apos;, userAge: &apos;22&apos; &#125;,</span><br><span class="line"> *   pathname: &apos;/&apos;,</span><br><span class="line"> *   path: &apos;/?userName=xiren&amp;userAge=22&apos;,</span><br><span class="line"> *   href: &apos;/?userName=xiren&amp;userAge=22&apos; &#125;</span><br><span class="line"> */</span><br><span class="line"> // 注意打印出的URL对象中的倒数第四个参数query，通过query，我们可以从传来的url中获取到想要的url参数</span><br><span class="line"></span><br><span class="line">console.log(result.query.userName); // xiren</span><br><span class="line"></span><br><span class="line">console.log(result.query.userAge); // 22</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">### 1.1.1 parse模块：</span><br></pre></td></tr></table></figure></p>
-<p>console.log(url.parse(&quot;http://www.baidu.com/new?name=xiren&quot;));</p>
-<p>/**</p>
-<ul>
-<li>Console：
-Url {
-protocol: 'http:',
-slashes: true,
-auth: null,
-host: 'www.baidu.com',
-port: null,
-hostname: 'www.baidu.com',
-hash: null,
-search: '?name=xiren',
-query: 'name=xiren',
-pathname: '/new',
-path: '/new?name=xiren',
-href: 'http://www.baidu.com/new?name=xiren'
-}
-*/</li>
-</ul>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.1.2 format模块：</span><br></pre></td></tr></table></figure></p>
-<p>console.log(url.format({
-protocol: 'http:',
-slashes: true,
-auth: null,
-host: 'www.baidu.com',
-port: null,
-hostname: 'www.baidu.com',
-hash: null,
-search: '?name=xiren',
-query: 'name=xiren',
-pathname: '/new',
-path: '/new?name=xiren',
-href: 'http://www.baidu.com/new?name=xiren'
-}))</p>
-<p>// Console：
-// http://www.baidu.com/new?name=xiren</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.1.3 resolve模块</span><br></pre></td></tr></table></figure></p>
-<p>console.log(url.resolve(&quot;http://www.baidu.com/xiren&quot;, &quot;nmenzhen&quot;));</p>
-<p>// Console：
-// http://www.baidu.com/nmenzhen</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 1.2 fs文件管理</span><br></pre></td></tr></table></figure></p>
-<p>/**</p>
-<ul>
-<li>
-<ol>
-<li>fs.stat 检测是文件还是目录</li>
-</ol>
-</li>
-<li>
-<ol start="2">
-<li>fs.mkdir 创建目录</li>
-</ol>
-</li>
-<li>
-<ol start="3">
-<li>fs.writeFile 创建写入文件</li>
-</ol>
-</li>
-<li>
-<ol start="4">
-<li>fs.appendFile 追加文件</li>
-</ol>
-</li>
-<li>
-<ol start="5">
-<li>fs.readFile 读取文件</li>
-</ol>
-</li>
-<li>
-<ol start="6">
-<li>fs.readdir 读取目录</li>
-</ol>
-</li>
-<li>
-<ol start="7">
-<li>fs.rename 重命名</li>
-</ol>
-</li>
-<li>
-<ol start="8">
-<li>fs.rmdir 删除目录</li>
-</ol>
-</li>
-<li>
-<ol start="9">
-<li>fs.unlink 删除文件
-*/</li>
-</ol>
-</li>
-</ul>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 1.3 path路径</span><br><span class="line">### 1.3.1 basename模块</span><br></pre></td></tr></table></figure></p>
-<p>path.basename('C:\temp\test.html')
-'test.html'
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.3.2 dirname模块</span><br></pre></td></tr></table></figure></p>
-<p>path.dirname('/foo/bar/baz/asdf/quux');
-// 返回: '/foo/bar/baz/asdf'
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.3.3 extname模块</span><br></pre></td></tr></table></figure></p>
-<p>path.extname('index.html');
-// 返回: '.html'</p>
-<p>path.extname('index.coffee.md');
-// 返回: '.md'</p>
-<p>path.extname('index.');
-// 返回: '.'</p>
-<p>path.extname('index');
-// 返回: ''</p>
-<p>path.extname('.index');
-// 返回: ''</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.3.4 format模块</span><br></pre></td></tr></table></figure></p>
-<p>path.format({
-dir: 'C:\path\dir',
-base: 'file.txt'
-});
-// 返回: 'C:\path\dir\file.txt'
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.3.5 join模块</span><br></pre></td></tr></table></figure></p>
-<p>path.join('/foo', 'bar', 'baz/asdf', 'quux', '..');
-// 返回: '/foo/bar/baz/asdf'</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.3.6 parse模块</span><br></pre></td></tr></table></figure></p>
-<p>path.parse('C:\path\dir\file.txt');
-// 返回:
-// { root: 'C:\',
-//   dir: 'C:\path\dir',
-//   base: 'file.txt',
-//   ext: '.txt',
-//   name: 'file' }</p>
-<pre><code>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">// 1. 引入 url 模块</span><br><span class="line">var url = require(&quot;url&quot;);</span><br><span class="line">// 2. 使用 url 的 parse 方法</span><br><span class="line">/**</span><br><span class="line"> * parse 方法需要两个参数：</span><br><span class="line"> * 第一个参数是地址</span><br><span class="line"> * 第二个参数是 true 的话表示把 get 传值转换成对象</span><br><span class="line"> */ </span><br><span class="line">var result = url.parse(req.url, true);</span><br><span class="line">console.log(result);</span><br><span class="line">/**</span><br><span class="line"> * Url &#123;</span><br><span class="line"> *   protocol: null,</span><br><span class="line"> *   slashes: null,</span><br><span class="line"> *   auth: null,</span><br><span class="line"> *   host: null,</span><br><span class="line"> *   port: null,</span><br><span class="line"> *   hostname: null,</span><br><span class="line"> *   hash: null,</span><br><span class="line"> *   search: &apos;?userName=xiren&amp;userAge=22&apos;,</span><br><span class="line"> *   query: &#123; userName: &apos;xiren&apos;, userAge: &apos;22&apos; &#125;,</span><br><span class="line"> *   pathname: &apos;/&apos;,</span><br><span class="line"> *   path: &apos;/?userName=xiren&amp;userAge=22&apos;,</span><br><span class="line"> *   href: &apos;/?userName=xiren&amp;userAge=22&apos; &#125;</span><br><span class="line"> */</span><br><span class="line"> // 注意打印出的URL对象中的倒数第四个参数query，通过query，我们可以从传来的url中获取到想要的url参数</span><br><span class="line"></span><br><span class="line">console.log(result.query.userName); // xiren</span><br><span class="line"></span><br><span class="line">console.log(result.query.userAge); // 22</span><br></pre></td></tr></table></figure></p>
+<h3>1.1.1 parse模块：</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">console.log(url.parse(&quot;http://www.baidu.com/new?name=xiren&quot;));</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Console：</span><br><span class="line">  Url &#123;</span><br><span class="line">    protocol: &apos;http:&apos;,</span><br><span class="line">    slashes: true,</span><br><span class="line">    auth: null,</span><br><span class="line">    host: &apos;www.baidu.com&apos;,</span><br><span class="line">    port: null,</span><br><span class="line">    hostname: &apos;www.baidu.com&apos;,</span><br><span class="line">    hash: null,</span><br><span class="line">    search: &apos;?name=xiren&apos;,</span><br><span class="line">    query: &apos;name=xiren&apos;,</span><br><span class="line">    pathname: &apos;/new&apos;,</span><br><span class="line">    path: &apos;/new?name=xiren&apos;,</span><br><span class="line">    href: &apos;http://www.baidu.com/new?name=xiren&apos; </span><br><span class="line">  &#125;</span><br><span class="line"> */</span><br></pre></td></tr></table></figure></p>
+<h3>1.1.2 format模块：</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">console.log(url.format(&#123;</span><br><span class="line">  protocol: &apos;http:&apos;,</span><br><span class="line">  slashes: true,</span><br><span class="line">  auth: null,</span><br><span class="line">  host: &apos;www.baidu.com&apos;,</span><br><span class="line">  port: null,</span><br><span class="line">  hostname: &apos;www.baidu.com&apos;,</span><br><span class="line">  hash: null,</span><br><span class="line">  search: &apos;?name=xiren&apos;,</span><br><span class="line">  query: &apos;name=xiren&apos;,</span><br><span class="line">  pathname: &apos;/new&apos;,</span><br><span class="line">  path: &apos;/new?name=xiren&apos;,</span><br><span class="line">  href: &apos;http://www.baidu.com/new?name=xiren&apos; </span><br><span class="line">&#125;))</span><br><span class="line"></span><br><span class="line">// Console：</span><br><span class="line">// http://www.baidu.com/new?name=xiren</span><br></pre></td></tr></table></figure></p>
+<h3>1.1.3 resolve模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(url.resolve(&quot;http://www.baidu.com/xiren&quot;, &quot;nmenzhen&quot;));</span><br><span class="line"></span><br><span class="line">// Console：</span><br><span class="line">// http://www.baidu.com/nmenzhen</span><br></pre></td></tr></table></figure></p>
+<h4>1.2 fs文件管理</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 1. fs.stat 检测是文件还是目录</span><br><span class="line"> * 2. fs.mkdir 创建目录</span><br><span class="line"> * 3. fs.writeFile 创建写入文件</span><br><span class="line"> * 4. fs.appendFile 追加文件</span><br><span class="line"> * 5. fs.readFile 读取文件</span><br><span class="line"> * 6. fs.readdir 读取目录</span><br><span class="line"> * 7. fs.rename 重命名</span><br><span class="line"> * 8. fs.rmdir 删除目录</span><br><span class="line"> * 9. fs.unlink 删除文件</span><br><span class="line"> */</span><br></pre></td></tr></table></figure></p>
+<h4>1.3 path路径</h4>
+<h3>1.3.1 basename模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path.basename(&apos;C:\\temp\\test.html&apos;)</span><br><span class="line">&apos;test.html&apos;</span><br></pre></td></tr></table></figure></p>
+<h3>1.3.2 dirname模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path.dirname(&apos;/foo/bar/baz/asdf/quux&apos;);</span><br><span class="line">// 返回: &apos;/foo/bar/baz/asdf&apos;</span><br></pre></td></tr></table></figure></p>
+<h3>1.3.3 extname模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">path.extname(&apos;index.html&apos;);</span><br><span class="line">// 返回: &apos;.html&apos;</span><br><span class="line"></span><br><span class="line">path.extname(&apos;index.coffee.md&apos;);</span><br><span class="line">// 返回: &apos;.md&apos;</span><br><span class="line"></span><br><span class="line">path.extname(&apos;index.&apos;);</span><br><span class="line">// 返回: &apos;.&apos;</span><br><span class="line"></span><br><span class="line">path.extname(&apos;index&apos;);</span><br><span class="line">// 返回: &apos;&apos;</span><br><span class="line"></span><br><span class="line">path.extname(&apos;.index&apos;);</span><br><span class="line">// 返回: &apos;&apos;</span><br></pre></td></tr></table></figure></p>
+<h3>1.3.4 format模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">path.format(&#123;</span><br><span class="line">  dir: &apos;C:\\path\\dir&apos;,</span><br><span class="line">  base: &apos;file.txt&apos;</span><br><span class="line">&#125;);</span><br><span class="line">// 返回: &apos;C:\\path\\dir\\file.txt&apos;</span><br></pre></td></tr></table></figure></p>
+<h3>1.3.5 join模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path.join(&apos;/foo&apos;, &apos;bar&apos;, &apos;baz/asdf&apos;, &apos;quux&apos;, &apos;..&apos;);</span><br><span class="line">// 返回: &apos;/foo/bar/baz/asdf&apos;</span><br></pre></td></tr></table></figure></p>
+<h3>1.3.6 parse模块</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">path.parse(&apos;C:\\path\\dir\\file.txt&apos;);</span><br><span class="line">// 返回:</span><br><span class="line">// &#123; root: &apos;C:\\&apos;,</span><br><span class="line">//   dir: &apos;C:\\path\\dir&apos;,</span><br><span class="line">//   base: &apos;file.txt&apos;,</span><br><span class="line">//   ext: &apos;.txt&apos;,</span><br><span class="line">//   name: &apos;file&apos; &#125;</span><br></pre></td></tr></table></figure></p>
+<h5>2. Express</h5>
+<p>先学会用，再学会意义~<br>
+express的几个核心的类（对象）：</p>
+<h4>2.1 express（前三个不常用）</h4>
+<pre><code>express.json()  
+express.static()   
+express.urlencoded()   
+express.Router()：创建一个新的路由器对象。  
+</code></pre>
+<h4>2.2 Application</h4>
+<p>例如<br>
+const express = require('express');<br>
+const app = express();</p>
+<p>方法：<br>
+app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。<br>
+中间件就是处理HTTP请求的函数，用来完成各种特定的任务，<br>
+比如检查用户是否登录、检测用户是否有权限访问等。<br>
+如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。<br>
+app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。<br>
+app.enable()：将参数设置为true。<br>
+app.enabled()：将参数设置为false。<br>
+app.get(path, function(req, res){})：根据请求路径来处理客户端发出的GET等各种请求。<br>
+第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。<br>
+app.listen()：绑定并侦听指定主机和端口上的连接。<br>
+app.param(paramName, callback)：用来批量处理路径中的参数<br>
+app.set(key, val)：用来设置参数，例如渲染模板<br>
+app.engin()：规定文件用何种方式来进行渲染</p>
+<h4>2.3 Request</h4>
+<pre><code>app.get('/', function (req, res) {
+   res.send('Hello World');
+})中的req 
 
-##### 2. Express
-先学会用，再学会意义~  
-express的几个核心的类（对象）：  
-#### 2.1 express（前三个不常用）
-    express.json()  
-    express.static()   
-    express.urlencoded()   
-    express.Router()：创建一个新的路由器对象。  
+req.query：获取URL的查询参数串   
+req.route：获取当前匹配的路由    
+req.protocol：获取协议类型   
+req.path：获取请求路径   
+</code></pre>
+<h4>2.4 Response</h4>
+<pre><code>app.get('/', function (req, res) {
+   res.send('Hello World');
+})中的res
 
-#### 2.2 Application
-例如  
-    const express = require('express');   
-    const app = express();  
-
-方法：    
-    app.use([path,] function [, function...])：定义一个中间件，查看路由是否以path路径开头。   
-    中间件就是处理HTTP请求的函数，用来完成各种特定的任务，   
-    比如检查用户是否登录、检测用户是否有权限访问等。   
-    如果path没有写，那么默认就是&quot;/&quot;，同时需要注意的是：中间件的执行是有顺序的。   
-    app.all([path,] function [, function...])：定义全局路由控制，用作路由处理，匹配完整路径，在app.use之后。   
-    app.enable()：将参数设置为true。   
-    app.enabled()：将参数设置为false。   
-    app.get(path, function(req, res){})：根据请求路径来处理客户端发出的GET等各种请求。    
-    第一个参数path为请求的路径， 第二个参数为处理请求的回调函数。  
-    app.listen()：绑定并侦听指定主机和端口上的连接。   
-    app.param(paramName, callback)：用来批量处理路径中的参数   
-    app.set(key, val)：用来设置参数，例如渲染模板   
-    app.engin()：规定文件用何种方式来进行渲染  
-
-#### 2.3 Request
-    app.get('/', function (req, res) {
-       res.send('Hello World');
-    })中的req 
-
-    req.query：获取URL的查询参数串   
-    req.route：获取当前匹配的路由    
-    req.protocol：获取协议类型   
-    req.path：获取请求路径   
-
-#### 2.4 Response
-    app.get('/', function (req, res) {
-       res.send('Hello World');
-    })中的res
-
-    res.send()：传送HTTP响应  
-    res.clearCookie()：清除Cookie  
-
-#### 2.5 Router
-    router.all()：最好使用app.all()来代替router.all()。  
-    router.METHOD()：提供了路由功能。  
-    其中METHOD是小写的HTTP方法之一，如GET，PUT，POST等。  
-    因此，实际的方法是router.get()，router.post()，router.put()等。  
-    router.param()：设置路由参数。  
-    router.route()：返回单个路由的实例。  
-    router.use()：主要是针对指定路径下中间件的处理。  
-
-#### 2.6 一些接口的区别
-...</code></pre>
+res.send()：传送HTTP响应  
+res.clearCookie()：清除Cookie  
+</code></pre>
+<h4>2.5 Router</h4>
+<pre><code>router.all()：最好使用app.all()来代替router.all()。  
+router.METHOD()：提供了路由功能。  
+其中METHOD是小写的HTTP方法之一，如GET，PUT，POST等。  
+因此，实际的方法是router.get()，router.post()，router.put()等。  
+router.param()：设置路由参数。  
+router.route()：返回单个路由的实例。  
+router.use()：主要是针对指定路径下中间件的处理。  
+</code></pre>
+<h4>2.6 一些接口的区别</h4>
+<p>...</p>
 
       
     </div>
@@ -880,7 +772,7 @@ express的几个核心的类（对象）：
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. Node</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 URL</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">1. Node</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.1 URL</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1.1 parse模块：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1.2 format模块：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.1.3 resolve模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.2 fs文件管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">1.3 path路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.1 basename模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.2 dirname模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.3 extname模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.4 format模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.5 join模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-text">1.3.6 parse模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">2. Express</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.1 express（前三个不常用）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.2 Application</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.3 Request</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.4 Response</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.5 Router</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-text">2.6 一些接口的区别</span></a></div>
             
 
           </div>
